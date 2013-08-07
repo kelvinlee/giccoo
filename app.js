@@ -27,7 +27,7 @@ app.configure(function () {
       console.log("you know here!");
       return next();
     }
-    express.csrf(req,res,next);
+    app.use(express.csrf());
   });
   app.use(function(req, res, next){ 
     //check language and git.
