@@ -31,14 +31,18 @@ app.configure(function () {
   });
   app.use(function(req, res, next){ 
     //check language
-    var language = req.headers["accept-language"].split(","); 
-    fs.exists("/mydata/myweb/giccoo/language/"+language[0]+".js",function(exists){
-      if (exists) {
-        res.locals.l = require("./language/"+language[0]+".js");
-      }else{
-        res.locals.l = require("./language/en-US.js");
-      } 
-    }); 
+    if (req.headers) {
+      var language = req.headers["accept-language"].split(","); 
+      fs.exists("/mydata/myweb/giccoo/language/"+language[0]+".js",function(exists){
+        if (exists) {
+          res.locals.l = require("./language/"+language[0]+".js");
+        }else{
+          res.locals.l = require("./language/en-US.js");
+        } 
+      }); 
+    }else{
+      res.locals.l = require("./language/en-US.js");
+    }
     // en-US,en;q=0.8
     res.locals.token = req.session._csrf;
     res.locals.config = config;
