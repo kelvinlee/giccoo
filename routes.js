@@ -3,10 +3,12 @@ var user = require('./controllers/user');
 var git = require('./controllers/git'); 
 
 module.exports = function (app) {
+  // git never changed.
+  app.post('/git-pull', git.gitpull);
   // home page
   app.get('/', art.homepage);
+  app.get('/test', art.homepage);
   
-  app.post('/git-pull', git.gitpull);
   // art
   // app.get('/arts/:page_id', art.list);
   // app.get('/art/:art_id', art.show);
