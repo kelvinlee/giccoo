@@ -10,6 +10,7 @@ module.exports = function (app) {
   app.get('/test', art.homepage);
   app.get('/test2', art.homepage);
   app.get('/test3', art.homepage);
+  app.get('/test4', art.homepage);
   
   // art
   // app.get('/arts/:page_id', art.list);
