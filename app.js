@@ -22,7 +22,13 @@ app.configure(function () {
 
   app.use(require('./controllers/user').auth_user);
 
-  app.use(express.csrf());
+  app.use(function(req,res,next){
+    if (req.body && req.body.git === 'pull') {
+      console.log("you know here!");
+      return next();
+    }
+    express.csrf(req,res,next);
+  });
   app.use(function(req, res, next){ 
     //check language
     var language = req.headers["accept-language"].split(","); 
