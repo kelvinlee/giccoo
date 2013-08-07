@@ -100,6 +100,9 @@ textarea {
 @c-4 : #55606b;
 @c-5 : #f7f7f7;
 @c-6 : #828282;
+a:hover {
+    text-decoration: none;
+}
 .fn {
     font-size: 12px;
 }
@@ -199,8 +202,9 @@ textarea {
         background:#fff;
     }
     .services {
+        .mp0(0px, 0px 40px);
         h3{
-            margin-top: 30px;
+            margin-top: 0px;
             font-size: 24px;
             color: @c-1;
         }
@@ -221,7 +225,13 @@ textarea {
             .fh;
             line-height: 28px;
             color:@c-6; 
+            .gbtn {
+                line-height: 56px;
+            }
         }
+    }
+    .odd {
+        background: @c-5;
     }
 }
 

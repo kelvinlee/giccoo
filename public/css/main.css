@@ -78,6 +78,9 @@ textarea {
 /* ==========================================================================
    less public styles
    ========================================================================== */
+a:hover {
+  text-decoration: none;
+}
 .fn {
   font-size: 12px;
 }
@@ -169,8 +172,12 @@ textarea {
   z-index: 99902;
   background: #fff;
 }
+.homepage .services {
+  margin: 0px;
+  padding: 0px 40px;
+}
 .homepage .services h3 {
-  margin-top: 30px;
+  margin-top: 0px;
   font-size: 24px;
   color: #ff7800;
 }
@@ -192,6 +199,12 @@ textarea {
   font-size: 18px;
   line-height: 28px;
   color: #828282;
+}
+.homepage .services p .gbtn {
+  line-height: 56px;
+}
+.homepage .odd {
+  background: #f7f7f7;
 }
 /* ==========================================================================
    Helper classes
