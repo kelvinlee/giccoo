@@ -31,6 +31,7 @@ app.configure(function () {
   });
   app.use(function(req, res, next){ 
     //check language and git.
+    console.log(req.headers["user-agent"]);
     if (req.headers["user-agent"].indexOf("GitHub")<0) {
       var language = req.headers["accept-language"].split(","); 
       fs.exists("/mydata/myweb/giccoo/language/"+language[0]+".js",function(exists){
