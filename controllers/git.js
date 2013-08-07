@@ -18,8 +18,9 @@ exports.gitpull = function(req,res, next) {
 	free.stderr.on('data', function(data) {
 	  console.log('Error: \n'+ data);
 	});
-	free.on('exit',function(code,signal) {
-	  console.log('Exit: '+code);
+	var restart = spawn('forever',["restartall"]);
+	restart.stdout.on("data",function(data){
+		console.log("App restart.");
 	});
   }
 }
