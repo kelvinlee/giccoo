@@ -12,16 +12,12 @@ exports.gitpull = function(req,res, next) {
   var json = JSON.parse(req.body.payload);
   if (typeof json.head_commit.committer.username !== "undefined") {
   	console.log("Git need pull, from:"+json.head_commit.committer.email);
-  	var free = spawn('git',['pull']);
+  	var free = spawn('git',['pull','&&','forever','restartall']);
 	free.stdout.on('data', function(data) {
 	  console.log('Success: \n'+ data);
 	});
 	free.stderr.on('data', function(data) {
 	  console.log('Error: \n'+ data);
-	});
-	var restart = spawn('forever',["restartall"]);
-	restart.stdout.on("data",function(data){
-		console.log("App restart.");
-	});
+	}); 
   }
 }
