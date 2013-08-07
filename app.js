@@ -30,9 +30,8 @@ app.configure(function () {
     express.csrf(req,res,next);
   });
   app.use(function(req, res, next){ 
-    //check language
-    console.log(req.headers);
-    if (req.headers) {
+    //check language and git.
+    if (req.headers["user-agent"].indexOf("GitHub")<0) {
       var language = req.headers["accept-language"].split(","); 
       fs.exists("/mydata/myweb/giccoo/language/"+language[0]+".js",function(exists){
         if (exists) {
@@ -41,9 +40,7 @@ app.configure(function () {
           res.locals.l = require("./language/en-US.js");
         } 
       }); 
-    }else{
-      res.locals.l = require("./language/en-US.js");
-    }
+    } 
     // en-US,en;q=0.8
     res.locals.token = req.session._csrf;
     res.locals.config = config;
