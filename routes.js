@@ -6,13 +6,9 @@ module.exports = function (app) {
   // git never changed.
   app.post('/git-pull', git.gitpull);
   // home page
-  app.get('/', art.homepage);
-  app.get('/test', art.homepage);
-  app.get('/test2', art.homepage);
-  app.get('/test3', art.homepage);
-  app.get('/test4', art.homepage);
+  app.get('/', art.homepage); 
   
-  // art
+  // art 
   // app.get('/arts/:page_id', art.list);
   // app.get('/art/:art_id', art.show);
   // app.get('/newart', art.create);
