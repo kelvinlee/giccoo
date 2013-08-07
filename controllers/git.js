@@ -17,6 +17,7 @@ exports.gitpull = function(req,res, next) {
 	  console.log('Success: \n'+ data);
     var restartf = spawn('forever',['restartall']);
     restartf.stderr.on('data',function(d){
+      var rest = spawn('forever',['start','/mydata/myweb/giccoo/app.js']);
       console.log('Success: \n'+ d);
     });
 	});
