@@ -11,5 +11,4 @@ exports.gitpull = function(req,res, next) {
   if (typeof json.head_commit.committer.username !== "undefined") {
   	console.log("Git need pull, from:"+json.head_commit.committer.email);
   }
-  next();
 }

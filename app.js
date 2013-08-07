@@ -23,6 +23,7 @@ app.configure(function () {
   app.use(require('./controllers/user').auth_user);
 
   app.use(function(req,res,next){
+    // if there is git pull dont use csrf.
     if (req.body && req.body.git === 'pull') {
       console.log("you know here!");
       return next();
@@ -31,8 +32,7 @@ app.configure(function () {
     next();
   });
   app.use(function(req, res, next){ 
-    //check language and git.
-    console.log(req.headers["user-agent"]);
+    //check language and git. 
     if (req.headers["user-agent"].indexOf("GitHub")<0) {
       var language = req.headers["accept-language"].split(","); 
       fs.exists("/mydata/myweb/giccoo/language/"+language[0]+".js",function(exists){
