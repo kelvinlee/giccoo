@@ -8,6 +8,7 @@ var spawn =require('child_process').spawn;
 
 exports.gitpull = function(req,res, next) {
   // console.log(req.body.payload);
+  // test git pull is ok?
   var json = JSON.parse(req.body.payload);
   if (typeof json.head_commit.committer.username !== "undefined") {
   	console.log("Git need pull, from:"+json.head_commit.committer.email);
