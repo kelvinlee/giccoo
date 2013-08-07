@@ -1,0 +1,49 @@
+doctype
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible",content="IE=edge,chrome=1")
+		meta(name="viewport",content="width=device-width, initial-scale=1.0")
+		block title
+		link(rel="shortcut icon",href="/favicon.ico")
+		link(rel="canonical",href="http://www.Giccoo.com/")
+		link(rel="stylesheet",type="text/css",href="/css/bootstrap.min.css") 
+		link(rel="stylesheet",type="text/css",href="/css/bootstrap-responsive.min.css") 
+		link(rel="stylesheet",type="text/css",href="/css/animate.css") 
+		link(rel="stylesheet",type="text/css",href="/css/main.css")
+		block css
+		script(src="/js/vendor/modernizr-2.6.2.min.js")
+		//if lte IE7
+			style .support-note .note-ie{display:block;}
+	body 
+		header(id="header").header
+			div.logo
+				a(href="/") 
+					img(src="/img/logo_1.png")
+				a(href="/")
+					img(src="/img/logo_2.png")
+			div.header_nav
+				button.phonenav
+				ul#nav.menu_nav
+					li
+						a(href="/") #{l.menu.home}
+					li
+						a(href="/") #{l.menu.work}
+					li
+						a(href="/") #{l.menu.services}
+					li
+						a(href="/") #{l.menu.aboutus}
+					li
+						a(href="/") #{l.menu.contact}
+					li
+						a(href="/") #{l.menu.blog}
+		block content_here
+		footer(id="footer")
+			div some thing here.
+		script(src="/js/vendor/jquery-1.10.1.min.js")
+		script(src="/js/bootstrap.min.js")
+		script(src="/js/jquery.pjax.js")
+		script(src="/js/plugins.js")
+		script(src="/js/main.js") 
+		block scripts 
+		block script

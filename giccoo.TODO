@@ -1,0 +1,72 @@
+art:
+ ✔ model @done (13-06-13 19:33)
+ ☐ proxy
+ ☐ controllers
+ ☐ view
+
+art_tag:
+ ✔ model @done (13-06-13 19:34)
+ ☐ proxy
+ ☐ controllers
+ ☐ view
+
+user:
+ ✔ model @done (13-06-13 19:33)
+ ☐ proxy
+ ☐ controllers
+ ☐ view
+
+page:
+ ✔ model @done (13-06-13 19:34)
+ ☐ proxy
+ ☐ controllers
+ ☐ view
+
+menu:
+ ✔ model @done (13-06-13 19:34)
+ ☐ proxy
+ ☐ controllers
+ ☐ view
+
+reply:
+ ☐ model 需要根据情况具体改一下.
+ ☐ proxy
+ ☐ controllers
+ ☐ view
+
+tag:
+ ✔ model @done (13-06-13 19:33)
+ ☐ proxy
+ ☐ controllers
+ ☐ view
+
+file:
+ ✔ model @done (13-06-13 19:35)
+ ☐ proxy
+ ☐ controllers
+ ☐ view
+
+file_tag:
+ ✔ model @done (13-06-13 19:35)
+ ☐ proxy
+ ☐ controllers
+ ☐ view
+
+后台管理功能:
+ ☐ art
+ ☐ page
+ ☐ menu
+ ☐ reply
+ ☐ tag
+ ☐ files
+
+前端界面:
+ ☐ art
+ ☐ page
+ ☐ menu
+ ☐ reply
+ ☐ tag
+ ☐ files
+
+其它:
+ ☐ routes看看能不能按照url获取地址.
