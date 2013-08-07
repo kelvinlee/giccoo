@@ -31,6 +31,7 @@ app.configure(function () {
   });
   app.use(function(req, res, next){ 
     //check language
+    console.log(req.headers);
     if (req.headers) {
       var language = req.headers["accept-language"].split(","); 
       fs.exists("/mydata/myweb/giccoo/language/"+language[0]+".js",function(exists){
