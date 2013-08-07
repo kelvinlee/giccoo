@@ -100,6 +100,7 @@ textarea {
 @c-4 : #55606b;
 @c-5 : #f7f7f7;
 @c-6 : #828282;
+@c-bo: #cdcdcd;
 a:hover {
     text-decoration: none;
 }
@@ -202,7 +203,7 @@ a:hover {
         background:#fff;
     }
     .services {
-        .mp0(0px, 0px 40px);
+        .mp0(0px auto, 60px 0px);
         h3{
             margin-top: 0px;
             font-size: 24px;
@@ -216,6 +217,7 @@ a:hover {
         h1{
             margin-top:20px;
             color: @c-6; 
+            font-weight: normal;
             a {
                 color: @c-6; 
                 font-size: 30px;
@@ -232,6 +234,11 @@ a:hover {
     }
     .odd {
         background: @c-5;
+        border-top:solid 1px @c-bo;
+    }
+    .w80 {
+        .wh(80%,auto);
+        .mp0(0px auto,10px 0px);
     }
 }
 
