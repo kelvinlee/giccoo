@@ -15,6 +15,10 @@ exports.gitpull = function(req,res, next) {
   	var free = spawn('git',['pull']);
 	free.stdout.on('data', function(data) {
 	  console.log('Success: \n'+ data);
+    var restartf = spawn('forever',['restartall']);
+    restartf.stderr.on('data',function(d){
+      console.log('Success: \n'+ d);
+    });
 	});
 	free.stderr.on('data', function(data) {
 	  console.log('Error: \n'+ data);
