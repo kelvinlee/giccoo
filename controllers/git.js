@@ -12,7 +12,7 @@ exports.gitpull = function(req,res, next) {
   var json = JSON.parse(req.body.payload);
   if (typeof json.head_commit.committer.username !== "undefined") {
   	console.log("Git need pull, from:"+json.head_commit.committer.email);
-  	var free = spawn('git',['pull','&&','forever','restartall']);
+  	var free = spawn('git',['pull']);
 	free.stdout.on('data', function(data) {
 	  console.log('Success: \n'+ data);
 	});
