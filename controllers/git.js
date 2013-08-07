@@ -6,7 +6,6 @@ var EventProxy = require('eventproxy');
 
 
 exports.gitpull = function(req,res, next) {
-  // console.log(req.body.payload);
-  console.log("content");
+  console.log(req.body.payload); 
   // next();
 }
