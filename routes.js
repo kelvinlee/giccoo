@@ -6,7 +6,7 @@ module.exports = function (app) {
   // home page
   app.get('/', art.homepage);
   
-  app.post('/git-pull', git.pull);
+  app.post('/git-pull', git.gitpull);
   // art
   // app.get('/arts/:page_id', art.list);
   // app.get('/art/:art_id', art.show);
