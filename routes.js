@@ -8,6 +8,7 @@ module.exports = function (app) {
   // home page
   app.get('/', art.homepage);
   app.get('/test', art.homepage);
+  app.get('/test2', art.homepage);
   
   // art
   // app.get('/arts/:page_id', art.list);
