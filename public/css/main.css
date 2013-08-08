@@ -87,6 +87,9 @@ a:hover {
 .fl {
   font-size: 14px;
 }
+.fll {
+  font-size: 16px;
+}
 .fh {
   font-size: 18px;
 }
@@ -154,7 +157,7 @@ a:hover {
 }
 .header .menu_nav li a {
   padding: 0px 20px;
-  font-size: 14px;
+  font-size: 16px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -170,6 +173,10 @@ a:hover {
   background: #fff;
   box-shadow: 1px 1px 1px #cecece;
   border-bottom: solid 1px #cecece;
+}
+.scrollheader .menu_nav li a {
+  color: #444444;
+  font-size: 14px;
 }
 .homepage {
   padding-top: 450px;
