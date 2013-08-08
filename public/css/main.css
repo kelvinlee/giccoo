@@ -245,13 +245,12 @@ a:hover {
 .homepage .services h1 a {
   color: #828282;
   font-size: 30px;
-  font-weight: 100;
 }
 .homepage .services p {
   font-size: 18px;
   line-height: 28px;
   color: #828282;
-  font-weight: 100;
+  letter-spacing: 1px;
 }
 .homepage .services p .gbtn {
   line-height: 56px;
