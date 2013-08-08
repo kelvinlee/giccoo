@@ -118,6 +118,15 @@ a:hover {
 .fh {
     font-size: 18px;
 }
+.fw1 {
+    font-weight: 100;
+}
+.fwn {
+    font-weight: normal;
+}
+.fwb {
+    font-weight: bold;
+}
 .wh (@w:0px,@h:0px) {
     width: @w;
     height: @h;
@@ -248,11 +257,13 @@ a:hover {
             margin-top: 0px;
             font-size: 24px;
             color: @c-1;
+            .fwn;
         }
         h2{
             .mp0;
             font-size: 46px;
             color: @c-2;
+            .fwn;
         }
         h1{
             margin-top:0px;
@@ -261,14 +272,17 @@ a:hover {
             a {
                 color: @c-6; 
                 font-size: 30px;
+                .fw1;
             }
         }
         p {
             .fh;
             line-height: 28px;
             color:@c-6; 
+            .fw1;
             .gbtn {
                 line-height: 56px;
+                .fw1;
             }
         }
         .liner {
