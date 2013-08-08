@@ -102,6 +102,12 @@ a:hover {
 .ttc {
   text-transform: capitalize;
 }
+.posa {
+  position: absolute;
+}
+.posr {
+  position: relative;
+}
 .uld {
   list-style: none;
 }
@@ -219,6 +225,16 @@ a:hover {
 }
 .homepage .services p .gbtn {
   line-height: 56px;
+}
+.homepage .services .liner {
+  position: absolute;
+  top: -60px;
+  right: 0px;
+  margin: 0px;
+  padding: 60px 0px;
+  width: 1px;
+  height: 100%;
+  border-right: solid 1px #edeeee;
 }
 .homepage .odd {
   background: #f7f7f7;

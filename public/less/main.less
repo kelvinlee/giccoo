@@ -122,6 +122,10 @@ a:hover {
     margin: @m;
     padding: @p;
 }
+.tr (@top:0px,@right:0px) {
+    top: @top;
+    right: @right;
+}
 .tl (@top:0px,@left:0px) {
     top: @top;
     left: @left;
@@ -137,6 +141,12 @@ a:hover {
 }
 .ttc {
     text-transform : capitalize;
+}
+.posa {
+    position: absolute;
+}
+.posr {
+    position: relative;
 }
 .transition (@style: all,@time: 1s,@anims: ease-in){
     -moz-transition: @style @time @anims ;
@@ -244,6 +254,13 @@ a:hover {
             .gbtn {
                 line-height: 56px;
             }
+        }
+        .liner {
+            .posa;
+            .tr(-60px,0px);
+            .mp0(0px,60px 0px);
+            .wh(1px,100%);
+            border-right: solid 1px @c-bo;
         }
     }
     .odd {

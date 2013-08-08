@@ -2,5 +2,11 @@
 $(document).ready(function() {});
 
 $(window).scroll(function() {
-  return console.log($(this).scrollTop());
+  if ($(this).scrollTop() > 395 && $("#header").not(".scrollheader")) {
+    $("#header").addClass("growtop scrollheader");
+  }
+  if ($(this).scrollTop() < 395 && $("#header").is(".scrollheader")) {
+    $("#header").removeClass("growtop scrollheader");
+  }
+  return true;
 });
