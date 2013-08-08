@@ -20,6 +20,9 @@ exports.gitpull = function(req,res, next) {
         console.log('Success stop: \n'+ d);
         var rest = spawn('forever',['start','/mydata/myweb/giccoo/app.js']); 
       });
+      restartf.stderr.on('data', function(data){
+        console.log('Error stop: \n'+ data);
+      });
   	});
   	free.stderr.on('data', function(data) {
   	  console.log('Error free: \n'+ data);
