@@ -177,10 +177,19 @@ a:hover {
 .uld {
     list-style: none;
 }
+.radius (@p:0px) {
+    -webkit-border-radius: @p;
+    -moz-border-radius: @p;
+    border-radius: @p;
+}
+.textshadow (@p:2px 2px 2px #333333){
+    text-shadow: @p;
+}
 .gbtn {
     .mp0 (0px,20px 33px);
     .fl;
     .ttu;
+    .textshadow(2px 2px 2px @c-1);
     background-color: @c-1;
     color: @c-w; 
 }
