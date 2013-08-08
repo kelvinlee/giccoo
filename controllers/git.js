@@ -15,17 +15,18 @@ exports.gitpull = function(req,res, next) {
   	var free = spawn('git',['pull']);
   	free.stdout.on('data', function(data) {
   	 console.log('Success free: \n'+ data);
-      var restartf = spawn('forever',['stop','/mydata/myweb/giccoo/app.js']);
-      restartf.stdout.on('data',function(d){
-        console.log('Success stop: \n'+ d);
-        var rest = spawn('forever',['start','/mydata/myweb/giccoo/app.js']);
-        rest.stdout.on("data",function(d){ console.log("Try start node."); });
-      });
-      restartf.stderr.on('data', function(data){
-        console.log('Error stop: \n'+ data);
-        var rest = spawn('forever',['start','/mydata/myweb/giccoo/app.js']);
-        rest.stdout.on("data",function(d){ console.log("Try start node."); });
-      });
+     var restartf = spawn('forever',['restartall']);
+      // var restartf = spawn('forever',['stop','/mydata/myweb/giccoo/app.js']);
+      // restartf.stdout.on('data',function(d){
+      //   console.log('Success stop: \n'+ d);
+      //   var rest = spawn('forever',['start','/mydata/myweb/giccoo/app.js']);
+      //   rest.stdout.on("data",function(d){ console.log("Try start node."); });
+      // });
+      // restartf.stderr.on('data', function(data){
+      //   console.log('Error stop: \n'+ data);
+      //   var rest = spawn('forever',['start','/mydata/myweb/giccoo/app.js']);
+      //   rest.stdout.on("data",function(d){ console.log("Try start node."); });
+      // });
   	});
   	free.stderr.on('data', function(data) {
   	  console.log('Error free: \n'+ data);
