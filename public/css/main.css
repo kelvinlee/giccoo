@@ -261,15 +261,15 @@ a:hover {
   letter-spacing: 2px;
 }
 .homepage .services .sercontent p {
-  width: 80%;
+  width: 90%;
   height: auto;
-  margin: 0px auto;
+  margin: 0px;
   padding: 0px;
 }
 .homepage .services .liner {
   position: absolute;
   top: -60px;
-  right: 0px;
+  left: 0px;
   margin: 0px;
   padding: 60px 0px;
   height: 100%;
