@@ -15,7 +15,7 @@ exports.gitpull = function(req,res, next) {
   	var free = spawn('git',['pull']);
 	free.stdout.on('data', function(data) {
 	  console.log('Success: \n'+ data);
-    var restartf = spawn('forever',['restartall']);
+    var restartf = spawn('forever',['stop','/mydata/myweb/giccoo/app.js']);
     restartf.stderr.on('data',function(d){
       var rest = spawn('forever',['start','/mydata/myweb/giccoo/app.js']);
       console.log('Success: \n'+ d);
