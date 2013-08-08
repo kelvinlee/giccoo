@@ -15,10 +15,10 @@ exports.gitpull = function(req,res, next) {
   	var free = spawn('git',['pull']);
   	free.stdout.on('data', function(data) {
   	 console.log('Success free: \n'+ data);
-      var restartf = spawn('forever',['stop /mydata/myweb/giccoo/app.js']);
-      restartf.stderr.on('data',function(d){
+      var restartf = spawn('forever',['stop','/mydata/myweb/giccoo/app.js']);
+      restartf.stdout.on('data',function(d){
         console.log('Success stop: \n'+ d);
-        var rest = spawn('forever',['start /mydata/myweb/giccoo/app.js']); 
+        var rest = spawn('forever',['start','/mydata/myweb/giccoo/app.js']); 
       });
   	});
   	free.stderr.on('data', function(data) {
