@@ -100,7 +100,8 @@ textarea {
 @c-4 : #55606b;
 @c-5 : #f7f7f7;
 @c-6 : #828282;
-@c-bo: #cdcdcd;
+@c-bo: #edeeee;
+@c-bo2:#cecece;
 a:hover {
     text-decoration: none;
 }
@@ -143,6 +144,9 @@ a:hover {
     -o-transition: @style @time @anims ;
     transition: @style @time @anims ;
 }
+.uld {
+    list-style: none;
+}
 .gbtn {
     .mp0 (0px,20px 33px);
     .fl;
@@ -183,7 +187,17 @@ a:hover {
             }
         }
     }
-}     
+}
+.growtop {
+    top:-88px;
+}
+.scrollheader {
+    .transition(top) ;
+    top:0px;
+    background: #fff;
+    box-shadow: 1px 1px 1px @c-bo2;
+    border-bottom: solid 1px @c-bo2;
+}
 .homepage {
     padding-top: 450px;
     position: absolute;
@@ -215,7 +229,7 @@ a:hover {
             color: @c-2;
         }
         h1{
-            margin-top:20px;
+            margin-top:0px;
             color: @c-6; 
             font-weight: normal;
             a {
@@ -235,10 +249,22 @@ a:hover {
     .odd {
         background: @c-5;
         border-top:solid 1px @c-bo;
+        h1 {
+            margin-top:0px;
+        }
+    }
+    .lb {
+        border-left:solid 1px @c-bo;
     }
     .w80 {
         .wh(80%,auto);
         .mp0(0px auto,10px 0px);
+    }
+    .m0 {
+        .mp0;
+    }
+    .list_se {
+        .uld ;
     }
 }
 

@@ -102,6 +102,9 @@ a:hover {
 .ttc {
   text-transform: capitalize;
 }
+.uld {
+  list-style: none;
+}
 .gbtn {
   margin: 0px;
   padding: 20px 33px;
@@ -149,6 +152,19 @@ a:hover {
   color: #ffffff;
   text-decoration: none;
 }
+.growtop {
+  top: -88px;
+}
+.scrollheader {
+  -moz-transition: top 1s ease-in;
+  -webkit-transition: top 1s ease-in;
+  -o-transition: top 1s ease-in;
+  transition: top 1s ease-in;
+  top: 0px;
+  background: #fff;
+  box-shadow: 1px 1px 1px #cecece;
+  border-bottom: solid 1px #cecece;
+}
 .homepage {
   padding-top: 450px;
   position: absolute;
@@ -188,7 +204,7 @@ a:hover {
   color: #505050;
 }
 .homepage .services h1 {
-  margin-top: 20px;
+  margin-top: 0px;
   color: #828282;
   font-weight: normal;
 }
@@ -206,13 +222,26 @@ a:hover {
 }
 .homepage .odd {
   background: #f7f7f7;
-  border-top: solid 1px #cdcdcd;
+  border-top: solid 1px #edeeee;
+}
+.homepage .odd h1 {
+  margin-top: 0px;
+}
+.homepage .lb {
+  border-left: solid 1px #edeeee;
 }
 .homepage .w80 {
   width: 80%;
   height: auto;
   margin: 0px auto;
   padding: 10px 0px;
+}
+.homepage .m0 {
+  margin: 0px;
+  padding: 0px;
+}
+.homepage .list_se {
+  list-style: none;
 }
 /* ==========================================================================
    Helper classes
