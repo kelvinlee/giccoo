@@ -118,9 +118,9 @@ a:hover {
   margin: 0px;
   padding: 20px 33px;
   font-size: 14px;
+  text-transform: uppercase;
   background-color: #ff7800;
   color: #ffffff;
-  text-transform: uppercase;
 }
 /* ==========================================================================
    Author's custom styles
@@ -134,6 +134,10 @@ a:hover {
   z-index: 999900;
   text-transform: uppercase;
   color: #fff;
+}
+.header .logo {
+  float: left;
+  line-height: 80px;
 }
 .header .phonenav {
   display: none;
@@ -149,11 +153,11 @@ a:hover {
   padding: 0px;
   width: auto;
   height: 80px;
-  line-height: 80px;
   list-style: none;
 }
 .header .menu_nav li {
   float: left;
+  line-height: 80px;
 }
 .header .menu_nav li a {
   padding: 0px 20px;

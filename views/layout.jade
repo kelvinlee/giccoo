@@ -17,24 +17,25 @@ html(lang="en")
 			style .support-note .note-ie{display:block;}
 	body 
 		header(id="header").header
-			div.logo
-				a(href="/") 
-					img(src="/img/logo_text.png",width="120",height="60")
-			div.header_nav
-				button.phonenav
-				ul#nav.menu_nav
-					li
-						a(href="/") #{l.menu.home}
-					li
-						a(href="/") #{l.menu.work}
-					li
-						a(href="/") #{l.menu.services}
-					li
-						a(href="/") #{l.menu.aboutus}
-					li
-						a(href="/") #{l.menu.contact}
-					li
-						a(href="/") #{l.menu.blog}
+			div.container.clearfix
+				div.logo
+					a(href="/") 
+						img(src="/img/logo_text.png",width="120",height="60")
+				div.header_nav
+					button.phonenav
+					ul#nav.menu_nav.clearfix
+						li
+							a(href="/") #{l.menu.home}
+						li
+							a(href="/") #{l.menu.work}
+						li
+							a(href="/") #{l.menu.services}
+						li
+							a(href="/") #{l.menu.aboutus}
+						li
+							a(href="/") #{l.menu.contact}
+						li
+							a(href="/") #{l.menu.blog}
 		block content_here
 		footer(id="footer")
 			div some thing here.
