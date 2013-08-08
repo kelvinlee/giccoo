@@ -165,6 +165,9 @@ a:hover {
     font-size: @font;
     line-height: @line;
 }
+.ls (@l : 0px){
+    letter-spacing : @l;
+}
 .transition (@style: all,@time: 1s,@anims: ease-in){
     -moz-transition: @style @time @anims ;
     -webkit-transition: @style @time @anims ;
@@ -288,6 +291,7 @@ a:hover {
             .gbtn {
                 line-height: 56px;
                 .fw1;
+                .ls(2px);
             }
         }
         .liner {

@@ -255,6 +255,7 @@ a:hover {
 .homepage .services p .gbtn {
   line-height: 56px;
   font-weight: 100;
+  letter-spacing: 2px;
 }
 .homepage .services .liner {
   position: absolute;
