@@ -222,7 +222,7 @@ a:hover {
 .homepage .services h3 {
   color: #ff7800;
   font-size: 24px;
-  line-height: 12px;
+  line-height: 24px;
   font-weight: normal;
   margin: 0px 0px 20px 0px;
   padding: 0px;
@@ -231,7 +231,7 @@ a:hover {
   color: #505050;
   margin: 0px;
   font-size: 46px;
-  line-height: 12px;
+  line-height: 46px;
   font-weight: normal;
   margin: 0px 0px 20px 0px;
   padding: 0px;
@@ -239,6 +239,8 @@ a:hover {
 .homepage .services h1 {
   color: #828282;
   font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
   margin: 0px 0px 20px 0px;
   padding: 0px;
 }
