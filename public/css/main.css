@@ -232,9 +232,9 @@ a:hover {
   right: 0px;
   margin: 0px;
   padding: 60px 0px;
-  width: 1px;
   height: 100%;
   border-right: solid 1px #edeeee;
+  z-index: -1;
 }
 .homepage .odd {
   background: #f7f7f7;
