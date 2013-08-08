@@ -4,25 +4,25 @@ var sanitize = require('validator').sanitize;
 var crypto = require('crypto');
 var EventProxy = require('eventproxy');
 
-var spawn =require('child_process').spawn;
+var spawn = require('child_process').spawn;
 
 exports.gitpull = function(req,res, next) {
   // console.log(req.body.payload);
   // test git pull is ok?
   var json = JSON.parse(req.body.payload);
   if (typeof json.head_commit.committer.username !== "undefined") {
-  	console.log("Git need pull, from:"+json.head_commit.committer.email);
+  	console.log("Git need pull, from:"+json.head_commit.committer.email); 
   	var free = spawn('git',['pull']);
-	free.stdout.on('data', function(data) {
-	  console.log('Success: \n'+ data);
-    var restartf = spawn('forever',['stop','/mydata/myweb/giccoo/app.js']);
-    restartf.stderr.on('data',function(d){
-      var rest = spawn('forever',['start','/mydata/myweb/giccoo/app.js']);
-      console.log('Success: \n'+ d);
-    });
-	});
-	free.stderr.on('data', function(data) {
-	  console.log('Error: \n'+ data);
-	}); 
+  	free.stdout.on('data', function(data) {
+  	 console.log('Success free: \n'+ data);
+      var restartf = spawn('forever',['stop /mydata/myweb/giccoo/app.js']);
+      restartf.stderr.on('data',function(d){
+        console.log('Success stop: \n'+ d);
+        var rest = spawn('forever',['start /mydata/myweb/giccoo/app.js']); 
+      });
+  	});
+  	free.stderr.on('data', function(data) {
+  	  console.log('Error free: \n'+ data);
+  	}); 
   }
 }
