@@ -274,7 +274,6 @@ a:hover {
   padding: 60px 0px;
   height: 100%;
   border-right: solid 1px #edeeee;
-  z-index: -1;
 }
 .homepage .odd {
   background: #f7f7f7;
