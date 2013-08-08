@@ -262,7 +262,7 @@ a:hover {
 }
 .homepage .services .sercontent p {
   width: 80%;
-  height: 0px;
+  height: auto;
   margin: 0px auto;
   padding: 0px;
 }
