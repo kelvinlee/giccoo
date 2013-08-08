@@ -34,7 +34,11 @@ app.configure(function () {
   app.use(function(req, res, next){ 
     //check language and git. 
     if (req.headers["user-agent"].indexOf("GitHub")<0) {
+      if (req.headers["accept-language"]) {
       var language = req.headers["accept-language"].split(","); 
+      }else{
+        var language = 'en-US';
+      } 
       fs.exists("/mydata/myweb/giccoo/language/"+language[0]+".js",function(exists){
         if (exists) {
           res.locals.l = require("./language/"+language[0]+".js");
