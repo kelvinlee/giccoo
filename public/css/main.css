@@ -315,6 +315,11 @@ a:hover {
   font-size: 18px;
   line-height: 36px;
 }
+.homepage .banner_ad {
+  height: 280px;
+  background: url(../img/banner.jpg) no-repeat center center;
+  background-size: cover;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
