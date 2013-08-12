@@ -297,6 +297,10 @@ a:hover {
 }
 .homepage .list_se {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  color: #828282;
 }
 /* ==========================================================================
    Helper classes
