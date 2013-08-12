@@ -260,6 +260,10 @@ a:hover {
   font-weight: 100;
   letter-spacing: 2px;
 }
+.homepage .services .sercontent {
+  position: relative;
+  z-index: 1;
+}
 .homepage .services .sercontent p {
   width: 90%;
   height: auto;
@@ -274,6 +278,7 @@ a:hover {
   padding: 60px 0px;
   height: 100%;
   border-right: solid 1px #edeeee;
+  z-index: 0;
 }
 .homepage .odd {
   background: #f7f7f7;
@@ -299,8 +304,11 @@ a:hover {
   list-style: none;
   margin: 0px;
   padding: 0px;
-  font-size: 18px;
   color: #828282;
+}
+.homepage .list_se li {
+  font-size: 18px;
+  line-height: 24px;
 }
 /* ==========================================================================
    Helper classes

@@ -304,6 +304,8 @@ a:hover {
             }
         }
         .sercontent {
+            position: relative;
+            z-index: 1;
             p{
                 .wh(90%,auto);
                 .mp0(0px,0px);
@@ -315,6 +317,7 @@ a:hover {
             .mp0(0px,60px 0px);
             height:100%;
             border-right: solid 1px @c-bo;
+            z-index: 0;
         }
     }
     .odd {
@@ -336,9 +339,11 @@ a:hover {
     }
     .list_se {
         .uld ;
-        .mp0 ;
-        .fh ;
+        .mp0 ; 
         color: @c-6;
+        li {
+            .flh (18px,24px);
+        }
     }
 }
 
