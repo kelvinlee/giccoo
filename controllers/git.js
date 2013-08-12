@@ -5,7 +5,9 @@ var crypto = require('crypto');
 var EventProxy = require('eventproxy');
 
 var spawn = require('child_process').spawn;
-
+exports.before = function(req,res,next) {
+  console.log("Test here is first!");
+}
 exports.gitpull = function(req,res, next) {
   // console.log(req.body.payload);
   // test git pull is ok?
