@@ -269,6 +269,8 @@ a:hover {
   height: auto;
   margin: 0px;
   padding: 0px;
+  font-size: 18px;
+  line-height: 36px;
 }
 .homepage .services .liner {
   position: absolute;
@@ -308,7 +310,7 @@ a:hover {
 }
 .homepage .list_se li {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 36px;
 }
 /* ==========================================================================
    Helper classes
