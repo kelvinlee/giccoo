@@ -29,7 +29,7 @@ app.configure(function () {
       return next();
     }
     app.use(express.csrf());
-    next();
+    return next();
   });
   app.use(function(req, res, next){ 
     //check language and git. 

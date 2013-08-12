@@ -136,9 +136,9 @@ exports.create = function(req,res, next) {
 
 //middleware 
 //check user logined!
-exports.auth_user = function (req, res, next) {
+exports.auth_user = function (req, res, next) { 
   res.locals.current_user = '';
-  if (req.session.user) {
+  if (typeof req.session.user !=="undefined" && req.session.user) {
     if (config.admins[req.session.user.name]) {
       req.session.user.is_admin = true;
     } 
