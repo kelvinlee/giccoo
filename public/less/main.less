@@ -270,8 +270,10 @@ a:hover {
         z-index: 99902;
         background:#fff;
     }
-    .services {
+    .p60 {
         .mp0(0px auto, 60px 0px);
+    }
+    .gicontent {
         h3{ 
             color: @c-1;
             .flh(24px,24px);
@@ -347,12 +349,23 @@ a:hover {
         color: @c-6;
         li {
             .flh (18px,36px);
+            list-style-image: url(../img/arrow.png);
         }
     }
     .banner_ad {
         height: 280px;
         background: url(../img/banner.jpg) no-repeat center center;
         background-size: cover;
+    }
+    .blog {
+        .blogcontent {
+            position: relative;
+            .mp0(0px,0px 120px 0px 0px);
+            .avatar {
+                position: absolute;
+                .lt;
+            }
+        }
     }
 }
 

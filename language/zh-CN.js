@@ -12,7 +12,8 @@ exports.services = {
 };
 exports.btn = {
 	more:"更多",
-	moreinfo:"阅读详细"
+	moreinfo:"阅读详细",
+  readmore:"阅读详细"
 };
 exports.error = {
 	noart : "文章内容不存在.",

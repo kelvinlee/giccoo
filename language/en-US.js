@@ -12,7 +12,8 @@ exports.services = {
 };
 exports.btn = {
 	more:"MORE",
-	moreinfo:"MORE INFO"
+	moreinfo:"MORE INFO",
+  readmore:"READ MORE"
 };
 exports.error = {
 	noart : "文章内容不存在.",
