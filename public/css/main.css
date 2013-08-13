@@ -218,11 +218,11 @@ a:hover {
   z-index: 99902;
   background: #fff;
 }
-.homepage .services {
+.homepage .p60 {
   margin: 0px auto;
   padding: 60px 0px;
 }
-.homepage .services h3 {
+.homepage .gicontent h3 {
   color: #ff7800;
   font-size: 24px;
   line-height: 24px;
@@ -230,7 +230,7 @@ a:hover {
   margin: 0px 0px 20px 0px;
   padding: 0px;
 }
-.homepage .services h2 {
+.homepage .gicontent h2 {
   color: #505050;
   margin: 0px;
   font-size: 46px;
@@ -239,7 +239,7 @@ a:hover {
   margin: 0px 0px 20px 0px;
   padding: 0px;
 }
-.homepage .services h1 {
+.homepage .gicontent h1 {
   color: #828282;
   font-weight: normal;
   font-size: 30px;
@@ -247,27 +247,27 @@ a:hover {
   margin: 0px 0px 20px 0px;
   padding: 0px;
 }
-.homepage .services h1 a {
+.homepage .gicontent h1 a {
   color: #828282;
   font-size: 30px;
 }
-.homepage .services p {
+.homepage .gicontent p {
   font-size: 18px;
   margin: 0px 0px 20px 0px;
   padding: 0px;
   line-height: 28px;
   color: #828282;
 }
-.homepage .services p .gbtn {
+.homepage .gicontent p .gbtn {
   line-height: 56px;
   font-weight: 100;
   letter-spacing: 2px;
 }
-.homepage .services .sercontent {
+.homepage .gicontent .sercontent {
   position: relative;
   z-index: 1;
 }
-.homepage .services .sercontent p {
+.homepage .gicontent .sercontent p {
   width: 90%;
   height: auto;
   margin: 0px;
@@ -275,7 +275,7 @@ a:hover {
   font-size: 18px;
   line-height: 36px;
 }
-.homepage .services .liner {
+.homepage .gicontent .liner {
   position: absolute;
   top: -60px;
   left: 0px;
@@ -314,11 +314,22 @@ a:hover {
 .homepage .list_se li {
   font-size: 18px;
   line-height: 36px;
+  list-style-image: url(../img/arrow.png);
 }
 .homepage .banner_ad {
   height: 280px;
   background: url(../img/banner.jpg) no-repeat center center;
   background-size: cover;
+}
+.homepage .blog .blogcontent {
+  position: relative;
+  margin: 0px;
+  padding: 0px 120px 0px 0px;
+}
+.homepage .blog .blogcontent .avatar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 /* ==========================================================================
    Helper classes
