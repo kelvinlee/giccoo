@@ -324,12 +324,33 @@ a:hover {
 .homepage .blog .blogcontent {
   position: relative;
   margin: 0px;
-  padding: 0px 120px 0px 0px;
+  padding: 0px 0px 0px 120px;
 }
 .homepage .blog .blogcontent .avatar {
   position: absolute;
   top: 0px;
   left: 0px;
+}
+.homepage .blog .blogcontent h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #ff7800;
+}
+.homepage .blog .blogcontent h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #828282;
+}
+.homepage .blog .blogcontent h1 {
+  font-size: 14px;
+  line-height: 14px;
+  color: #ff7800;
+  font-weight: normal;
+}
+.homepage .blog .blogcontent .title {
+  font-size: 24px;
+  line-height: 24px;
+  color: #044893;
 }
 /* ==========================================================================
    Helper classes
