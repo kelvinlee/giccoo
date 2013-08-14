@@ -197,7 +197,8 @@ a:hover {
 }
 .homepage {
   padding-top: 450px;
-  position: absolute;
+  position: relative;
+  z-index: 20;
   width: 100%;
   height: auto;
   top: 0px;
@@ -362,6 +363,8 @@ a:hover {
 .footer {
   margin: 0px;
   padding: 40px 0px;
+  position: relative;
+  z-index: 21;
   width: 100%;
   background: #2c2b30;
   color: #ffffff;
