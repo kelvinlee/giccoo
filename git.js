@@ -2,17 +2,17 @@ var http = require('http');
 var url = require('url');
 var exec = require("child_process").exec;
 
+function restartNode() {
+  exec("forever restart /mydata/myweb/giccoo/app.js");
+}
 function gitpull(porject) {
   console.log("run git");
-  exec("git pull", function (error, stdout, stderr) {
-    console.log(stdout);
-    console.log(error);
-    console.log(stderr);
-  });
+  exec("git pull",restartNode);
   return true;
 }
-function routes(pathname) {
-  if (pathname==="/git") {
+function routes(req,res) {
+  var pathname = url.parse(req.url).pathname;
+  if (pathname==="/git" && req.method.toLowerCase()) {
     console.log(pathname);
     gitpull();
   }else{
@@ -24,7 +24,7 @@ var req = http.createServer(function(req,res){
   console.log(req.body);
   console.log(res.body);
 
-  routes(url.parse(req.url).pathname);
+  routes(req,res);
   res.end(); 
 }).listen(9999); 
 
