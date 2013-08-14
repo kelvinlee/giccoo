@@ -3,15 +3,15 @@ var url = require('url');
 var exec = require("child_process").exec;
 
 function gitpull(porject) {
-  exec("git pull "+porject+" master", function (error, stdout, stderr) {
+  exec("git pull", function (error, stdout, stderr) {
     console.log(stdout);
   });
   return true;
 }
-function routes(pathname,project) {
+function routes(pathname) {
   console.log(pathname);
-  if (pathname==="/git" && project) {
-    gitpull(project);
+  if (pathname==="/git") {
+    gitpull();
   }else{
     return "404";
   }
