@@ -353,6 +353,7 @@ a:hover {
   margin: 0px 0px 20px 0px;
   padding: 0px;
   color: #044893;
+  display: inline-block;
 }
 .footer {
   margin: 0px;
