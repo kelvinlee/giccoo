@@ -376,6 +376,8 @@ a:hover {
 }
 .footer .sitemap ul {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 .footer .sitemap ul li {
   min-height: 30px;
@@ -396,6 +398,13 @@ a:hover {
 .footer .copyright {
   margin: 0px;
   padding: 20px 0px 0px 0px;
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+  line-height: 40px;
+}
+.footer .footlogo {
+  float: right;
 }
 /* ==========================================================================
    Helper classes
