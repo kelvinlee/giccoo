@@ -2,17 +2,19 @@ var http = require('http');
 var url = require('url');
 var exec = require("child_process").exec;
 
-function restartNode() {
-  exec("forever restart /mydata/myweb/giccoo/app.js");
+function restartNode(e,s,t) {
+  console.log(s);
+  exec("forever restart /mydata/myweb/giccoo/app.js",function(er,su,st){
+    console.log(su);
+  });
 }
-function gitpull(porject) {
-  console.log("run git");
+function gitpull(porject) { 
   exec("git pull",restartNode);
   return true;
 }
 function routes(req,res) {
   var pathname = url.parse(req.url).pathname;
-  if (pathname==="/git" && req.method.toLowerCase()=="post") {
+  if (pathname==="/update" && req.method.toLowerCase()=="post") {
     console.log(pathname);
     gitpull();
   }else{
@@ -20,10 +22,7 @@ function routes(req,res) {
   }
 }
 var req = http.createServer(function(req,res){
-  //res.writeHead(200, {'Content-Type': 'text/plain'});
-  console.log(req.body);
-  console.log(res.body);
-
+  //res.writeHead(200, {'Content-Type': 'text/plain'}); 
   routes(req,res);
   res.end(); 
 }).listen(9999); 
