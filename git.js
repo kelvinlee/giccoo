@@ -1,11 +1,26 @@
 var http = require('http');
 var url = require('url');
+var exec = require("child_process").exec;
 
-function routes(pathname) {
+function gitpull(porject) {
+  exec("git pull "+porject+" master", function (error, stdout, stderr) {
+    console.log(stdout);
+  });
+  return true;
+}
+function routes(pathname,project) {
   console.log(pathname);
+  if (pathname==="/git" && project) {
+    gitpull(project);
+  }else{
+    return "404";
+  }
 }
 var req = http.createServer(function(req,res){
   //res.writeHead(200, {'Content-Type': 'text/plain'});
+  console.log(req.body);
+  console.log(res.body);
+
   routes(url.parse(req.url).pathname);
   res.end();
   console.log("content");
