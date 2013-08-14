@@ -371,7 +371,7 @@ a:hover {
 }
 .footer .sitemap {
   margin: 0px;
-  padding: 0px 0px 20px 0px;
+  padding: 0px 0px 40px 0px;
   border-bottom: solid 1px #444444;
 }
 .footer .sitemap ul {
@@ -381,6 +381,11 @@ a:hover {
 }
 .footer .sitemap ul li {
   min-height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+}
+.footer .sitemap ul li label {
+  font-size: 14px;
   line-height: 30px;
 }
 .footer .sitemap ul li a {

@@ -39,7 +39,7 @@ html(lang="en")
 		block content_here
 		footer.footer(id="footer")
 			div.container
-				div.row.sitemap
+				div.row-fluid.sitemap
 					div.span2
 						ul
 							li.title COMPANY
@@ -71,7 +71,10 @@ html(lang="en")
 							li.title NEWS LETTER
 							li
 								label Keep up to date with all our latest goings on.
-								input(type="text")
+								div.input-append
+									input(type="text",placeholder="Email address")
+									span.add-on
+										i.icon-envelope
 				div.row.copyright
 					| © 2013 GICCOO LTD | ALL RIGHTS RESERVED
 					img.footlogo(src="/img/logo-w.png")
