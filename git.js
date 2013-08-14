@@ -2,11 +2,8 @@ var http = require('http');
 var url = require('url');
 var exec = require("child_process").exec;
 
-function restartNode(e,s,t) {
-  console.log(s);
-  exec("forever restart /mydata/myweb/giccoo/app.js",function(er,su,st){
-    console.log(su);
-  });
+function restartNode(e,s,t) { 
+  exec("forever restart /mydata/myweb/giccoo/app.js");
 }
 function gitpull(porject) { 
   exec("git pull",restartNode);
@@ -14,8 +11,7 @@ function gitpull(porject) {
 }
 function routes(req,res) {
   var pathname = url.parse(req.url).pathname;
-  if (pathname==="/update" && req.method.toLowerCase()=="post") {
-    console.log(pathname);
+  if (pathname==="/update" && req.method.toLowerCase()=="post") { 
     gitpull();
   }else{
     return "404";

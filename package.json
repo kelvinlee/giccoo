@@ -10,7 +10,7 @@
     "validator":"*",
     "eventproxy":"*",
     "node-markdown":"*",
-    "socket.id":"*",
+    "socket.io":"*",
     "xss":"*",
     "ejs": "*",
     "jade": "*"
