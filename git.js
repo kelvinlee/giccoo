@@ -6,7 +6,7 @@ function routes(pathname) {
 }
 var req = http.createServer(function(req,res){
   //res.writeHead(200, {'Content-Type': 'text/plain'});
-  routes(url.parse(request.url).pathname);
+  routes(url.parse(req.url).pathname);
   res.end();
   console.log("content");
 }).listen(9999); 
