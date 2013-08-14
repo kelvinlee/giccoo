@@ -12,7 +12,7 @@ function gitpull(porject) {
 }
 function routes(req,res) {
   var pathname = url.parse(req.url).pathname;
-  if (pathname==="/git" && req.method.toLowerCase()) {
+  if (pathname==="/git" && req.method.toLowerCase()=="post") {
     console.log(pathname);
     gitpull();
   }else{
