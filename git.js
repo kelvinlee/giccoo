@@ -1,7 +1,8 @@
 var http = require('http');
-http.createServer(function(req,res){
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('test');
+var req = http.createServer(function(req,res){
+  //res.writeHead(200, {'Content-Type': 'text/plain'});
+  //res.end('test');
+  console.log("content");
 }).listen(9999);
 http.get('/git',function(res){
   console.log("Got response: " + res.statusCode);
