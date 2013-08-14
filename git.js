@@ -1,14 +1,15 @@
 var http = require('http');
+var url = require('url');
+
+function routes(pathname) {
+  console.log(pathname);
+}
 var req = http.createServer(function(req,res){
   //res.writeHead(200, {'Content-Type': 'text/plain'});
-  //res.end('test');
+  routes(url.parse(request.url).pathname);
+  res.end();
   console.log("content");
-}).listen(9999);
-http.get('/git',function(res){
-  console.log("Got response: " + res.statusCode);
-}).on('error', function(e) {
-  console.log("Got error: " + e.message);
-});
+}).listen(9999); 
 
 
 // var config = require('../config').config;
