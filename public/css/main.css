@@ -343,14 +343,51 @@ a:hover {
 }
 .homepage .blog .blogcontent h1 {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 20px;
   color: #ff7800;
   font-weight: normal;
 }
 .homepage .blog .blogcontent .title {
   font-size: 24px;
   line-height: 24px;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
   color: #044893;
+}
+.footer {
+  margin: 0px;
+  padding: 40px 0px;
+  width: 100%;
+  background: #2c2b30;
+  color: #ffffff;
+}
+.footer .sitemap {
+  margin: 0px;
+  padding: 0px 0px 20px 0px;
+  border-bottom: solid 1px #444444;
+}
+.footer .sitemap ul {
+  list-style: none;
+}
+.footer .sitemap ul li {
+  min-height: 30px;
+  line-height: 30px;
+}
+.footer .sitemap ul li a {
+  color: #ffffff;
+  font-size: 14px;
+}
+.footer .sitemap ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.footer .sitemap ul .title {
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+.footer .copyright {
+  margin: 0px;
+  padding: 20px 0px 0px 0px;
 }
 /* ==========================================================================
    Helper classes

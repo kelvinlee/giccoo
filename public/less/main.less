@@ -95,6 +95,7 @@ textarea {
    ========================================================================== */
 @c-w : #ffffff;
 @c-b : #444444;
+@c-bl: #2c2b30;
 @c-1 : #ff7800;
 @c-2 : #505050;
 @c-3 : #444444;
@@ -103,7 +104,7 @@ textarea {
 @c-6 : #828282;
 @c-7 : #044893;
 @c-bo: #edeeee;
-@c-bo2:#cecece;
+@c-bo2:#cecece; 
 a:hover {
     text-decoration: none;
 }
@@ -222,7 +223,7 @@ a:hover {
     .menu_nav {
         .mp0;
         .wh(auto,80px); 
-        list-style: none;
+        .uld;
         li {
             float:left;
             line-height: 80px;
@@ -375,15 +376,51 @@ a:hover {
                 color: @c-6;
             }
             h1 {
-                .flh(14px,14px);
+                .flh(14px,20px);
                 color: @c-1;
                 .fwn;
             }
             .title {
                 .flh(24px,24px);
+                .mp0(0px 0px 20px 0px,0px);
                 color: @c-7;
             }
         }
+    }
+}
+.footer {
+    .mp0(0px,40px 0px);
+    width: 100%;
+    background: @c-bl;
+    color: @c-w;
+    .sitemap {
+        .mp0(0px,0px 0px 20px 0px);
+        border-bottom: solid 1px @c-b;
+        ul {
+            .uld;
+            li {
+                min-height: 30px;
+                line-height: 30px;
+                a {
+                    color: @c-w;
+                    .fl;
+                }
+                a:hover{
+                    color: @c-w;
+                    text-decoration: underline;
+                }
+            }
+            .title {
+                padding-bottom: 15px;
+                .fh;
+            }
+        }
+    }
+    .copyright {
+        .mp0(0px,20px 0px 0px 0px);
+    }
+    .footlogo {
+
     }
 }
 
