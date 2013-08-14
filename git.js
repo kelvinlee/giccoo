@@ -3,14 +3,17 @@ var url = require('url');
 var exec = require("child_process").exec;
 
 function gitpull(porject) {
+  console.log("run git");
   exec("git pull", function (error, stdout, stderr) {
     console.log(stdout);
+    console.log(error);
+    console.log(stderr);
   });
   return true;
 }
 function routes(pathname) {
-  console.log(pathname);
   if (pathname==="/git") {
+    console.log(pathname);
     gitpull();
   }else{
     return "404";
@@ -22,8 +25,7 @@ var req = http.createServer(function(req,res){
   console.log(res.body);
 
   routes(url.parse(req.url).pathname);
-  res.end();
-  console.log("content");
+  res.end(); 
 }).listen(9999); 
 
 
