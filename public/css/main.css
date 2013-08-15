@@ -1016,7 +1016,7 @@ a:hover {
 }
 .homepage .blog {
   margin: 0px;
-  padding: 30px 0px 0px 0px;
+  padding: 30px 0px 30px 0px;
 }
 .homepage .blog .blogcontent {
   position: relative;
@@ -1040,9 +1040,11 @@ a:hover {
 }
 .homepage .blog .blogcontent h1 {
   font-size: 14px;
-  line-height: 20px;
-  color: #ff7800;
+  line-height: 28px;
+  margin: 0px;
+  padding: 0px;
   font-weight: normal;
+  color: #ff7800;
 }
 .homepage .blog .blogcontent .title {
   font-size: 24px;
@@ -1087,6 +1089,16 @@ a:hover {
 .footer .sitemap ul li a:hover {
   color: #ffffff;
   text-decoration: underline;
+}
+.footer .sitemap ul li .input-icon {
+  color: #2c2b30;
+  font-size: 18px;
+}
+.footer .sitemap ul li input {
+  border: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
 .footer .sitemap ul .title {
   padding-bottom: 15px;

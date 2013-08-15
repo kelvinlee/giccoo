@@ -390,7 +390,7 @@ a:hover {
         background-size: cover;
     }
     .blog {
-        .mp0(0px,30px 0px 0px 0px);
+        .mp0(0px,30px 0px 30px 0px);
         .blogcontent {
             position: relative; 
             .mp0(0px,0px 0px 0px 120px);
@@ -407,9 +407,10 @@ a:hover {
                 color: @c-6;
             }
             h1 {
-                .flh(14px,20px);
-                color: @c-1;
+                .flh(14px,28px);
+                .mp0;
                 .fwn;
+                color: @c-1; 
             }
             .title {
                 .flh(24px,24px);
@@ -446,6 +447,14 @@ a:hover {
                 a:hover{
                     color: @c-w;
                     text-decoration: underline;
+                }
+                .input-icon {
+                    color: @c-bl;
+                    .fh;
+                }
+                input {
+                    border:none;
+                    .border-radius(0px);
                 }
             }
             .title {
