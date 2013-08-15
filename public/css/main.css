@@ -1115,6 +1115,36 @@ a:hover {
 .footer .footlogo {
   float: right;
 }
+.banner_0815 {
+  width: 90%;
+  height: auto;
+  margin: 180px auto auto;
+  padding: 0px;
+  font-family: 'Dosis', sans-serif;
+}
+.banner_0815 h1 {
+  margin: 0px;
+  padding: 5px 25px;
+  font-size: 35pt;
+  line-height: 42px;
+  font-weight: 400;
+  display: table;
+  background: url(../img/1x1.png) repeat left top;
+}
+.banner_0815 h2 {
+  margin: 2px 0px 0px;
+  padding: 5px 25px;
+  font-size: 30pt;
+  line-height: 38px;
+  font-family: 'brush-tipterrence_trialRg';
+  font-weight: 400;
+  display: table;
+  background: url(../img/1x1.png) repeat left top;
+}
+.banner_0815 .gbtn {
+  float: right;
+  display: inline-block;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
