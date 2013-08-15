@@ -93,6 +93,9 @@ textarea {
 /* ==========================================================================
    less public styles
    ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,700italic,900,400italic,300");
+@import "icon-font";
 @c-w : #ffffff;
 @c-b : #444444;
 @c-bl: #2c2b30;
@@ -105,7 +108,7 @@ textarea {
 @c-7 : #044893;
 @c-bo: #edeeee;
 @c-bo2:#cecece; 
-body{
+body,a,h1,h2,h3,h4,h5,h6,p,label{
     font-family: 'Lato', sans-serif;
 }
 a:hover {
@@ -200,6 +203,26 @@ a:hover {
 }
 .gbtn:hover {
     color: @c-3;
+}
+
+.control-group {
+  position: relative;
+}
+.control-group > .input-icon {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  line-height: 37px;
+  vertical-align: middle;
+  font-size: 19.991999999999997px;
+  /* 20px */
+
+  color: #b2bcc5;
+  background-color: #ffffff;
+  padding: 0 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 /* ==========================================================================
    Author's custom styles
