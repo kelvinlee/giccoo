@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,700italic,900,400italic,300");
+
+@import url("http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here");
 /*
  * HTML5 Boilerplate
  *
@@ -822,6 +824,9 @@ a:hover {
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
+h3 {
+  font-family: 'Just Me Again Down Here', cursive;
+}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -1136,7 +1141,7 @@ a:hover {
   padding: 5px 25px;
   font-size: 30pt;
   line-height: 38px;
-  font-family: 'brush-tipterrence_trialRg';
+  font-family: 'Just Me Again Down Here', cursive;
   font-weight: 400;
   display: table;
   background: url(../img/1x1.png) repeat left top;
