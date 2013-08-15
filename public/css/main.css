@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,700italic,900,400italic,300");
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic");
 
 @import url("http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here");
 /*
@@ -1126,12 +1126,13 @@ h3 {
   margin: 180px auto auto;
   padding: 0px;
   font-family: 'Dosis', sans-serif;
+  color: #ffffff;
 }
 .banner_0815 h1 {
   margin: 0px;
   padding: 5px 25px;
   font-size: 35pt;
-  line-height: 42px;
+  line-height: 40pt;
   font-weight: 400;
   display: table;
   background: url(../img/1x1.png) repeat left top;
@@ -1140,7 +1141,7 @@ h3 {
   margin: 2px 0px 0px;
   padding: 5px 25px;
   font-size: 30pt;
-  line-height: 38px;
+  line-height: 35pt;
   font-family: 'Just Me Again Down Here', cursive;
   font-weight: 400;
   display: table;
@@ -1149,6 +1150,7 @@ h3 {
 .banner_0815 .gbtn {
   float: right;
   display: inline-block;
+  margin-top: -52px;
 }
 /* ==========================================================================
    Helper classes
