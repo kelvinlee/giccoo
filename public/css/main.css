@@ -799,10 +799,10 @@ a:hover {
   font-size: 14px;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px #ff7800;
-  -moz-transition: all 0.5s ease-in;
-  -webkit-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
   background-color: #ff7800;
   color: #ffffff;
 }
