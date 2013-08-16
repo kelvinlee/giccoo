@@ -799,6 +799,10 @@ a:hover {
   font-size: 14px;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px #ff7800;
+  -moz-transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
   background-color: #ff7800;
   color: #ffffff;
 }
@@ -865,10 +869,18 @@ h3 {
   line-height: 80px;
 }
 .header .menu_nav li a {
-  padding: 0px 20px;
   font-size: 16px;
+  margin: 0px;
+  padding: 0px 20px;
+  -moz-transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
   color: #ffffff;
   text-decoration: none;
+}
+.header .menu_nav li a:hover {
+  color: #ff7800;
 }
 .growtop {
   top: -88px;
@@ -1005,11 +1017,13 @@ h3 {
 }
 .homepage .list_se {
   list-style: none;
-  margin: 0px;
+  margin: 0px 0px 0px 20px;
   padding: 0px;
   color: #828282;
 }
 .homepage .list_se li {
+  margin: 0px;
+  padding: 0px 0px 0px 5px;
   font-size: 18px;
   line-height: 36px;
   list-style-image: url(../img/arrow.png);

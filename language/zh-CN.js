@@ -24,7 +24,7 @@ exports.social = {
   dribbble : {name:"Weixin",url:""}
 }
 exports.services = {
-	h3:"我们能为你做的事很多",
+	h3:"我们能为您做的事很多,比如",
 	h2:"我们的服务"
 };
 exports.btn = {
