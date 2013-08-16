@@ -25,59 +25,59 @@ html(lang="en")
 					button.phonenav
 					ul#nav.menu_nav.clearfix
 						li
-							a(href="/") #{l.menu.home}
+							a(href="#{l.menu.home.url}") #{l.menu.home.name}
 						li
-							a(href="/") #{l.menu.work}
+							a(href="#{l.menu.work.url}") #{l.menu.work.name}
 						li
-							a(href="/") #{l.menu.services}
+							a(href="#{l.menu.services.url}") #{l.menu.services.name}
 						li
-							a(href="/") #{l.menu.aboutus}
+							a(href="#{l.menu.aboutus.url}") #{l.menu.aboutus.name}
 						li
-							a(href="/") #{l.menu.contact}
+							a(href="#{l.menu.contact.url}") #{l.menu.contact.name}
 						li
-							a(href="/") #{l.menu.blog}
+							a(href="#{l.menu.blog.url}") #{l.menu.blog.name}
 		block content_here
 		footer.footer(id="footer")
 			div.container
 				div.row-fluid.sitemap
 					div.span2
 						ul
-							li.title COMPANY
+							li.title #{l.menu.company}
 							li 
-								a About US
+								a #{l.menu.aboutus}
 							li 
-								a Our Services
+								a #{l.menu.services}
 							li 
-								a Our Services
+								a #{l.menu.blog}
 					div.span2
 						ul
-							li.title SOCIAL
+							li.title #{l.menu.social}
 							li 
-								a About US
+								a(href="#{l.social.twitter.url}",target="_blank") #{l.social.twitter.name}
 							li 
-								a Our Services
+								a(href="#{l.social.facebook.url}",target="_blank") #{l.social.facebook.name}
 							li 
-								a Our Services
+								a(href="#{l.social.dribbble.url}",target="_blank") #{l.social.dribbble.name}
 					div.span4
 						ul
-							li.title CONTACT
+							li.title #{l.menu.contact}
 							li 
-								a +86 010 650000000
+								a(href="tel:#{l.contact.tel}") #{l.contact.tel}
 							li 
-								a giccoo@giccoo.com
-							li yanhaisailuocheng202, beijing,china
+								a(href="mailto:#{l.contact.email}") #{l.contact.email}
+							li #{l.contact.adr}
 					div.span4
 						ul
-							li.title NEWS LETTER
+							li.title #{l.letter.title}
 							li
-								label Keep up to date with all our latest goings on.
+								label #{l.letter.content}
 								div.control-group
-									input.span4(type="text",placeholder="Email address") 
-									a.input-icon(href="javascript:void(0)",onclick="getourmail()")
+									input.span4(name="email",type="text",placeholder="#{l.letter.placeholder}") 
+									a.input-icon(href="javascript:void(0)",onclick="getourmail('#{language}')")
 										i.fui-mail
 				div.row.copyright
 					| © 2013 GICCOO LTD | ALL RIGHTS RESERVED
-					img.footlogo(src="/img/logo-w.png")
+					img.footlogo(src="/img/logo-w.png",alt="Giccoo")
 
 		script(src="/js/vendor/jquery-1.10.1.min.js")
 		script(src="/js/bootstrap.min.js")

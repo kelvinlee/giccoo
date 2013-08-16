@@ -42,8 +42,10 @@ app.configure(function () {
       fs.exists("/mydata/myweb/giccoo/language/"+language[0]+".js",function(exists){
         if (exists) {
           res.locals.l = require("./language/"+language[0]+".js");
+          res.locals.language = language[0];
         }else{
           res.locals.l = require("./language/en-US.js");
+          res.locals.language = "en-US";
         } 
       }); 
     } 
