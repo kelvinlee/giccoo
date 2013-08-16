@@ -44,14 +44,14 @@ html(lang="en")
 						ul
 							li.title #{l.menu.company.name}
 							li 
-								a #{l.menu.aboutus.name}
+								a(href="#{l.menu.aboutus.url}") #{l.menu.aboutus.name}
 							li 
-								a #{l.menu.services.name}
+								a(href="#{l.menu.services.url}") #{l.menu.services.name}
 							li 
-								a #{l.menu.blog.name}
+								a(href="#{l.menu.blog.url}") #{l.menu.blog.name}
 					div.span2
 						ul
-							li.title #{l.menu.social}
+							li.title #{l.menu.social.name}
 							li 
 								a(href="#{l.social.twitter.url}",target="_blank") #{l.social.twitter.name}
 							li 
@@ -60,7 +60,7 @@ html(lang="en")
 								a(href="#{l.social.dribbble.url}",target="_blank") #{l.social.dribbble.name}
 					div.span4
 						ul
-							li.title #{l.menu.contact}
+							li.title #{l.menu.contact.name}
 							li 
 								a(href="tel:#{l.contact.tel}") #{l.contact.tel}
 							li 

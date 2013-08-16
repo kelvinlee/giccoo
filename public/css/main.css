@@ -297,10 +297,10 @@ input[type="color"],
   -o-transition: border .25s linear, color .25s linear;
   transition: border .25s linear, color .25s linear;
   -webkit-backface-visibility: hidden;
-  -moz-transition: border .25s linear, color .25s linear 1s ease-in;
-  -webkit-transition: border .25s linear, color .25s linear 1s ease-in;
-  -o-transition: border .25s linear, color .25s linear 1s ease-in;
-  transition: border .25s linear, color .25s linear 1s ease-in;
+  -moz-transition: border .25s linear, color .25s linear 0.5s ease-in;
+  -webkit-transition: border .25s linear, color .25s linear 0.5s ease-in;
+  -o-transition: border .25s linear, color .25s linear 0.5s ease-in;
+  transition: border .25s linear, color .25s linear 0.5s ease-in;
 }
 textarea:-moz-placeholder,
 input[type="text"]:-moz-placeholder,
@@ -799,10 +799,10 @@ a:hover {
   font-size: 14px;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px #ff7800;
-  -moz-transition: all 1s ease-in;
-  -webkit-transition: all 1s ease-in;
-  -o-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
   background-color: #ff7800;
   color: #ffffff;
 }
@@ -872,10 +872,10 @@ h3 {
   font-size: 16px;
   margin: 0px;
   padding: 0px 20px;
-  -moz-transition: all 1s ease-in;
-  -webkit-transition: all 1s ease-in;
-  -o-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
   color: #ffffff;
   text-decoration: none;
 }
@@ -891,10 +891,10 @@ h3 {
   -o-transition: top;
   transition: top;
   -webkit-backface-visibility: hidden;
-  -moz-transition: top 1s ease-in;
-  -webkit-transition: top 1s ease-in;
-  -o-transition: top 1s ease-in;
-  transition: top 1s ease-in;
+  -moz-transition: top 0.5s ease-in;
+  -webkit-transition: top 0.5s ease-in;
+  -o-transition: top 0.5s ease-in;
+  transition: top 0.5s ease-in;
   top: 0px;
   background: #fff;
   box-shadow: 1px 1px 1px #cecece;
