@@ -7,10 +7,12 @@ html(lang="en")
 		block title
 		link(rel="shortcut icon",href="/favicon.ico")
 		link(rel="canonical",href="http://www.Giccoo.com/")
-		link(rel="stylesheet",type="text/css",href="/css/bootstrap.min.css")
-		link(rel="stylesheet",type="text/css",href="/css/bootstrap-responsive.min.css") 
-		link(rel="stylesheet",type="text/css",href="/css/animate.css") 
-		link(rel="stylesheet",type="text/css",href="/css/main.css")
+		link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic")
+		link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here")
+		link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/bootstrap.min.css")
+		link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/bootstrap-responsive.min.css") 
+		link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/animate.css") 
+		link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/main.css")
 		block css
 		script(src="/js/vendor/modernizr-2.6.2.min.js")
 		//if lte IE7
@@ -79,10 +81,10 @@ html(lang="en")
 					| © 2013 GICCOO LTD | ALL RIGHTS RESERVED
 					img.footlogo(src="/img/logo-w.png",alt="Giccoo")
 
-		script(src="/js/vendor/jquery-1.10.1.min.js")
-		script(src="/js/bootstrap.min.js")
-		script(src="/js/jquery.pjax.js")
-		script(src="/js/plugins.js")
-		script(src="/js/main.js") 
+		script(src="#{config.cdn}/js/vendor/jquery-1.10.1.min.js")
+		script(src="#{config.cdn}/js/bootstrap.min.js")
+		script(src="#{config.cdn}/js/jquery.pjax.js")
+		script(src="#{config.cdn}/js/plugins.js")
+		script(src="#{config.cdn}/js/main.js") 
 		block scripts 
 		block script

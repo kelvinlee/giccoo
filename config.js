@@ -9,6 +9,7 @@ exports.config = {
     '<meta name="author" content="Kelvin" />', 
   ],
   host: 'www.Giccoo.com',
+  cdn: 'http://www.Giccoo.com',
   site_logo: '', // default is `name`
   site_navs: [ 
     [ '/about', '关于' ],
