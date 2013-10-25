@@ -144,16 +144,14 @@
       "initialSize" : 303014,
       "fileType" : 8192
     },
-    "\/lib\/util.js" : {
+    "\/public\/css\/admin\/wizard.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/util.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/lib\/util-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/public\/css\/admin\/wizard.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/public\/images\/fancybox_overlay.png" : {
       "ignoreWasSetByUser" : 0,
@@ -177,6 +175,17 @@
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/codemirror-ck.js",
       "fileType" : 64
     },
+    "\/lib\/util.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/util.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/lib\/util-ck.js",
+      "fileType" : 64
+    },
     "\/models\/index.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -187,15 +196,6 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/index-ck.js",
       "fileType" : 64
-    },
-    "\/public\/css\/admin\/wizard.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/css\/admin\/wizard.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/public\/img\/bg.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -802,6 +802,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
+    "\/public\/css\/admin\/pygments.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/css\/admin\/pygments.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/public\/less\/input.less" : {
       "ieCompatibility" : 1,
       "inputAbbreviatedPath" : "\/public\/less\/input.less",
@@ -818,15 +827,6 @@
       "outputStyle" : 2,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/public\/css\/admin\/pygments.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/css\/admin\/pygments.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/proxy\/user.js" : {
       "ignoreWasSetByUser" : 0,
@@ -969,6 +969,15 @@
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/codemode\/markdown-ck.js",
       "fileType" : 64
     },
+    "\/public\/css\/admin\/color\/magenta.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/css\/admin\/color\/magenta.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/public\/less\/icon-font.less" : {
       "ieCompatibility" : 1,
       "inputAbbreviatedPath" : "\/public\/less\/icon-font.less",
@@ -985,15 +994,6 @@
       "outputStyle" : 2,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/public\/css\/admin\/color\/magenta.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/css\/admin\/color\/magenta.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/public\/images\/nature4.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -1080,8 +1080,8 @@
       "fileType" : 8192
     },
     "\/git.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/git.js",

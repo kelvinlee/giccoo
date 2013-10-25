@@ -12,7 +12,8 @@ function gitpull(porject) {
 function routes(req,res) {
   var pathname = url.parse(req.url).pathname;
   if (pathname==="/update" && req.method.toLowerCase()=="post") { 
-    gitpull(); 
+    gitpull();
+    console.log("I need run git.");
   }else{
     return "404";
   }
