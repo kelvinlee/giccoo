@@ -164,17 +164,6 @@
       "initialSize" : 923,
       "fileType" : 8192
     },
-    "\/lib\/util.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/util.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/lib\/util-ck.js",
-      "fileType" : 64
-    },
     "\/public\/js\/vendor\/codemirror.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -184,6 +173,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/codemirror-ck.js",
+      "fileType" : 64
+    },
+    "\/lib\/util.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/util.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/lib\/util-ck.js",
       "fileType" : 64
     },
     "\/models\/index.js" : {
@@ -208,6 +208,15 @@
       "initialSize" : 180347,
       "fileType" : 4096
     },
+    "\/public\/css\/admin\/fullcalendar.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/css\/admin\/fullcalendar.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/controllers\/admin.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -219,15 +228,6 @@
       "outputAbbreviatedPath" : "\/controllers\/admin.js",
       "outputStyle" : 1,
       "fileType" : 32
-    },
-    "\/public\/css\/admin\/fullcalendar.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/css\/admin\/fullcalendar.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/models\/topic_tag.js" : {
       "ignoreWasSetByUser" : 0,
@@ -443,6 +443,23 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/public\/less\/config.less" : {
+      "ieCompatibility" : 1,
+      "inputAbbreviatedPath" : "\/public\/less\/config.less",
+      "outputAbbreviatedPath" : "\/public\/css\/config.css",
+      "outputPathIsSetByUser" : 0,
+      "strictUnits" : 0,
+      "relativeURLS" : 0,
+      "ignore" : 0,
+      "strictImports" : 0,
+      "ignoreWasSetByUser" : 0,
+      "shouldRunBless" : 0,
+      "hidden" : 0,
+      "strictMath" : 0,
+      "outputStyle" : 2,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
     "\/proxy\/tag.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -484,23 +501,6 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/user-ck.js",
       "fileType" : 64
-    },
-    "\/public\/less\/config.less" : {
-      "ieCompatibility" : 1,
-      "inputAbbreviatedPath" : "\/public\/less\/config.less",
-      "outputAbbreviatedPath" : "\/public\/css\/config.css",
-      "outputPathIsSetByUser" : 0,
-      "strictUnits" : 0,
-      "relativeURLS" : 0,
-      "ignore" : 0,
-      "strictImports" : 0,
-      "ignoreWasSetByUser" : 0,
-      "shouldRunBless" : 0,
-      "hidden" : 0,
-      "strictMath" : 0,
-      "outputStyle" : 2,
-      "fileType" : 1,
-      "debugStyle" : 0
     },
     "\/language\/default.js" : {
       "ignoreWasSetByUser" : 0,
@@ -552,6 +552,17 @@
       "outputAbbreviatedPath" : "\/controllers\/admin-ck.js",
       "fileType" : 64
     },
+    "\/public\/jade\/a.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/jade\/a.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/public\/a.html",
+      "fileType" : 512
+    },
     "\/de-bug.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -583,17 +594,6 @@
       "inputAbbreviatedPath" : "\/public\/css\/admin\/isotope.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
-    },
-    "\/public\/jade\/a.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/jade\/a.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/public\/a.html",
-      "fileType" : 512
     },
     "\/public\/css\/admin\/morris.css" : {
       "ignoreWasSetByUser" : 0,
@@ -1187,16 +1187,16 @@
       "outputAbbreviatedPath" : "\/de-app-ck.js",
       "fileType" : 64
     },
-    "\/proxy\/index.js" : {
+    "\/public\/images\/avatar-male2.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/proxy\/index.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/proxy\/index-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
+      "initialSize" : 7086,
+      "fileType" : 8192
     },
     "\/public\/js\/vendor\/showdown.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1209,16 +1209,16 @@
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/showdown-ck.js",
       "fileType" : 64
     },
-    "\/public\/images\/avatar-male2.png" : {
+    "\/proxy\/index.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
-      "initialSize" : 7086,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/proxy\/index.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/proxy\/index-ck.js",
+      "fileType" : 64
     },
     "\/public\/js\/main.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1314,17 +1314,6 @@
       "initialSize" : 1229,
       "fileType" : 8192
     },
-    "\/public\/images\/chat-left@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
-      "initialSize" : 1016,
-      "fileType" : 8192
-    },
     "\/models\/art.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1335,6 +1324,17 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/art-ck.js",
       "fileType" : 64
+    },
+    "\/public\/images\/chat-left@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
+      "initialSize" : 1016,
+      "fileType" : 8192
     },
     "\/public\/css\/admin\/codemirror.css" : {
       "ignoreWasSetByUser" : 0,

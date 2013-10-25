@@ -9,6 +9,8 @@ lib-cov
 *.pid
 *.gz
 
+codekit-config.json
+
 pids
 logs
 results
