@@ -1,0 +1,151 @@
+doctype
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible",content="IE=edge,chrome=1")
+		meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		block title
+		link(rel="shortcut icon",href="/favicon.ico")
+		link(rel="canonical",href="http://www.Giccoo.com")
+
+		//- font and css
+		link(href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/admin/bootstrap.min.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/admin/font-awesome.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/admin/se7en-font.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/admin/isotope.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/admin/jquery.fancybox.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/admin/fullcalendar.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/admin/wizard.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/admin/select2.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/admin/morris.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/admin/datatables.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/admin/pygments.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/admin/style.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/admin/color/green.css",media="all",rel="stylesheet",title="green-theme",type="text/css")
+		//- link(href="css/admin/color/orange.css",media="all",rel="alternate,stylesheet",title="orange-theme",type="text/css")
+		//- link(href="css/admin/color/magenta.css",media="all",rel="alternate,stylesheet",title="magenta-theme",type="text/css")
+		//- link(href="css/admin/color/gray.css",media="all",rel="stylesheet",title="gray-theme",type="text/css")
+		
+		block css
+		script(src="/js/vendor/modernizr-2.6.2.min.js")
+		//if lte IE7
+			style .support-note .note-ie{display:block;}
+	body 
+		header#header.navbar.navbar-fixed-top.scroll-hide
+			div.container-fluid.top-bar
+				div.pull-right
+					ul.nav.navbar-nav.pull-right
+						li.dropdown.notifications.hidden-xs
+							a.dropdown-toggle(data-toggle="dropdown",href="javascript:void(0)")
+								span.se7en-flag(aria-hidden="true")
+								div.sr-only Notifications
+								p.counter 4
+							ul.dropdown-menu
+								- for (i=0;i<4;i++)
+									li
+										a(href="")
+											div.notifications.label.label-info NEW
+											| New user added: Jane Smith
+						li.dropdown.messages.hidden-xs
+							a.dropdown-toggle(data-toggle="dropdown",href="javascript:void(0)")
+								span.se7en-flag(aria-hidden="true")
+								div.sr-only Messages
+								p.counter 3
+							ul.dropdown-menu
+								- for (i=0;i<3;i++)
+									li
+										a(href="")
+											img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=34",width="34",height="34")
+											| Could we meet today? I wanted...
+						li.dropdown.user.hidden-xs
+							a.dropdown-toggle(data-toggle="dropdown",href="javascript:void(0)")
+								img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=34",width="34",height="34")
+								| Kelvin Li
+								b.caret
+							ul.dropdown-menu 
+								li
+									a(href="")
+										i.icon-user
+										| My Account
+								li
+									a(href="")
+										i.icon-gear
+										| Account Settings
+								li
+									a(href="")
+										i.icon-signout
+										| Logout
+				//- Here for mobile
+				button.navbar-toggle
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.logo(href="/admin")
+				form.navbar-form.form-inline.col-lg-2.hidden-xs
+					input.form-control(placeholder="Search",type="text")
+			nav.container-fluid.main-nav.clearfix
+				div.nav-collapse
+					ul.nav
+						li.dashboard
+							a.current(href="/admin")
+								span.se7en-home(aria-hidden="true")
+								| Dashboard
+						li.dashboard
+							a(href="/admin/menu")
+								span.se7en-forms(aria-hidden="true")
+								| Menu
+						li.dashboard
+							a(href="/admin/page")
+								span.se7en-feed(aria-hidden="true")
+								| Page
+						li.dashboard
+							a(href="/admin/user")
+								span.se7en-tables(aria-hidden="true")
+								| User
+						li.dashboard
+							a(data-toggle="dropdown",href="javascript:void(0)")
+								span.se7en-pages(aria-hidden="true")
+								| Blog
+								b.caret
+							ul.dropdown-menu
+								li
+									a(href="/admin/blog/list/1") Blog List
+									a(href="/admin/blog/tag/1") Blog Tag
+									a(href="/admin/blog/reply/1") Blog Reply 
+						li.dashboard
+							a(data-toggle="dropdown",href="javascript:void(0)")
+								span.se7en-gallery(aria-hidden="true")
+								| Material
+								b.caret
+							ul.dropdown-menu
+								li
+									a(href="/admin/material/list/1") Material List
+									a(href="/admin/material/tag/1") Material Tag
+						li.dropdown.ui
+							a(data-toggle="dropdown",href="javascript:void(0)")
+								span.se7en-star(aria-hidden="true")
+								|Features
+								b.caret
+							ul.dropdown-menu
+								li
+									a(href="some.html") Some
+									a(href="some.html") Some
+						li.dashboard
+							a(href="/admin/language/1")
+								span.se7en-charts(aria-hidden="true")
+								| Language
+
+
+
+		section#pjax-container.container-fluid.main-content
+			block content_here
+		//- footer.footer(id="footer") 
+
+		//- script(src="#{config.cdn}/js/vendor/require.js") 
+		script(src="#{config.cdn}/js/vendor/jquery-1.10.1.min.js")
+		script(src="#{config.cdn}/js/vendor/bootstrap.min.js")
+		script(src="#{config.cdn}/js/vendor/jquery.pjax.js")
+		script(src="#{config.cdn}/js/admin.js")
+		block scripts 
+		block script

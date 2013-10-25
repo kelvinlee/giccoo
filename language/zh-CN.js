@@ -1,3 +1,6 @@
+exports.t = {
+  homepage:""
+}
 exports.menu = {  
     home:{name:"首页",url:"/"}, 
     work:{name:"作品",url:"/work"}, 

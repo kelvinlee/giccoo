@@ -1,0 +1,44 @@
+extends layout 
+block title
+	title #{l.t.homepage}
+block content_here
+	div.page-title
+		h1 Menu
+	div.row
+		div.col-lg-12
+			div.widget-container.fluid-height.clearfix
+				div.heading
+					i.icon-table
+					|Menu Table with Sorting
+				div.widget-content.padded.clearfix 
+					table#dataMenuTable.table.table-bordered.table-striped.dataTable
+						thead
+							th.check-header.hidden-xs
+							th Menu Name
+							th Url
+							th Order
+							th Date Added
+							th
+						tbody
+							tr
+								td.check.hidden-xs
+									<input name="menuoptions" type="checkbox" value="option1">
+								td
+								td
+								td
+								td
+								td.actions
+									div.action-buttons
+										a.table-actions(href="/art/")
+											i.icon-eye-open
+										a.table-actions(href="/admin/menu/")
+											i.icon-pencil
+										a.table-actions(href="/admin/menu/del/")
+											i.icon-trash
+
+
+
+block scripts
+	script(src="/js/vendor/jquery.dataTables.min.js")
+	script(src="/js/admin/menu.js")
+block script 

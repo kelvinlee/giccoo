@@ -9,6 +9,7 @@ html(lang="en")
 		link(rel="canonical",href="http://www.Giccoo.com")
 		link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic")
 		link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here")
+		link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600")
 		link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/bootstrap.min.css")
 		link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/bootstrap-responsive.min.css") 
 		link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/animate.css") 
@@ -22,7 +23,7 @@ html(lang="en")
 			div.container.clearfix
 				div.logo
 					a(href="/") 
-						img(src="/img/logo_text.png",width="120",height="60")
+						img(src="/img/logo_text.png",width="120",height="40")
 				div.header_nav
 					button.phonenav
 					ul#nav.menu_nav.clearfix
@@ -82,9 +83,9 @@ html(lang="en")
 					img.footlogo(src="/img/logo-w.png",alt="Giccoo")
 
 		script(src="#{config.cdn}/js/vendor/jquery-1.10.1.min.js")
-		script(src="#{config.cdn}/js/bootstrap.min.js")
-		script(src="#{config.cdn}/js/jquery.pjax.js")
-		script(src="#{config.cdn}/js/plugins.js")
+		script(src="#{config.cdn}/js/vendor/bootstrap.min.js")
+		script(src="#{config.cdn}/js/vendor/jquery.pjax.js")
+		//- script(src="#{config.cdn}/js/plugins.js")
 		script(src="#{config.cdn}/js/main.js") 
 		block scripts 
 		block script

@@ -1,3 +1,6 @@
+exports.t = {
+  homepage:""
+}
 exports.menu = {  
     home:{name:"HOME",url:"/"}, 
     work:{name:"WORK",url:"/work"}, 
