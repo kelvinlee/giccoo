@@ -24,6 +24,8 @@ var req = http.createServer(function(req,res){
   res.end(); 
 }).listen(9999); 
 
+console.log("Wait git start.");
+
 
 // var config = require('../config').config;
 // var check = require('validator').check;
