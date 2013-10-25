@@ -12,13 +12,13 @@ function gitpull(porject) {
 function routes(req,res) {
   var pathname = url.parse(req.url).pathname;
   if (pathname==="/update" && req.method.toLowerCase()=="post") { 
-    gitpull();
+    gitpull(); 
   }else{
     return "404";
   }
 }
 var req = http.createServer(function(req,res){
-  //res.writeHead(200, {'Content-Type': 'text/plain'}); 
+  res.writeHead(200, {'Content-Type': 'text/plain'}); 
   routes(req,res);
   res.end(); 
 }).listen(9999); 
