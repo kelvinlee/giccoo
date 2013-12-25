@@ -50,14 +50,14 @@ block content_here
 block css
 	link(href="/css/admin/codemirror.css",media="all",rel="stylesheet",type="text/css")
 	
-block scripts
+block thisPageScript
 	script(src="/js/vendor/jquery.dataTables.min.js")
 	script(src="/js/vendor/codemirror.js")
 	script(src="/js/vendor/showdown.js")
 	script(src="/js/vendor/codemode/markdown.js")
 	//- script(src="/js/vendor/epiceditor.min.js")
 	script(src="/js/admin/menu.js")
-block script 
+block thisPageJs 
 	script
 		$(document).ready(function() { 
 			fCreateEditor();

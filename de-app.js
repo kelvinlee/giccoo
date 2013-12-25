@@ -5,7 +5,7 @@ path = require('path');
 
 express = require('express');
 
-config = require('./config').config;
+config = require('./de-config').config;
 
 routes = require('./routes');
 
@@ -33,6 +33,7 @@ app.configure(function() {
   });
   return app.use(function(req, res, next) {
     var language;
+    console.log(req.headers["accept-language"]);
     if (req.headers["user-agent"].indexOf("GitHub" < 0)) {
       if (req.headers["accept-language"]) {
         language = req.headers["accept-language"].split(",");

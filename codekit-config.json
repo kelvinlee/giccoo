@@ -1,6 +1,6 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8326",
+  "creatorBuild" : "8376",
   "files" : {
     "\/public\/images\/se7en-logo@2x.png" : {
       "ignoreWasSetByUser" : 0,
@@ -175,17 +175,6 @@
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/codemirror-ck.js",
       "fileType" : 64
     },
-    "\/models\/index.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/models\/index.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/models\/index-ck.js",
-      "fileType" : 64
-    },
     "\/lib\/util.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -195,6 +184,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/lib\/util-ck.js",
+      "fileType" : 64
+    },
+    "\/models\/index.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/models\/index.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/models\/index-ck.js",
       "fileType" : 64
     },
     "\/public\/img\/bg.jpg" : {
@@ -285,6 +285,17 @@
       "initialSize" : 135155,
       "fileType" : 8192
     },
+    "\/public\/images\/image-iso4.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/image-iso4.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/image-iso4.png",
+      "initialSize" : 227796,
+      "fileType" : 8192
+    },
     "\/public\/js\/admin.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -296,17 +307,6 @@
       "outputAbbreviatedPath" : "\/public\/js\/admin.js",
       "outputStyle" : 1,
       "fileType" : 32
-    },
-    "\/public\/images\/image-iso4.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/image-iso4.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/image-iso4.png",
-      "initialSize" : 227796,
-      "fileType" : 8192
     },
     "\/public\/images\/nature1.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -443,16 +443,16 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/public\/images\/avatar-female.jpg" : {
+    "\/proxy\/tag.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/avatar-female.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/avatar-female.jpg",
-      "initialSize" : 3899,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/proxy\/tag.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/proxy\/tag-ck.js",
+      "fileType" : 64
     },
     "\/public\/css\/admin\/color\/gray.css" : {
       "ignoreWasSetByUser" : 0,
@@ -491,20 +491,20 @@
       "outputAbbreviatedPath" : "\/models\/user-ck.js",
       "fileType" : 64
     },
-    "\/proxy\/tag.js" : {
+    "\/public\/images\/avatar-female.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/proxy\/tag.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/proxy\/tag-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/public\/images\/avatar-female.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/avatar-female.jpg",
+      "initialSize" : 3899,
+      "fileType" : 4096
     },
     "\/language\/default.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/language\/default.js",
@@ -512,17 +512,6 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/language\/default-ck.js",
       "fileType" : 64
-    },
-    "\/public\/images\/avatar-female2.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/avatar-female2.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/avatar-female2.png",
-      "initialSize" : 6672,
-      "fileType" : 8192
     },
     "\/public\/less\/mixins.less" : {
       "ieCompatibility" : 1,
@@ -540,6 +529,17 @@
       "outputStyle" : 2,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/public\/images\/avatar-female2.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/avatar-female2.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/avatar-female2.png",
+      "initialSize" : 6672,
+      "fileType" : 8192
     },
     "\/controllers\/admin.js" : {
       "ignoreWasSetByUser" : 0,
@@ -680,17 +680,6 @@
       "initialSize" : 102415,
       "fileType" : 8192
     },
-    "\/public\/images\/chat-right@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/chat-right@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/chat-right@2x.png",
-      "initialSize" : 1142,
-      "fileType" : 8192
-    },
     "\/public\/img\/glyphicons-halflings.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -700,6 +689,17 @@
       "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/img\/glyphicons-halflings.png",
       "initialSize" : 12799,
+      "fileType" : 8192
+    },
+    "\/public\/images\/chat-right@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chat-right@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chat-right@2x.png",
+      "initialSize" : 1142,
       "fileType" : 8192
     },
     "\/public\/images\/logo-login@2x.png" : {
@@ -772,6 +772,15 @@
       "initialSize" : 216820,
       "fileType" : 4096
     },
+    "\/public\/css\/bootstrap.min.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/css\/bootstrap.min.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/config.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -783,15 +792,6 @@
       "outputAbbreviatedPath" : "\/config.js",
       "outputStyle" : 1,
       "fileType" : 32
-    },
-    "\/public\/css\/bootstrap.min.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/css\/bootstrap.min.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/public\/css\/main.css" : {
       "ignoreWasSetByUser" : 0,
@@ -894,6 +894,18 @@
       "outputAbbreviatedPath" : "\/language\/en-US-ck.js",
       "fileType" : 64
     },
+    "\/de-config.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/de-config.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/de-config.js",
+      "outputStyle" : 1,
+      "fileType" : 32
+    },
     "\/app.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -915,6 +927,18 @@
       "outputAbbreviatedPath" : "\/public\/images\/image-iso3.png",
       "initialSize" : 277529,
       "fileType" : 8192
+    },
+    "\/language\/default.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/language\/default.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/language\/default.js",
+      "outputStyle" : 1,
+      "fileType" : 32
     },
     "\/public\/css\/bootstrap-responsive.min.css" : {
       "ignoreWasSetByUser" : 0,
@@ -1187,16 +1211,16 @@
       "outputAbbreviatedPath" : "\/de-app-ck.js",
       "fileType" : 64
     },
-    "\/public\/images\/avatar-male2.png" : {
+    "\/public\/js\/vendor\/showdown.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
-      "initialSize" : 7086,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/public\/js\/vendor\/showdown.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/public\/js\/vendor\/showdown-ck.js",
+      "fileType" : 64
     },
     "\/proxy\/index.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1209,16 +1233,16 @@
       "outputAbbreviatedPath" : "\/proxy\/index-ck.js",
       "fileType" : 64
     },
-    "\/public\/js\/vendor\/showdown.js" : {
+    "\/public\/images\/avatar-male2.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/js\/vendor\/showdown.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/public\/js\/vendor\/showdown-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
+      "initialSize" : 7086,
+      "fileType" : 8192
     },
     "\/public\/js\/main.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1314,17 +1338,6 @@
       "initialSize" : 1229,
       "fileType" : 8192
     },
-    "\/public\/images\/chat-left@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
-      "initialSize" : 1016,
-      "fileType" : 8192
-    },
     "\/models\/art.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1335,6 +1348,17 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/art-ck.js",
       "fileType" : 64
+    },
+    "\/public\/images\/chat-left@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
+      "initialSize" : 1016,
+      "fileType" : 8192
     },
     "\/public\/css\/admin\/codemirror.css" : {
       "ignoreWasSetByUser" : 0,
@@ -1377,6 +1401,17 @@
       "outputAbbreviatedPath" : "\/public\/images\/avatar-female.png",
       "initialSize" : 7072,
       "fileType" : 8192
+    },
+    "\/de-config.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/de-config.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/de-config-ck.js",
+      "fileType" : 64
     },
     "\/controllers\/git.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1475,6 +1510,7 @@
       "trailing" : 1,
       "nonew" : 1,
       "es3" : 0,
+      "freeze" : true,
       "yui" : 0,
       "mootools" : 0,
       "proto" : 0,
@@ -1510,6 +1546,7 @@
       "unused" : 1,
       "debug" : 0,
       "bitwise" : 1,
+      "notypeof" : true,
       "white" : 0,
       "browser" : 1,
       "worker" : 0,
@@ -1536,7 +1573,6 @@
       "newcap" : 0,
       "sloppy" : 0,
       "closure" : 0,
-      "es5" : 0,
       "browser" : 1,
       "properties" : 0,
       "plusplus" : 0,

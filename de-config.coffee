@@ -28,7 +28,7 @@ exports.config =
 	db: 'mongodb://localhost/giccoo'
 	session_secret: 'giccoo_club'
 	auth_cookie_name: 'giccoo_club'
-	ip: '127.0.0.1' #
+	ip: '127.0.0.1' #209.148.89.194
 	port: 8080
 	list_count: 20
 	# mail SMTP

@@ -2,7 +2,7 @@
 path = require 'path'
 express = require 'express'
 #var io = require socket.io').listen(server); 
-config = require('./config').config
+config = require('./de-config').config
 routes = require './routes'
 fs = require 'fs'
 
@@ -24,11 +24,13 @@ app.configure ->
     next()
   app.use (req,res,next)->
     # check language and git. 
+    console.log req.headers["accept-language"]
     if req.headers["user-agent"].indexOf "GitHub" < 0
       if req.headers["accept-language"]
         language = req.headers["accept-language"].split ","
       else
         language = 'en-US'
+
       fs.exists "/mydata/myweb/giccoo/language/"+language[0]+".js", (exists)->
         if exists
           res.locals.l = require "./language/"+language[0]+".js"
@@ -36,6 +38,7 @@ app.configure ->
         else
           res.locals.l = require "./language/en-US.js"
           res.locals.language = "en-US"
+    #console.log language
     res.locals.token = req.session._csrf
     res.locals.config = config
     next() 

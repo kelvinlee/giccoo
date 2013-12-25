@@ -36,6 +36,7 @@ app.configure ->
         else
           res.locals.l = require "./language/en-US.js"
           res.locals.language = "en-US"
+ 
     res.locals.token = req.session._csrf
     res.locals.config = config
     next() 
