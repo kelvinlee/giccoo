@@ -22,7 +22,8 @@ app.configure(function() {
   app.use(express.session({
     secret: config.session_secret
   }));
-  app.use(express.bodyParser());
+  app.use(express.urlencoded());
+  app.use(express.json());
   app.use(require('./controllers/user').auth_user);
   app.use(function(req, res, next) {
     if (req.body && req.body.git === 'pull') {

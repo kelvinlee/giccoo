@@ -16,7 +16,8 @@ app.configure ->
   app.use express.cookieParser()
   app.use express.session
     secret: config.session_secret
-  app.use express.bodyParser()
+  app.use express.urlencoded()
+  app.use express.json()
   app.use require('./controllers/user').auth_user
   app.use (req,res,next)->
     return next() if req.body and req.body.git is 'pull'
