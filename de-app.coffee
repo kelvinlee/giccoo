@@ -26,20 +26,18 @@ app.configure ->
   app.use (req,res,next)->
     # check language and git. 
     console.log req.headers["accept-language"]
-    if req.headers["user-agent"].indexOf "GitHub" < 0
-      if req.headers["accept-language"]
-        language = req.headers["accept-language"].split ","
-      else
-        language = 'en-US'
+    #if req.headers["user-agent"].indexOf "GitHub" < 0
+    language = 'en-US'
+    language = req.headers["accept-language"].split "," if req.headers["accept-language"]
 
-      fs.exists "/mydata/myweb/giccoo/language/"+language[0]+".js", (exists)->
-        if exists
-          res.locals.l = require "./language/"+language[0]+".js"
-          res.locals.language = language[0]
-        else
-          res.locals.l = require "./language/en-US.js"
-          res.locals.language = "en-US"
-    #console.log language
+    fs.exists "./language/"+language[0]+".js", (exists)->
+      res.locals.l = require "./language/en-US.js"
+      res.locals.language = "en-US"
+      if exists
+        res.locals.l = require "./language/"+language[0]+".js"
+        res.locals.language = language[0] 
+        
+    console.log language
     res.locals.token = req.session._csrf
     res.locals.config = config
     next() 
