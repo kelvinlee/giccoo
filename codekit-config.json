@@ -13,6 +13,17 @@
       "initialSize" : 2101,
       "fileType" : 8192
     },
+    "\/public\/images\/image-iso6.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/image-iso6.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/image-iso6.png",
+      "initialSize" : 187170,
+      "fileType" : 8192
+    },
     "\/public\/jade\/a.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -32,17 +43,6 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/file_tag-ck.js",
       "fileType" : 64
-    },
-    "\/public\/images\/image-iso6.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/image-iso6.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/image-iso6.png",
-      "initialSize" : 187170,
-      "fileType" : 8192
     },
     "\/public\/images\/nature2.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -164,17 +164,6 @@
       "initialSize" : 923,
       "fileType" : 8192
     },
-    "\/lib\/util.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib\/util.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/lib\/util-ck.js",
-      "fileType" : 64
-    },
     "\/public\/js\/vendor\/codemirror.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -184,6 +173,17 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/codemirror-ck.js",
+      "fileType" : 64
+    },
+    "\/lib\/util.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/lib\/util.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/lib\/util-ck.js",
       "fileType" : 64
     },
     "\/models\/index.js" : {
@@ -208,15 +208,6 @@
       "initialSize" : 180347,
       "fileType" : 4096
     },
-    "\/public\/css\/admin\/fullcalendar.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/css\/admin\/fullcalendar.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/controllers\/admin.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -228,6 +219,15 @@
       "outputAbbreviatedPath" : "\/controllers\/admin.js",
       "outputStyle" : 1,
       "fileType" : 32
+    },
+    "\/public\/css\/admin\/fullcalendar.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/css\/admin\/fullcalendar.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/models\/topic_tag.js" : {
       "ignoreWasSetByUser" : 0,
@@ -443,6 +443,26 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/proxy\/tag.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/proxy\/tag.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/proxy\/tag-ck.js",
+      "fileType" : 64
+    },
+    "\/public\/css\/admin\/color\/gray.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/css\/admin\/color\/gray.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/public\/less\/config.less" : {
       "ieCompatibility" : 1,
       "inputAbbreviatedPath" : "\/public\/less\/config.less",
@@ -460,15 +480,15 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/proxy\/tag.js" : {
+    "\/models\/user.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/proxy\/tag.js",
+      "inputAbbreviatedPath" : "\/models\/user.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/proxy\/tag-ck.js",
+      "outputAbbreviatedPath" : "\/models\/user-ck.js",
       "fileType" : 64
     },
     "\/public\/images\/avatar-female.jpg" : {
@@ -482,24 +502,15 @@
       "initialSize" : 3899,
       "fileType" : 4096
     },
-    "\/public\/css\/admin\/color\/gray.css" : {
+    "\/language\/default.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/css\/admin\/color\/gray.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/models\/user.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/models\/user.js",
+      "inputAbbreviatedPath" : "\/language\/default.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/models\/user-ck.js",
+      "outputAbbreviatedPath" : "\/language\/default-ck.js",
       "fileType" : 64
     },
     "\/public\/images\/avatar-female2.png" : {
@@ -529,17 +540,6 @@
       "outputStyle" : 2,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/language\/default.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/language\/default.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/language\/default-ck.js",
-      "fileType" : 64
     },
     "\/controllers\/admin.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1211,17 +1211,6 @@
       "outputAbbreviatedPath" : "\/de-app-ck.js",
       "fileType" : 64
     },
-    "\/public\/images\/avatar-male2.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
-      "initialSize" : 7086,
-      "fileType" : 8192
-    },
     "\/public\/js\/vendor\/showdown.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1232,6 +1221,17 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/showdown-ck.js",
       "fileType" : 64
+    },
+    "\/public\/images\/avatar-male2.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
+      "initialSize" : 7086,
+      "fileType" : 8192
     },
     "\/proxy\/index.js" : {
       "ignoreWasSetByUser" : 0,

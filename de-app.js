@@ -45,7 +45,7 @@ app.configure(function() {
     res.locals.language = "en-US";
     fs.exists("./language/" + language[0] + ".js", function(exists) {
       if (exists) {
-        res.locals.l = require("./language/" + language[0]);
+        res.locals.l = require("./language/" + language[0] + ".js");
         return res.locals.language = language[0];
       }
     });

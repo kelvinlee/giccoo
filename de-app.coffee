@@ -34,7 +34,7 @@ app.configure ->
     res.locals.language = "en-US"
     fs.exists "./language/"+language[0]+".js", (exists)->
       if exists
-        res.locals.l = require "./language/"+language[0]
+        res.locals.l = require "./language/"+language[0]+".js"
         res.locals.language = language[0]
         
         
