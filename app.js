@@ -34,6 +34,7 @@ app.configure(function() {
   });
   return app.use(function(req, res, next) {
     var language;
+    console.log(req.headers);
     if (req.headers["user-agent"].indexOf("GitHub" < 0)) {
       if (req.headers["accept-language"]) {
         language = req.headers["accept-language"].split(",");

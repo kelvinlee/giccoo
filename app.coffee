@@ -25,6 +25,7 @@ app.configure ->
     next()
   app.use (req,res,next)->
     # check language and git. 
+    console.log req.headers
     if req.headers["user-agent"].indexOf "GitHub" < 0
       if req.headers["accept-language"]
         language = req.headers["accept-language"].split ","
