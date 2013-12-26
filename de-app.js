@@ -34,20 +34,21 @@ app.configure(function() {
   });
   return app.use(function(req, res, next) {
     var language;
-    console.log(req.headers["accept-language"]);
+    console.log(req.headers);
     language = 'en-US';
     if (req.headers["accept-language"]) {
       language = req.headers["accept-language"].split(",");
     }
+    res.locals.l = require("./language/en-US.js");
+    res.locals.language = "en-US";
     fs.exists("./language/" + language[0] + ".js", function(exists) {
-      res.locals.l = require("./language/en-US.js");
-      res.locals.language = "en-US";
       if (exists) {
-        res.locals.l = require("./language/" + language[0] + ".js");
+        res.locals.l = require("./language/" + language[0]);
         return res.locals.language = language[0];
       }
     });
-    console.log(language);
+    console.log(res.locals.language);
+    console.log(res.locals.l);
     res.locals.token = req.session._csrf;
     res.locals.config = config;
     return next();

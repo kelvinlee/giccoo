@@ -43,11 +43,12 @@ app.configure(function() {
     res.locals.language = "en-US";
     fs.exists("./language/" + language[0] + ".js", function(exists) {
       if (exists) {
-        res.locals.l = require("./language/" + language[0] + ".js");
+        res.locals.l = require("./language/" + language[0]);
         return res.locals.language = language[0];
       }
     });
     console.log(res.locals.language);
+    console.log(res.locals.l);
     res.locals.token = req.session._csrf;
     res.locals.config = config;
     return next();
