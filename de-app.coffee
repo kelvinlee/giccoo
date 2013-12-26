@@ -9,6 +9,7 @@ fs = require 'fs'
 
 app = express()
 # configuration in all env
+routes(app)
 app.configure ->
   viewsRoot = path.join __dirname, 'views'
   app.set 'view engine', 'jade'
@@ -68,8 +69,6 @@ app.configure 'production', ->
     maxAge: maxAge
   app.set 'view cache', true
 
-
-routes(app)
 
 app.listen config.port,config.ip
 

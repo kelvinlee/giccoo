@@ -13,6 +13,8 @@ fs = require('fs');
 
 app = express();
 
+routes(app);
+
 app.configure(function() {
   var viewsRoot;
   viewsRoot = path.join(__dirname, 'views');
@@ -86,8 +88,6 @@ app.configure('production', function() {
   }));
   return app.set('view cache', true);
 });
-
-routes(app);
 
 app.listen(config.port, config.ip);
 
