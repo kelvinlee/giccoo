@@ -50,6 +50,7 @@ app.configure(function() {
         }
       });
     }
+    console.log(res.locals.language);
     res.locals.token = req.session._csrf;
     res.locals.config = config;
     return next();
