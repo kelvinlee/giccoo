@@ -6,35 +6,27 @@ exports.t = {
 exports.menu = {
   home: {
     name: "",
-    url: ""
+    url: "/"
   },
   work: {
     name: "",
-    url: ""
+    url: "/work"
   },
-  services: {
+  opensource: {
     name: "",
-    url: ""
+    url: "/opensource"
   },
   aboutus: {
     name: "",
-    url: ""
+    url: "/aboutus"
   },
   contact: {
     name: "",
-    url: ""
+    url: "/contact"
   },
   blog: {
     name: "",
-    url: ""
-  },
-  company: {
-    name: "",
-    url: ""
-  },
-  social: {
-    name: "",
-    url: ""
+    url: "/blog"
   }
 };
 
