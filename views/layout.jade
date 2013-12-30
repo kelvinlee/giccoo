@@ -29,18 +29,19 @@ html(lang="en")
 				div.header_nav
 					button.phonenav
 					ul#nav.menu_nav.clearfix
-						li
-							a(href="#{l.menu.home.url}") #{l.menu.home.name}
-						li
-							a(href="#{l.menu.work.url}") #{l.menu.work.name}
-						li
-							a(href="#{l.menu.services.url}") #{l.menu.services.name}
-						li
-							a(href="#{l.menu.aboutus.url}") #{l.menu.aboutus.name}
-						li
-							a(href="#{l.menu.contact.url}") #{l.menu.contact.name}
-						li
-							a(href="#{l.menu.blog.url}") #{l.menu.blog.name}
+						- for(var i in l.menu)
+							li
+								a(href="#{l.menu[i].url}") #{l.menu[i].name}
+						//- li
+						//- 	a(href="#{l.menu.work.url}") #{l.menu.work.name}
+						//- li
+						//- 	a(href="#{l.menu.services.url}") #{l.menu.services.name}
+						//- li
+						//- 	a(href="#{l.menu.aboutus.url}") #{l.menu.aboutus.name}
+						//- li
+						//- 	a(href="#{l.menu.contact.url}") #{l.menu.contact.name}
+						//- li
+						//- 	a(href="#{l.menu.blog.url}") #{l.menu.blog.name}
 		block content_here
 		footer.footer(id="footer")
 			div.container

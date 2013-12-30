@@ -84,7 +84,12 @@ exports.btn = {
 
 exports.error = {
   noart: "",
-  loseauthor: ""
+  loseauthor: "",
+  registersuccess: ""
+};
+
+exports.note = {
+  del: ""
 };
 
 exports.admin = {

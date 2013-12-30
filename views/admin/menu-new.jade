@@ -4,7 +4,7 @@ block title
 block content_here
 	div.page-title
 		h1 Add new menu
-	form
+	form(action="/admin/menu/new",method="post")
 		div.row
 			div.col-md-8
 				div.widget-container.fluid-height.clearfix
@@ -48,15 +48,15 @@ block content_here
 
 
 block css
-	link(href="/css/admin/codemirror.css",media="all",rel="stylesheet",type="text/css")
+	link.(href="/css/admin/codemirror.css",media="all",rel="stylesheet",type="text/css")
 	
 block thisPageScript
-	script(src="/js/vendor/jquery.dataTables.min.js")
-	script(src="/js/vendor/codemirror.js")
-	script(src="/js/vendor/showdown.js")
-	script(src="/js/vendor/codemode/markdown.js")
+	script.(src="/js/vendor/jquery.dataTables.min.js")
+	script.(src="/js/vendor/codemirror.js")
+	script.(src="/js/vendor/showdown.js")
+	script.(src="/js/vendor/codemode/markdown.js")
 	//- script(src="/js/vendor/epiceditor.min.js")
-	script(src="/js/admin/menu.js")
+	script.(src="/js/admin/menu.js")
 block thisPageJs 
 	script
 		$(document).ready(function() { 

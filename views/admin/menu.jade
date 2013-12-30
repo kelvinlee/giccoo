@@ -20,21 +20,22 @@ block content_here
 							th Date Added
 							th
 						tbody
-							tr
-								td.check.hidden-xs
-									<input name="menuoptions" type="checkbox" value="option1">
-								td
-								td
-								td
-								td
-								td.actions
-									div.action-buttons
-										a.table-actions(href="/art/")
-											i.icon-eye-open
-										a.table-actions(href="/admin/menu/")
-											i.icon-pencil
-										a.table-actions(href="/admin/menu/del/")
-											i.icon-trash
+							- for (var i=0;i<menulist.length;i++)
+								tr
+									td.check.hidden-xs
+										<input name="menuoptions" type="checkbox" value="option1">
+									td #{menulist[i].name} 
+									td #{menulist[i].url}
+									td #{menulist[i].description}
+									td #{menulist[i].create_at} 
+									td.actions
+										div.action-buttons
+											a.table-actions(href="/#{menulist[i].name}")
+												i.icon-eye-open
+											a.table-actions(href="/admin/menu/update/#{menulist[i].id}")
+												i.icon-pencil
+											a.table-actions(href="/admin/menu/del/#{menulist[i].id}",onclick="return confirm('#{l.note.del}');")
+												i.icon-trash
 
 
 

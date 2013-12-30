@@ -13,6 +13,18 @@
       "initialSize" : 2101,
       "fileType" : 8192
     },
+    "\/public\/js\/coffee\/main.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/js\/coffee\/main.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/public\/js\/main.js",
+      "outputStyle" : 1,
+      "fileType" : 32
+    },
     "\/public\/images\/image-iso6.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -121,18 +133,6 @@
       "initialSize" : 923,
       "fileType" : 8192
     },
-    "\/de-app.coffee" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/de-app.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 0,
-      "outputAbbreviatedPath" : "\/de-app.js",
-      "outputStyle" : 1,
-      "fileType" : 32
-    },
     "\/public\/images\/image-iso8.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -177,7 +177,7 @@
     },
     "\/lib\/util.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/lib\/util.js",
@@ -205,20 +205,8 @@
       "inputAbbreviatedPath" : "\/public\/img\/bg.jpg",
       "processed" : 0,
       "outputAbbreviatedPath" : "\/public\/img\/bg.jpg",
-      "initialSize" : 180347,
+      "initialSize" : 49788,
       "fileType" : 4096
-    },
-    "\/controllers\/admin.coffee" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/controllers\/admin.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 0,
-      "outputAbbreviatedPath" : "\/controllers\/admin.js",
-      "outputStyle" : 1,
-      "fileType" : 32
     },
     "\/public\/css\/admin\/fullcalendar.css" : {
       "ignoreWasSetByUser" : 0,
@@ -274,6 +262,17 @@
       "outputStyle" : 1,
       "fileType" : 32
     },
+    "\/public\/images\/image-iso.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/image-iso.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/image-iso.png",
+      "initialSize" : 135155,
+      "fileType" : 8192
+    },
     "\/public\/images\/image-iso4.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -285,28 +284,16 @@
       "initialSize" : 227796,
       "fileType" : 8192
     },
-    "\/public\/js\/admin.coffee" : {
+    "\/controllers\/sign.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/js\/admin.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 0,
-      "outputAbbreviatedPath" : "\/public\/js\/admin.js",
+      "inputAbbreviatedPath" : "\/controllers\/sign.js",
       "outputStyle" : 1,
-      "fileType" : 32
-    },
-    "\/public\/images\/image-iso.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/image-iso.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/image-iso.png",
-      "initialSize" : 135155,
-      "fileType" : 8192
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/controllers\/sign-ck.js",
+      "fileType" : 64
     },
     "\/public\/images\/nature1.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -394,18 +381,6 @@
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/jquery-1.10.1.min-ck.js",
       "fileType" : 64
     },
-    "\/routes.coffee" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/routes.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 0,
-      "outputAbbreviatedPath" : "\/routes.js",
-      "outputStyle" : 1,
-      "fileType" : 32
-    },
     "\/public\/css\/admin\/color\/orange.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -414,6 +389,18 @@
       "inputAbbreviatedPath" : "\/public\/css\/admin\/color\/orange.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/controllers\/coffee\/sign.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/controllers\/coffee\/sign.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/controllers\/sign.js",
+      "outputStyle" : 1,
+      "fileType" : 32
     },
     "\/models\/menu.js" : {
       "ignoreWasSetByUser" : 0,
@@ -433,9 +420,9 @@
       "outputPathIsSetByUser" : 0,
       "strictUnits" : 0,
       "relativeURLS" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "strictImports" : 0,
-      "ignoreWasSetByUser" : 0,
+      "ignoreWasSetByUser" : 1,
       "shouldRunBless" : 0,
       "hidden" : 0,
       "strictMath" : 0,
@@ -454,6 +441,17 @@
       "outputAbbreviatedPath" : "\/proxy\/tag-ck.js",
       "fileType" : 64
     },
+    "\/public\/images\/avatar-female.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/avatar-female.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/avatar-female.jpg",
+      "initialSize" : 3899,
+      "fileType" : 4096
+    },
     "\/public\/css\/admin\/color\/gray.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -462,6 +460,17 @@
       "inputAbbreviatedPath" : "\/public\/css\/admin\/color\/gray.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/models\/user.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/models\/user.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/models\/user-ck.js",
+      "fileType" : 64
     },
     "\/public\/less\/config.less" : {
       "ieCompatibility" : 1,
@@ -479,28 +488,6 @@
       "outputStyle" : 2,
       "fileType" : 1,
       "debugStyle" : 0
-    },
-    "\/models\/user.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/models\/user.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/models\/user-ck.js",
-      "fileType" : 64
-    },
-    "\/public\/images\/avatar-female.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/avatar-female.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/avatar-female.jpg",
-      "initialSize" : 3899,
-      "fileType" : 4096
     },
     "\/language\/default.js" : {
       "ignoreWasSetByUser" : 0,
@@ -523,6 +510,17 @@
       "outputAbbreviatedPath" : "\/public\/images\/avatar-female2.png",
       "initialSize" : 6672,
       "fileType" : 8192
+    },
+    "\/public\/img\/bg.old.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/img\/bg.old.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/img\/bg.old.jpg",
+      "initialSize" : 180347,
+      "fileType" : 4096
     },
     "\/public\/less\/mixins.less" : {
       "ieCompatibility" : 1,
@@ -563,17 +561,14 @@
       "outputAbbreviatedPath" : "\/public\/a.html",
       "fileType" : 512
     },
-    "\/de-bug.coffee" : {
+    "\/public\/css\/admin\/isotope.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/de-bug.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 0,
-      "outputAbbreviatedPath" : "\/de-bug.js",
-      "outputStyle" : 1,
-      "fileType" : 32
+      "inputAbbreviatedPath" : "\/public\/css\/admin\/isotope.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/public\/js\/vendor\/modernizr-2.6.2.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -586,14 +581,17 @@
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/modernizr-2.6.2.min-ck.js",
       "fileType" : 64
     },
-    "\/public\/css\/admin\/isotope.css" : {
+    "\/coffee\/app.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/css\/admin\/isotope.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/coffee\/app.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/app.js",
+      "outputStyle" : 1,
+      "fileType" : 32
     },
     "\/public\/css\/admin\/morris.css" : {
       "ignoreWasSetByUser" : 0,
@@ -656,18 +654,6 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/jquery.dataTables.min-ck.js",
       "fileType" : 64
-    },
-    "\/public\/js\/main.coffee" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/js\/main.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 0,
-      "outputAbbreviatedPath" : "\/public\/js\/main.js",
-      "outputStyle" : 1,
-      "fileType" : 32
     },
     "\/public\/images\/avatar-male2-lg.png" : {
       "ignoreWasSetByUser" : 0,
@@ -772,18 +758,6 @@
       "initialSize" : 216820,
       "fileType" : 4096
     },
-    "\/config.coffee" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/config.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 0,
-      "outputAbbreviatedPath" : "\/config.js",
-      "outputStyle" : 1,
-      "fileType" : 32
-    },
     "\/public\/css\/bootstrap.min.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -792,6 +766,18 @@
       "inputAbbreviatedPath" : "\/public\/css\/bootstrap.min.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/controllers\/coffee\/admin.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/controllers\/coffee\/admin.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/controllers\/admin.js",
+      "outputStyle" : 1,
+      "fileType" : 32
     },
     "\/public\/css\/main.css" : {
       "ignoreWasSetByUser" : 0,
@@ -828,16 +814,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/proxy\/user.js" : {
+    "\/coffee\/routes.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/proxy\/user.js",
+      "inputAbbreviatedPath" : "\/coffee\/routes.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/routes.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/proxy\/user-ck.js",
-      "fileType" : 64
+      "fileType" : 32
     },
     "\/public\/images\/image-iso7.png" : {
       "ignoreWasSetByUser" : 0,
@@ -849,6 +836,17 @@
       "outputAbbreviatedPath" : "\/public\/images\/image-iso7.png",
       "initialSize" : 236409,
       "fileType" : 8192
+    },
+    "\/proxy\/user.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/proxy\/user.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/proxy\/user-ck.js",
+      "fileType" : 64
     },
     "\/public\/img\/glyphicons-halflings-white.png" : {
       "ignoreWasSetByUser" : 0,
@@ -894,15 +892,15 @@
       "outputAbbreviatedPath" : "\/language\/en-US-ck.js",
       "fileType" : 64
     },
-    "\/de-config.coffee" : {
+    "\/proxy\/coffee\/user.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/de-config.coffee",
+      "inputAbbreviatedPath" : "\/proxy\/coffee\/user.coffee",
       "checkOutputStyle" : 0,
       "minifyOutput" : 0,
-      "outputAbbreviatedPath" : "\/de-config.js",
+      "outputAbbreviatedPath" : "\/proxy\/user.js",
       "outputStyle" : 1,
       "fileType" : 32
     },
@@ -928,15 +926,15 @@
       "initialSize" : 277529,
       "fileType" : 8192
     },
-    "\/language\/default.coffee" : {
+    "\/lib\/coffee\/util.coffee" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/language\/default.coffee",
+      "inputAbbreviatedPath" : "\/lib\/coffee\/util.coffee",
       "checkOutputStyle" : 0,
       "minifyOutput" : 0,
-      "outputAbbreviatedPath" : "\/language\/default.js",
+      "outputAbbreviatedPath" : "\/lib\/util.js",
       "outputStyle" : 1,
       "fileType" : 32
     },
@@ -1092,6 +1090,18 @@
       "outputAbbreviatedPath" : "\/controllers\/user-ck.js",
       "fileType" : 64
     },
+    "\/coffee\/de-app.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/coffee\/de-app.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/de-app.js",
+      "outputStyle" : 1,
+      "fileType" : 32
+    },
     "\/public\/img\/arrow.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1103,6 +1113,18 @@
       "initialSize" : 574,
       "fileType" : 8192
     },
+    "\/coffee\/config.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/coffee\/config.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/config.js",
+      "outputStyle" : 1,
+      "fileType" : 32
+    },
     "\/git.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -1113,6 +1135,18 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/git-ck.js",
       "fileType" : 64
+    },
+    "\/public\/js\/coffee\/admin.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/js\/coffee\/admin.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/public\/js\/admin.js",
+      "outputStyle" : 1,
+      "fileType" : 32
     },
     "\/public\/images\/se7en-logo.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1244,6 +1278,18 @@
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/showdown-ck.js",
       "fileType" : 64
     },
+    "\/language\/coffee\/default.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/language\/coffee\/default.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/language\/default.js",
+      "outputStyle" : 1,
+      "fileType" : 32
+    },
     "\/public\/js\/main.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1255,17 +1301,16 @@
       "outputAbbreviatedPath" : "\/public\/js\/main-ck.js",
       "fileType" : 64
     },
-    "\/app.coffee" : {
+    "\/proxy\/menu.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 0,
-      "outputAbbreviatedPath" : "\/app.js",
+      "inputAbbreviatedPath" : "\/proxy\/menu.js",
       "outputStyle" : 1,
-      "fileType" : 32
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/proxy\/menu-ck.js",
+      "fileType" : 64
     },
     "\/public\/js\/vendor\/jquery.pjax.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1286,6 +1331,18 @@
       "inputAbbreviatedPath" : "\/public\/css\/animate.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/coffee\/de-bug.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/coffee\/de-bug.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/de-bug.js",
+      "outputStyle" : 1,
+      "fileType" : 32
     },
     "\/public\/js\/plugins.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1338,6 +1395,17 @@
       "initialSize" : 1229,
       "fileType" : 8192
     },
+    "\/public\/images\/chat-left@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
+      "initialSize" : 1016,
+      "fileType" : 8192
+    },
     "\/models\/art.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1349,16 +1417,22 @@
       "outputAbbreviatedPath" : "\/models\/art-ck.js",
       "fileType" : 64
     },
-    "\/public\/images\/chat-left@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
+    "\/public\/less\/sign.less" : {
+      "ieCompatibility" : 1,
+      "inputAbbreviatedPath" : "\/public\/less\/sign.less",
+      "outputAbbreviatedPath" : "\/public\/css\/sign.css",
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
-      "initialSize" : 1016,
-      "fileType" : 8192
+      "strictUnits" : 0,
+      "relativeURLS" : 0,
+      "ignore" : 1,
+      "strictImports" : 0,
+      "ignoreWasSetByUser" : 1,
+      "shouldRunBless" : 0,
+      "hidden" : 0,
+      "strictMath" : 0,
+      "outputStyle" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/public\/css\/admin\/codemirror.css" : {
       "ignoreWasSetByUser" : 0,
@@ -1402,6 +1476,18 @@
       "initialSize" : 7072,
       "fileType" : 8192
     },
+    "\/coffee\/de-config.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/coffee\/de-config.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/de-config.js",
+      "outputStyle" : 1,
+      "fileType" : 32
+    },
     "\/de-config.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1423,6 +1509,18 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/controllers\/git-ck.js",
       "fileType" : 64
+    },
+    "\/proxy\/coffee\/menu.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/proxy\/coffee\/menu.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/proxy\/menu.js",
+      "outputStyle" : 1,
+      "fileType" : 32
     },
     "\/public\/css\/admin\/application.css" : {
       "ignoreWasSetByUser" : 0,
@@ -1459,7 +1557,7 @@
     "coffeeMinifyOutput" : 0,
     "javascriptOutputSuffix" : "-ck",
     "jadeOutputStyle" : 0,
-    "coffeeAutoOutputPathStyle" : 0,
+    "coffeeAutoOutputPathStyle" : 2,
     "autoSyncProjectSettingsFile" : 1,
     "lessAutoOutputPathReplace1" : "less",
     "jadeAutoOutputPathReplace1" : "",
@@ -1485,7 +1583,7 @@
     "sassAutoOutputPathReplace1" : "sass",
     "slimAutoOutputPathReplace1" : "",
     "sassOutputStyle" : 0,
-    "coffeeAutoOutputPathRelativePath" : "..\/js",
+    "coffeeAutoOutputPathRelativePath" : "..\/",
     "slimCompileOnly" : 0,
     "slimLogicless" : 0,
     "uglifyIndent" : 4,

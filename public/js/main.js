@@ -2,10 +2,10 @@
 $(document).ready(function() {});
 
 $(window).scroll(function() {
-  if ($(this).scrollTop() > 395 && $("#header").not(".scrollheader")) {
+  if ($(this).scrollTop() > $('#banner').height() - 80 && $("#header").not(".scrollheader")) {
     $("#header").addClass("growtop scrollheader");
   }
-  if ($(this).scrollTop() < 395 && $("#header").is(".scrollheader")) {
+  if ($(this).scrollTop() < $('#banner').height() - 80 && $("#header").is(".scrollheader")) {
     $("#header").removeClass("growtop scrollheader");
   }
   return true;

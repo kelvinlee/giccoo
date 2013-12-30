@@ -1,4 +1,4 @@
-# app.js test for 2
+# app.js for production
 path = require 'path'
 express = require 'express'
 #var io = require socket.io').listen(server); 
@@ -25,7 +25,7 @@ app.configure ->
     next()
   app.use (req,res,next)->
     # check language and git. 
-    console.log req.headers 
+    # console.log req.headers 
     #if req.headers["user-agent"].indexOf "GitHub" < 0
     language = 'en-US'
     language = req.headers["accept-language"].split "," if req.headers["accept-language"]
@@ -35,10 +35,9 @@ app.configure ->
       if exists
         res.locals.l = require "./language/"+language[0]
         res.locals.language = language[0]
-        
-        
-    console.log res.locals.language
-    console.log res.locals.l
+
+    # console.log res.locals.language
+    # console.log res.locals.l
     res.locals.token = req.session._csrf
     res.locals.config = config
     next() 

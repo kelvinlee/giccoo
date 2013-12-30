@@ -2,14 +2,13 @@
 path = require 'path'
 express = require 'express'
 #var io = require socket.io').listen(server); 
-config = require('./de-config').config
+config = require('./config').config
 routes = require './routes'
 fs = require 'fs'
 
 
 app = express()
 # configuration in all env
-routes(app)
 app.configure ->
   viewsRoot = path.join __dirname, 'views'
   app.set 'view engine', 'jade'
@@ -26,7 +25,7 @@ app.configure ->
     next()
   app.use (req,res,next)->
     # check language and git. 
-    console.log req.headers 
+    # console.log req.headers 
     #if req.headers["user-agent"].indexOf "GitHub" < 0
     language = 'en-US'
     language = req.headers["accept-language"].split "," if req.headers["accept-language"]
@@ -34,12 +33,11 @@ app.configure ->
     res.locals.language = "en-US"
     fs.exists "./language/"+language[0]+".js", (exists)->
       if exists
-        res.locals.l = require "./language/"+language[0]+".js"
+        res.locals.l = require "./language/"+language[0]
         res.locals.language = language[0]
-        
-        
-    console.log res.locals.language
-    console.log res.locals.l
+
+    # console.log res.locals.language
+    # console.log res.locals.l
     res.locals.token = req.session._csrf
     res.locals.config = config
     next() 
@@ -69,6 +67,8 @@ app.configure 'production', ->
     maxAge: maxAge
   app.set 'view cache', true
 
+
+routes(app)
 
 app.listen config.port,config.ip
 

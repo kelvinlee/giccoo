@@ -1,5 +1,5 @@
 exports.t = {
-  homepage:""
+  homepage:"sss"
 }
 exports.menu = {  
     home:{name:"HOME",url:"/"}, 
@@ -39,8 +39,12 @@ exports.btn = {
 exports.banner=  {
   h1:"Simple, beautiful, effective",
   h2:"hand crafted websites"
-}
+};
 exports.error = {
 	noart : "We can't find this page.",
-  loseauthor : 'Lost author.'
-}
+  loseauthor : 'Lost author.',
+  registersuccess: "Success"
+};
+exports.note = {
+  del: "Are you sure you want delete this?"
+};

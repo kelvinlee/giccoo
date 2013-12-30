@@ -5,15 +5,13 @@ path = require('path');
 
 express = require('express');
 
-config = require('./de-config').config;
+config = require('./config').config;
 
 routes = require('./routes');
 
 fs = require('fs');
 
 app = express();
-
-routes(app);
 
 app.configure(function() {
   var viewsRoot;
@@ -36,7 +34,6 @@ app.configure(function() {
   });
   return app.use(function(req, res, next) {
     var language;
-    console.log(req.headers);
     language = 'en-US';
     if (req.headers["accept-language"]) {
       language = req.headers["accept-language"].split(",");
@@ -45,12 +42,10 @@ app.configure(function() {
     res.locals.language = "en-US";
     fs.exists("./language/" + language[0] + ".js", function(exists) {
       if (exists) {
-        res.locals.l = require("./language/" + language[0] + ".js");
+        res.locals.l = require("./language/" + language[0]);
         return res.locals.language = language[0];
       }
     });
-    console.log(res.locals.language);
-    console.log(res.locals.l);
     res.locals.token = req.session._csrf;
     res.locals.config = config;
     return next();
@@ -88,6 +83,8 @@ app.configure('production', function() {
   }));
   return app.set('view cache', true);
 });
+
+routes(app);
 
 app.listen(config.port, config.ip);
 

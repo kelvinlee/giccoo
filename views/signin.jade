@@ -1,0 +1,23 @@
+extends layout 
+block title
+	title #{l.t.homepage}
+block content_here
+	section.login
+		div#banner.banner
+			div.banner_login
+
+		div.container.p60
+			h1 欢迎登录到Giccoo
+			div.col-sm-2
+			form(action="/sign/in",method="post")
+				div.form-group
+					label.span2.control-label 用户名
+					div.span8
+						input.form-control.parsley-validated(id="username",name="username",type="text",placeholder="请输入用户名")
+				div.form-group
+					label.span2.control-label 密码
+					div.span8
+						input.form-control.parsley-validated(id="password",name="password",type="password",placeholder="请输入密码")
+				div.form-group
+					input(type="submit",value="提交").btn
+					a(href="/regiter").btn 注册

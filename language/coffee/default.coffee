@@ -47,7 +47,9 @@ exports.btn =
 exports.error =
   noart : ""
   loseauthor : ""
-
+  registersuccess : ""
+exports.note =
+  del : ""
 # 后台管理 admin for english
 exports.admin =
   menus:

@@ -39,8 +39,12 @@ exports.btn = {
 exports.banner=  {
   h1:"简单, 精制, 高效",
   h2:"拒绝单一"
-}
+};
 exports.error = {
 	noart : "文章内容不存在.",
-  loseauthor : '文章作者丢失.'
+  loseauthor : '文章作者丢失.',
+  registersuccess: "添加成功"
+};
+exports.note = {
+  del: "确定要删除吗?"
 };

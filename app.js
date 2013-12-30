@@ -34,7 +34,6 @@ app.configure(function() {
   });
   return app.use(function(req, res, next) {
     var language;
-    console.log(req.headers);
     language = 'en-US';
     if (req.headers["accept-language"]) {
       language = req.headers["accept-language"].split(",");
@@ -47,8 +46,6 @@ app.configure(function() {
         return res.locals.language = language[0];
       }
     });
-    console.log(res.locals.language);
-    console.log(res.locals.l);
     res.locals.token = req.session._csrf;
     res.locals.config = config;
     return next();
