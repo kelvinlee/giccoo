@@ -33,27 +33,13 @@ app.configure(function() {
     return next();
   });
   return app.use(function(req, res, next) {
-    var language;
-    language = 'en-US';
-    if (req.headers["accept-language"]) {
-      language = req.headers["accept-language"].split(",");
-    }
-    res.locals.l = require("./language/en-US.js");
-    res.locals.language = "en-US";
-    fs.exists("./language/" + language[0] + ".js", function(exists) {
-      if (exists) {
-        res.locals.l = require("./language/" + language[0]);
-        return res.locals.language = language[0];
-      }
-    });
     res.locals.token = req.session._csrf;
-    res.locals.config = config;
     return next();
   });
 });
 
 app.use(function(req, res, next) {
-  var msgs;
+  var language, msgs;
   msgs = req.session.messages || [];
   res.locals.messages = msgs;
   res.locals.hasMessages = !!msgs.length;
@@ -62,6 +48,22 @@ app.use(function(req, res, next) {
     hasMessages: !!msgs.length
   });
   req.session.messages = [];
+  console.log(req.headers && req.headers["accept-language"]);
+  res.locals.config = config;
+  language = 'en-US';
+  res.locals.l = require("./language/en-US.js");
+  res.locals.language = language;
+  if (req.headers && req.headers["accept-language"]) {
+    if (req.headers["accept-language"]) {
+      language = req.headers["accept-language"].split(",");
+    }
+    fs.exists("./language/" + language[0] + ".js", function(exists) {
+      if (exists) {
+        res.locals.l = require("./language/" + language[0]);
+        return res.locals.language = language[0];
+      }
+    });
+  }
   return next();
 });
 

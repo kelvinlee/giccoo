@@ -9,60 +9,72 @@ html(lang="en")
 		//- link(rel="icon",type="image/x-icon",href="http://www.giccoo.com/favicon.ico")
 
 		link(rel="canonical",href="http://www.Giccoo.com")
-		link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic")
-		link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here")
-		link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600")
+		//- link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic")
+		//- link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here")
+		//- link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600")
 		link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/bootstrap.min.css")
-		link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/bootstrap-responsive.min.css")
-		link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/animate.css")
-		link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/main.css")
+		link(rel="stylesheet",type="text/css",href="/css/animate.css")
+		link(rel="stylesheet",type="text/css",href="/css/main.css")
 		block css
 		script(src="/js/vendor/modernizr-2.6.2.min.js")
 		//if lte IE7
 			style .support-note .note-ie{display:block;}
 	body
+		//- div.sign
+		//- 	div.in.container.clearfix
+		//- 		form.form-inline
+		//- 			div.form-group
+		//- 				label.sr-only Email:
+		//- 				input.form-control(type="text")
+		//- 			div.form-group
+		//- 				label.sr-only Password:
+		//- 				input.form-control(type="text")
 		header(id="header").header
 			div.container.clearfix
-				div.logo
-					a(href="/")
-						img(src="/img/logo_text.png",width="120",height="40")
-				div.header_nav
-					button.phonenav
-					ul#nav.menu_nav.clearfix
-						- for(var i in l.menu)
-							li
-								a(href="#{l.menu[i].url}") #{l.menu[i].name} 
+				//- div.logo
+				//- 	a(href="/")
+				//- 		img(src="/img/logo_text.png",width="120",height="40")
+				//- div.col
+				//- 	button.phonenav
+				//- 	ul#nav.menu_nav.clearfix
+				//- 		- for(var i in l.menu)
+				//- 			li
+				//- 				a(href="#{l.menu[i].url}") #{l.menu[i].name} 
+				nav.navbar.navbar-default(role="navigation")
+					div.navbar-header
+						a(href="/")
+							img(src="/img/logo_text.png",width="120",height="40")
+					div.collapse.navbar-collapse
+						ul.nav.navbar-nav.navbar-right
+							- for(var i in l.menu)
+								li
+									a(href="#{l.menu[i].url}") #{l.menu[i].name} 
 		block content_here
 		footer.footer(id="footer")
 			div.container
-				div.row-fluid.sitemap
-					div.span2
+				div.row.sitemap
+					div.col-sm-2
 						ul
-							li.title #{l.menu.company.name}
-							li
-								a(href="#{l.menu.aboutus.url}") #{l.menu.aboutus.name}
-							li
-								a(href="#{l.menu.services.url}") #{l.menu.services.name}
-							li
-								a(href="#{l.menu.blog.url}") #{l.menu.blog.name}
-					div.span2
+							li.title #{l.footer.wantsay}
+							li #{l.footer.content}
+					div.col-sm-2
 						ul
-							li.title #{l.menu.social.name}
+							li.title #{l.social.name}
 							li
 								a(href="#{l.social.twitter.url}",target="_blank") #{l.social.twitter.name}
 							li
 								a(href="#{l.social.facebook.url}",target="_blank") #{l.social.facebook.name}
 							li
 								a(href="#{l.social.dribbble.url}",target="_blank") #{l.social.dribbble.name}
-					div.span4
+					div.col-sm-4
 						ul
-							li.title #{l.menu.contact.name}
+							li.title #{l.contact.name}
 							li
 								a(href="tel:#{l.contact.tel}") #{l.contact.tel}
 							li
 								a(href="mailto:#{l.contact.email}") #{l.contact.email}
 							li #{l.contact.adr}
-					div.span4
+					div.col-sm-4
 						ul
 							li.title #{l.letter.title}
 							li
@@ -79,6 +91,6 @@ html(lang="en")
 		script(src="#{config.cdn}/js/vendor/bootstrap.min.js")
 		script(src="#{config.cdn}/js/vendor/jquery.pjax.js")
 		//- script(src="#{config.cdn}/js/plugins.js")
-		script(src="#{config.cdn}/js/main.js")
+		script(src="/js/main.js")
 		block scripts
 		block script

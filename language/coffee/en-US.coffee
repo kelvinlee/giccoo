@@ -2,30 +2,28 @@ exports.t =
   homepage:"" 
 exports.menu = 
     home:
-      name:"",url:"/" 
+      name:"HOME",url:"/" 
     work:
-      name:"",url:"/work"
+      name:"WORK",url:"/work"
     opensource:
-      name:"",url:"/opensource"
+      name:"Open Source",url:"/opensource"
     aboutus:
-      name:"",url:"/aboutus"
+      name:"ABOUT US",url:"/aboutus"
     contact:
-      name:"",url:"/contact"
+      name:"Contact",url:"/contact"
     blog:
-      name:"",url:"/blog"
-    # company:
-    #   name:"",url:""
-    # social:
-    #   name:"",url:""
+      name:"Blog",url:"/blog"
 exports.letter =
-  title:""
-  content:""
-  placeholder:""
+  title:"NEWS LETTER"
+  content:"Keep up to date with all our latest goings on."
+  placeholder:"Email address"
 exports.contact = 
-  email :""
-  tel : ""
-  adr : ""
+  name : "Contact Us"
+  email :"giccoo@giccoo.com"
+  tel : "000000"
+  adr : "UK +"
 exports.social = 
+  name:"Social"
   twitter : 
     name:"Twiiter",url:""
   facebook : 
@@ -34,22 +32,27 @@ exports.social =
     name:"Dribbble",url:""
 
 exports.services =
-  h3:""
-  h2:""
+  h3:"Some of the things we do"
+  h2:"OUR SERVICES"
 exports.banner = 
-  h1:""
-  h2:""
+  h1:"Simple, beautiful, effective"
+  h2:"hand crafted websites"
 exports.btn =
-  more:""
-  moreinfo:""
-  readmore:""
-  workwithus:"" 
+  more:"MORE"
+  moreinfo:"MORE INFO"
+  readmore:"READ MORE"
+  workwithus:"WORK WITH US!" 
 exports.error =
-  noart : ""
-  loseauthor : ""
-  registersuccess : ""
+  noart : "We can't find this page."
+  loseauthor : "Lost author."
+  registersuccess : "Success"
 exports.note =
-  del : ""
+  del : "Are you sure you want delete this?"
+exports.footer = 
+  wantsay:'We want to say'
+  content:'Write less do more.'
+
+
 # 后台管理 admin for english
 exports.admin =
   menus:

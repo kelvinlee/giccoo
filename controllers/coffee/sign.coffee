@@ -1,6 +1,5 @@
 User = require('../proxy').User
 
-
 check = require('validator').check
 EventProxy = require('eventproxy')
 config = require('../config').config

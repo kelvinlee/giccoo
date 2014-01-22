@@ -9,7 +9,6 @@ exports.getUserByNames = (names, callback)->
 	User.find {name:{$in: names}}, callback
 exports.getUserById = (id, callback)->
 	User.find {_id:id}, callback 
-
 exports.getUsersByQuery = (query, opt, callback)->
 	User.find query, null, opt, callback
 

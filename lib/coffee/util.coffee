@@ -1,5 +1,6 @@
 xss = require 'xss'
 sanitize = require('validator').sanitize
+crypto = require 'crypto'
 
 exports.format_date = (date, friendly)->
 	year = date.getFullYear()
@@ -83,10 +84,65 @@ exports.strim = (str)->
 #
 exports.recode = ->
 	{recode:200,reason:'success'}
-
-exports.empty = (str)->
+#
+# 查看是否为空
+#
+# @param {string}
+# @return {bool}
+#
+empty = (str)->
 	return yes if typeof str is 'undefined'
 	return yes if str is ''
 	return yes if str.length<=0
 	return no
+exports.empty = empty
+#
+# MD5加密
+#
+# @param {string}
+# @return {string}
+#
+md5 = (str)->
+	md5sum = crypto.createHash 'md5'
+	md5sum.update str
+	str = md5sum.digest 'hex'
+	return str
+exports.md5 = md5
+#
+# 加密字符串
+#
+# @param {string}
+# @return {string}
+#
+encrypt = (str, secret)->
+	cipher = crypto.createCipher 'aes192', secret
+	enc = cipher.update str, 'utf8', 'hex'
+	enc += cipher.final 'hex'
+	return enc
+exports.encrypt = encrypt
+
+#
+# 解密字符串
+#
+# @param {string}
+# @return {string}
+#
+decrypt = (str, secret)->
+	decipher = crypto.createDecipher 'aes192', secret
+	dec = decipher.update str, 'hex', 'utf8'
+	dec += decipher.final 'utf8'
+	return dec
+exports.decrypt = decrypt
+
+#
+# 解密字符串
+#
+# @param {string}
+# @return {string}
+#
+exports.gen_session = (user, res)->
+  auth_token = encrypt user._id + '\t' + user.name + '\t' + user.pass + '\t' + user.email, config.session_secret
+  #cookie 有效期30天
+  day = 1000 * 60 * 60 * 24 * 30
+  res.cookie config.auth_cookie_name, auth_token, {path: '/', maxAge: day} 
 

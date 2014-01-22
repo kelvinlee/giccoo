@@ -1,18 +1,16 @@
 .banner_0815 {
 	.wh(100%,auto);
-	.mp0(180px auto auto,0px);
+	.mp(180px auto auto,0px);
 	font-family: 'Dosis',sans-serif;
-	color: @c-w;
+	color: @cw;
 	h1 {
-		.mp0(0px,5px 25px);
-		.flh(35pt,40pt);
+		.mp(0px,5px 25px);
 		font-weight: 300;
 		display: table;
 		background: url(../img/1x1.png) repeat left top;
 	}
 	h2 {
-		.mp0(2px 0px 0px,5px 25px);
-		.flh(30pt,35pt);
+		.mp(2px 0px 0px,5px 25px);
 		font-family: 'Just Me Again Down Here', cursive;
 		font-weight: 400;
 		display: table;
@@ -24,7 +22,14 @@
 		margin-top:-52px;
 	}
 }
+.banner-work {
+	.tl(@x:fixed);
+  .wh(100%,450px);
+  z-index: 99901;
+  background: url(../img/banner-work.jpg) no-repeat center center;
+  background-size:cover;
+}
 .banner_login{
 	.wh(100%,300px);
-	background: #ccc;
+	background: @c-g-cc;
 }
