@@ -36,7 +36,6 @@ exports.register = function(req, res) {
 
 exports.post = function(req, res) {
   var name, passwd, re;
-  console.log(req.body);
   name = Ut.strim(req.body.username);
   passwd = Ut.strim(req.body.password);
   re = Ut.recode();
@@ -56,7 +55,8 @@ exports.post = function(req, res) {
         re.recode = 201;
       } else {
         if (list.length > 0) {
-
+          req.session.is_admin = list[0].is_admin;
+          req.session.userid = list[0]._id;
         } else {
           re.reason = 'none';
           re.recode = 201;
@@ -65,8 +65,9 @@ exports.post = function(req, res) {
       return res.send(re);
     });
     return false;
+  } else {
+    res.send(re);
   }
-  res.send(re);
   return false;
 };
 

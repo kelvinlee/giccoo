@@ -13,17 +13,24 @@ config = require('../config').config;
 
 Ut = require('../lib/util');
 
+exports.callback = function(req, res, next) {
+  console.log('asdf', req.session.is_admin);
+  return next();
+};
+
 checkAdmin = function(req, res) {
   if (req.session.is_admin) {
     return true;
   } else {
-    res.render('404');
+    return res.render('404');
   }
-  return false;
 };
 
 exports.homepage = function(req, res) {
   console.log("work");
-  res.render('work');
-  return false;
+  return res.render('work');
+};
+
+exports.art = function(req, res, next) {
+  return res.render('work');
 };

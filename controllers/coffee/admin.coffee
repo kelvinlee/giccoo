@@ -11,11 +11,11 @@ config = require('../config').config
 #var md = require('showdown').Markdown
 
 checkAdmin = (req,res)->
-	# if req.session.is_admin
+	if req.session.is_admin
 		return yes
-	# else
-		# res.render '404'
-	# no
+	else
+		res.redirect '/sign/in'
+	no
 
 exports.homepage = (req,res,next)->
 	if checkAdmin req,res

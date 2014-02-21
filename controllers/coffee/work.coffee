@@ -7,15 +7,20 @@ config = require('../config').config
 Ut = require '../lib/util'
 
 #var md = require('showdown').Markdown
-
+exports.callback = (req,res,next)->
+	console.log 'asdf',req.session.is_admin
+	next()
 checkAdmin = (req,res)->
 	if req.session.is_admin
 		return yes
 	else
 		res.render '404'
-	no
 exports.homepage = (req,res)->
 	# work list
 	console.log "work"
 	res.render 'work'
-	no 
+exports.art = (req,res,next)->
+	# work content
+	# console.log "work",req.params.shortname
+	res.render 'work'
+	# next()

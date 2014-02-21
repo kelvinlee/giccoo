@@ -37,7 +37,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/vendor\/bootstrap.min-ck.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/bootstrap.min-ck-ck.js",
       "fileType" : 64
@@ -48,7 +48,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/vendor\/bootstrap.min.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/bootstrap.min-ck.js",
       "fileType" : 64
@@ -59,7 +59,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/proxy\/work.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/proxy\/work-ck.js",
       "fileType" : 64
@@ -70,26 +70,6 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/css\/admin\/isotope.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/public\/js\/admin\/menu.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/js\/admin\/menu.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/public\/js\/admin\/menu-ck.js",
-      "fileType" : 64
-    },
-    "\/public\/css\/admin\/se7en-font.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/css\/admin\/se7en-font.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
@@ -105,13 +85,33 @@
       "outputStyle" : 1,
       "fileType" : 32
     },
+    "\/public\/css\/admin\/se7en-font.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/css\/admin\/se7en-font.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/public\/js\/admin\/menu.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/js\/admin\/menu.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/public\/js\/admin\/menu-ck.js",
+      "fileType" : 64
+    },
     "\/public\/images\/image-iso5.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/image-iso5.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/image-iso5.png",
       "initialSize" : 160461,
       "fileType" : 8192
@@ -122,7 +122,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/models\/index.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/index-ck.js",
       "fileType" : 64
@@ -133,7 +133,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/models\/work.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/work-ck.js",
       "fileType" : 64
@@ -153,7 +153,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/admin.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/admin-ck.js",
       "fileType" : 64
@@ -173,7 +173,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/info-data-sprite.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/info-data-sprite.png",
       "initialSize" : 37347,
       "fileType" : 8192
@@ -184,7 +184,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/image-iso7.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/image-iso7.png",
       "initialSize" : 236409,
       "fileType" : 8192
@@ -204,7 +204,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/de-config.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/de-config-ck.js",
       "fileType" : 64
@@ -225,6 +225,18 @@
       "outputStyle" : 2,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/controllers\/coffee\/note.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/controllers\/coffee\/note.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 0,
+      "outputAbbreviatedPath" : "\/controllers\/note.js",
+      "outputStyle" : 1,
+      "fileType" : 32
     },
     "\/public\/less\/screen.less" : {
       "ieCompatibility" : 1,
@@ -269,7 +281,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/lib\/util.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/lib\/util-ck.js",
       "fileType" : 64
@@ -304,7 +316,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/nature3.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/nature3.jpg",
       "initialSize" : 240033,
       "fileType" : 4096
@@ -339,7 +351,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/icon-search.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/icon-search.png",
       "initialSize" : 1229,
       "fileType" : 8192
@@ -350,7 +362,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/avatar-male2-lg.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/avatar-male2-lg.png",
       "initialSize" : 102415,
       "fileType" : 8192
@@ -378,7 +390,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/avatar-female.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/avatar-female.png",
       "initialSize" : 7072,
       "fileType" : 8192
@@ -435,7 +447,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/vendor\/jquery.dataTables.min.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/jquery.dataTables.min-ck.js",
       "fileType" : 64
@@ -446,7 +458,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/avatar-male2.png",
       "initialSize" : 7086,
       "fileType" : 8192
@@ -457,7 +469,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/vendor\/showdown.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/showdown-ck.js",
       "fileType" : 64
@@ -477,7 +489,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/img\/banner.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/img\/banner.jpg",
       "initialSize" : 73429,
       "fileType" : 4096
@@ -488,7 +500,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/chat-left@2x.png",
       "initialSize" : 1016,
       "fileType" : 8192
@@ -499,7 +511,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/logo-login@2x.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/logo-login@2x.png",
       "initialSize" : 3125,
       "fileType" : 8192
@@ -510,7 +522,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/vendor\/codemode\/markdown.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/codemode\/markdown-ck.js",
       "fileType" : 64
@@ -521,7 +533,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/se7en-logo@2x.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/se7en-logo@2x.png",
       "initialSize" : 2101,
       "fileType" : 8192
@@ -541,7 +553,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/se7en-logo.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/se7en-logo.png",
       "initialSize" : 1622,
       "fileType" : 8192
@@ -575,7 +587,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/controllers\/work.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/controllers\/work-ck.js",
       "fileType" : 64
@@ -595,7 +607,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/image-iso2.jpg.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/image-iso2.jpg.png",
       "initialSize" : 230186,
       "fileType" : 8192
@@ -640,7 +652,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/controllers\/art.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/controllers\/art-ck.js",
       "fileType" : 64
@@ -651,7 +663,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/vendor\/jquery.pjax-ck.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/jquery.pjax-ck-ck.js",
       "fileType" : 64
@@ -662,7 +674,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/image-iso8.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/image-iso8.png",
       "initialSize" : 303014,
       "fileType" : 8192
@@ -696,6 +708,17 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
+    "\/controllers\/note.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/controllers\/note.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/controllers\/note-ck.js",
+      "fileType" : 64
+    },
     "\/public\/css\/admin\/bootstrap.min.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -722,7 +745,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/info-data-sprite@2x.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/info-data-sprite@2x.png",
       "initialSize" : 52032,
       "fileType" : 8192
@@ -742,7 +765,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/language\/zh-CN.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/language\/zh-CN-ck.js",
       "fileType" : 64
@@ -753,7 +776,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/vendor\/require.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/require-ck.js",
       "fileType" : 64
@@ -793,7 +816,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/proxy\/art.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/proxy\/art-ck.js",
       "fileType" : 64
@@ -804,7 +827,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/config.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/config-ck.js",
       "fileType" : 64
@@ -841,7 +864,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/avatar-male.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/avatar-male.jpg",
       "initialSize" : 3874,
       "fileType" : 4096
@@ -869,7 +892,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/models\/art.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/art-ck.js",
       "fileType" : 64
@@ -880,7 +903,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/image7.png.jpeg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/image7.png.jpeg",
       "initialSize" : 196246,
       "fileType" : 4096
@@ -903,7 +926,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/nature4.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/nature4.jpg",
       "initialSize" : 247681,
       "fileType" : 4096
@@ -914,7 +937,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/controllers\/sign.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/controllers\/sign-ck.js",
       "fileType" : 64
@@ -925,7 +948,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/avatar-female.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/avatar-female.jpg",
       "initialSize" : 3899,
       "fileType" : 4096
@@ -936,7 +959,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/proxy\/menu.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/proxy\/menu-ck.js",
       "fileType" : 64
@@ -976,7 +999,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/controllers\/user.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/controllers\/user-ck.js",
       "fileType" : 64
@@ -998,7 +1021,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/chat-right.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/chat-right.png",
       "initialSize" : 551,
       "fileType" : 8192
@@ -1009,7 +1032,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/proxy\/index.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/proxy\/index-ck.js",
       "fileType" : 64
@@ -1020,7 +1043,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/image-iso9.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/image-iso9.png",
       "initialSize" : 174967,
       "fileType" : 8192
@@ -1031,7 +1054,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/models\/file_tag.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/file_tag-ck.js",
       "fileType" : 64
@@ -1042,7 +1065,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/chat-left.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/chat-left.png",
       "initialSize" : 447,
       "fileType" : 8192
@@ -1053,7 +1076,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/social-image.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/social-image.jpg",
       "initialSize" : 216820,
       "fileType" : 4096
@@ -1064,7 +1087,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/routes.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/routes-ck.js",
       "fileType" : 64
@@ -1075,7 +1098,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/fancybox_overlay.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/fancybox_overlay.png",
       "initialSize" : 923,
       "fileType" : 8192
@@ -1095,7 +1118,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/app.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/app-ck.js",
       "fileType" : 64
@@ -1106,7 +1129,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/de-app.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/de-app-ck.js",
       "fileType" : 64
@@ -1117,7 +1140,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/img\/bg.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/img\/bg.jpg",
       "initialSize" : 60575,
       "fileType" : 4096
@@ -1139,7 +1162,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/models\/tag.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/tag-ck.js",
       "fileType" : 64
@@ -1159,7 +1182,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/models\/user.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/user-ck.js",
       "fileType" : 64
@@ -1181,7 +1204,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/nature1.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/nature1.jpg",
       "initialSize" : 347863,
       "fileType" : 4096
@@ -1201,7 +1224,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/git.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/git-ck.js",
       "fileType" : 64
@@ -1212,7 +1235,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/main.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/main-ck.js",
       "fileType" : 64
@@ -1223,7 +1246,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/image5.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/image5.jpg",
       "initialSize" : 259676,
       "fileType" : 4096
@@ -1246,7 +1269,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/icon-search@2x.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/icon-search@2x.png",
       "initialSize" : 1539,
       "fileType" : 8192
@@ -1257,7 +1280,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/models\/file.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/file-ck.js",
       "fileType" : 64
@@ -1268,7 +1291,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/image-iso3.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/image-iso3.png",
       "initialSize" : 277529,
       "fileType" : 8192
@@ -1288,7 +1311,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/image6.png.jpeg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/image6.png.jpeg",
       "initialSize" : 224591,
       "fileType" : 4096
@@ -1299,7 +1322,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/controllers\/admin.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/controllers\/admin-ck.js",
       "fileType" : 64
@@ -1310,7 +1333,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/language\/default.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/language\/default-ck.js",
       "fileType" : 64
@@ -1345,7 +1368,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/admin\/main.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/admin\/main-ck.js",
       "fileType" : 64
@@ -1403,7 +1426,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/models\/reply.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/reply-ck.js",
       "fileType" : 64
@@ -1426,21 +1449,10 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/avatar-female2.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/avatar-female2.png",
       "initialSize" : 6672,
       "fileType" : 8192
-    },
-    "\/public\/img\/banner-work.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/img\/banner-work.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/img\/banner-work.jpg",
-      "initialSize" : 39934,
-      "fileType" : 4096
     },
     "\/coffee\/de-app.coffee" : {
       "ignoreWasSetByUser" : 0,
@@ -1465,13 +1477,24 @@
       "initialSize" : 1929,
       "fileType" : 8192
     },
+    "\/public\/img\/banner-work.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/img\/banner-work.jpg",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/public\/img\/banner-work.jpg",
+      "initialSize" : 39934,
+      "fileType" : 4096
+    },
     "\/public\/js\/vendor\/epiceditor.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/vendor\/epiceditor.min.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/epiceditor.min-ck.js",
       "fileType" : 64
@@ -1494,7 +1517,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/vendor\/jquery.pjax.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/jquery.pjax-ck.js",
       "fileType" : 64
@@ -1505,7 +1528,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/models\/menu.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/menu-ck.js",
       "fileType" : 64
@@ -1516,7 +1539,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/models\/page.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/page-ck.js",
       "fileType" : 64
@@ -1527,7 +1550,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/plugins.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/plugins-ck.js",
       "fileType" : 64
@@ -1575,7 +1598,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/proxy\/tag.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/proxy\/tag-ck.js",
       "fileType" : 64
@@ -1586,7 +1609,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/vendor\/modernizr-2.6.2.min.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/modernizr-2.6.2.min-ck.js",
       "fileType" : 64
@@ -1606,7 +1629,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/controllers\/git.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/controllers\/git-ck.js",
       "fileType" : 64
@@ -1617,7 +1640,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/image-iso4.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/image-iso4.png",
       "initialSize" : 227796,
       "fileType" : 8192
@@ -1657,7 +1680,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/language\/en-US.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/language\/en-US-ck.js",
       "fileType" : 64
@@ -1677,7 +1700,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/proxy\/reply.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/proxy\/reply-ck.js",
       "fileType" : 64
@@ -1688,7 +1711,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/proxy\/user.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/proxy\/user-ck.js",
       "fileType" : 64
@@ -1708,7 +1731,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/nature2.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/nature2.jpg",
       "initialSize" : 387099,
       "fileType" : 4096
@@ -1719,7 +1742,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/vendor\/jquery-1.10.1.min.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/jquery-1.10.1.min-ck.js",
       "fileType" : 64
@@ -1730,7 +1753,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/chat-right@2x.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/chat-right@2x.png",
       "initialSize" : 1142,
       "fileType" : 8192
@@ -1741,7 +1764,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/image-iso6.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/image-iso6.png",
       "initialSize" : 187170,
       "fileType" : 8192
@@ -1752,7 +1775,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/js\/vendor\/codemirror.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/public\/js\/vendor\/codemirror-ck.js",
       "fileType" : 64
@@ -1763,7 +1786,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/logo.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/logo.png",
       "initialSize" : 4755,
       "fileType" : 8192
@@ -1783,7 +1806,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/models\/topic_tag.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/topic_tag-ck.js",
       "fileType" : 64
@@ -1803,7 +1826,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/images\/image-iso.png",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/images\/image-iso.png",
       "initialSize" : 135155,
       "fileType" : 8192
@@ -1823,7 +1846,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/models\/art_tag.js",
-      "outputStyle" : 1,
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/models\/art_tag-ck.js",
       "fileType" : 64
@@ -1834,7 +1857,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/public\/img\/bg.old.jpg",
-      "processed" : 0,
+      "processed" : 1,
       "outputAbbreviatedPath" : "\/public\/img\/bg.old.jpg",
       "initialSize" : 180347,
       "fileType" : 4096
@@ -1872,7 +1895,7 @@
     "lessAutoOutputPathRelativePath" : "..\/css",
     "hamlAutoOutputPathRelativePath" : "",
     "jsCheckerReservedNamesString" : "",
-    "javascriptOutputStyle" : 1,
+    "javascriptOutputStyle" : 0,
     "stylusDebugStyle" : 0,
     "hamlUseCDATA" : 0,
     "hamlAutoOutputPathStyle" : 0,

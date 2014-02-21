@@ -34,11 +34,13 @@ app.use (req,res,next)->
     messages: msgs
     hasMessages: !! msgs.length
   req.session.messages = []
-  console.log req.headers && req.headers["accept-language"]
+  # console.log req.headers && req.headers["accept-language"]
   res.locals.config = config
+  # 判断系统语言.
   language = 'en-US'
   res.locals.l = require "./language/en-US.js"
   res.locals.language = language
+  # console.log req.headers
   if req.headers && req.headers["accept-language"]
     language = req.headers["accept-language"].split "," if req.headers["accept-language"]
     fs.exists "./language/"+language[0]+".js", (exists)->

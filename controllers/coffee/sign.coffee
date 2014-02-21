@@ -25,7 +25,7 @@ exports.register = (req,res)->
 	res.render 'register'
 	no
 exports.post = (req,res)->
-	console.log req.body
+	# console.log req.body
 	name = Ut.strim req.body.username
 	passwd = Ut.strim req.body.password
 	re = Ut.recode() 
@@ -43,13 +43,16 @@ exports.post = (req,res)->
 				re.recode = 201
 			else
 				if list.length>0
-					
+					req.session.is_admin = list[0].is_admin
+					req.session.userid = list[0]._id
+					# console.log req.session
 				else
 					re.reason = 'none'
 					re.recode = 201
 			res.send re
 		return no
-	res.send re
+	else
+		res.send re
 	no
 exports.reg = (req,res) ->
 	# 注册提交

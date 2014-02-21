@@ -3,7 +3,6 @@ var Schema = mongoose.Schema;
 var config = require('../config');
 
 var UserSchema = new Schema({
-  shortname: {type: String, index:true },
   name: { type: String, index: true },
   pass: { type: String },
   email: { type: String, unique: true },
@@ -12,6 +11,7 @@ var UserSchema = new Schema({
   sex: {type:Number , default: 1},
   title: {type:String} ,
 
+  is_admin: { type: Number, default: 0 },
   art_count: { type: Number, default: 0 },
   reply_count: { type: Number, default: 0 },
   project_count: {type:Number, default: 0 },

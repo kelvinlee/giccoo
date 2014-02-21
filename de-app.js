@@ -48,7 +48,6 @@ app.use(function(req, res, next) {
     hasMessages: !!msgs.length
   });
   req.session.messages = [];
-  console.log(req.headers && req.headers["accept-language"]);
   res.locals.config = config;
   language = 'en-US';
   res.locals.l = require("./language/en-US.js");

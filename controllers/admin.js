@@ -16,7 +16,12 @@ EventProxy = require('eventproxy');
 config = require('../config').config;
 
 checkAdmin = function(req, res) {
-  return true;
+  if (req.session.is_admin) {
+    return true;
+  } else {
+    res.redirect('/sign/in');
+  }
+  return false;
 };
 
 exports.homepage = function(req, res, next) {

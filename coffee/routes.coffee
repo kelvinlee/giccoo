@@ -4,6 +4,7 @@ user = require './controllers/user'
 git = require './controllers/git'
 admin = require './controllers/admin'
 sign = require './controllers/sign'
+note = require './controllers/note'
 
 module.exports = (app)->
   # git never changed.
@@ -36,6 +37,7 @@ module.exports = (app)->
   
   # work
   app.get '/work', work.homepage
+  app.get '/work/:shortname', work.art
   
 
   # art 
@@ -53,5 +55,6 @@ module.exports = (app)->
 
   #art post
   # app.post('/art/:art_id',art.createblog);
+  app.get '*', note.notfind
 
 console.log "routes loaded."
