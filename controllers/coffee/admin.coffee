@@ -5,7 +5,6 @@ TagWork = require('../proxy').TagWork
 # Art = require('../proxy').Art
 # ArtTag = require('../proxy').ArtTag
 fs = require 'fs'
-gm = require 'gm'
 Ut = require '../lib/util'
 check = require('validator').check 
 EventProxy = require('eventproxy')
