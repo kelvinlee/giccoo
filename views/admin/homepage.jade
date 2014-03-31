@@ -1,9 +1,32 @@
 extends layout 
 block title
-	title #{l.t.homepage}
-block content_here
-	div homePage
 
+block crumb
+	li.active Dashboard
+block nav-model
+	div.top-content
+		ul.list-inline.mini-stat
+			li
+				h5 LIKES
+					span.stat-value.stat-color-orange
+						i.fa.fa-plus-circle
+						|  81,450
+				span#mini-bar-chart1.mini-bar-chart
+			li
+				h5 SUBSCRIBERS
+					span.stat-value.stat-color-blue
+						i.fa.fa-plus-circle
+						|  150,743
+				span#mini-bar-chart2.mini-bar-chart
+			li
+				h5 CUSTOMERS
+					span.stat-value.stat-color-seagreen
+						i.fa.fa-plus-circle
+						|  150,743
+				span#mini-bar-chart3.mini-bar-chart
+block content-here
 
-
-block scripts
+block thisPageScript
+	-var jslist = ['assets/js/stat/jquery.easypiechart.min.js','assets/js/raphael-2.1.0.min.js','assets/js/stat/flot/jquery.flot.min.js','assets/js/stat/flot/jquery.flot.resize.min.js','assets/js/stat/flot/jquery.flot.time.min.js','assets/js/stat/flot/jquery.flot.pie.min.js','assets/js/stat/flot/jquery.flot.tooltip.min.js','assets/js/jquery.sparkline.min.js','assets/js/datatable/jquery.dataTables.min.js','assets/js/datatable/jquery.dataTables.bootstrap.js','assets/js/jquery.mapael.js','assets/js/maps/usa_states.js','assets/js/king-chart-stat.min.js','assets/js/king-table.min.js','assets/js/king-components.min.js']
+	-for(var i=0;i<jslist.length;i++)
+		script(src="/#{jslist[i]}",type="text/javascript")

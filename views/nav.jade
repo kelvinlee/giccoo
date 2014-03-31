@@ -1,0 +1,29 @@
+nav#navigation.fixed-top
+	div.container
+		div.row-fluid
+			div.span12.center
+				a.brand.pull-left(href="/")
+					img(src="/img/logo_text.png",width="80",alt="Giccoo")
+				div.mobile-menu(data-toggle="collapse",data-target=".nav-collapse")
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				//- MAIN MENU
+				ul#main-menu.nav-collapse.collapse
+					li
+						a(href="#page-welcome") Home
+					li
+						a(href="#page-work") Work
+					li
+						a(href="#page-features") Features
+					li
+						a(href="#page-about") About
+					//- li
+						a(href="#page-blog") Blog
+					li
+						a(href="#page-contact") Contact
+
+				div.social-icons.hover-big.pull-right
+					//- -var icons = ['facebook','twitter']
+						a(href="",class="sicon-facebook")
+							i facebook

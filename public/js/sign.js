@@ -1,0 +1,1 @@
+var fBindLogin;$(document).ready(function(){return fBindLogin()}),fBindLogin=function(){return $(".btn-login,.btn-regiter").click(function(){return $.ajax({type:"post",dataType:"json",url:$(this).parents("form").attr("action"),data:$("form").serializeArray(),success:function(n){return 200===n.recode?window.location.href="/admin":alert(n.reason)}}),!1})};

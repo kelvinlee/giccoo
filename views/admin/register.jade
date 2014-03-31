@@ -1,0 +1,58 @@
+doctype
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible",content="IE=edge,chrome=1")
+		meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		block title
+		link(rel="shortcut icon",href="/favicon.ico")
+		link(rel="canonical",href="http://www.Giccoo.com")
+
+		//- font and css
+		link(href="/assets/css/bootstrap.min.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/assets/css/font-awesome.min.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/assets/css/main.min.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/foradmin.css",media="all",rel="stylesheet",type="text/css")
+		
+		//- link(href="css/admin/color/orange.css",media="all",rel="alternate,stylesheet",title="orange-theme",type="text/css")
+		//- link(href="css/admin/color/magenta.css",media="all",rel="alternate,stylesheet",title="magenta-theme",type="text/css")
+		//- link(href="css/admin/color/gray.css",media="all",rel="stylesheet",title="gray-theme",type="text/css")
+		
+		//- script(src="/js/vendor/modernizr-2.6.2.min.js")
+		//if lte IE7
+			style .support-note .note-ie{display:block;}
+	body
+		div(class="full-page-wrapper page-register text-center")
+			div.inner-page
+				div.logo
+					a(href="http://www.giccoo.com")
+						img(width="120",src="/assets/img/logo.png")
+				button.btn.btn-login-facebook(type="button")
+					span Connect using Facebook
+				div.separator
+					span OR
+				div.register-box.center-block
+					form(action="/register",method="post")
+						p.title Create Your Account
+						input.form-control(id="username",name="username",type="text",placeholder="username") 
+						input.form-control(id="email",name="email",type="text",placeholder="Email") 
+						input.form-control(id="password",name="password",type="password",placeholder="password") 
+						input.form-control(id="rpassword",name="rpassword",type="password",placeholder="repeat password") 
+
+						//- div.simple-checkbox
+							input#remendme(type="checkbox")
+							label(for="remendme") Remember me next time
+						button.btn.btn-custom-primary.btn-lg.btn-block.btn-regiter
+							i.fa.fa-check-circle
+							|  Create Account
+					//- div.links
+						p
+							a(href="/register") Create New Account
+			footer.footer &copy; 2014 Giccoo
+
+		//- footer.footer(id="footer") 
+			
+		- var jslist =['assets/js/jquery-1.7.2.min.js','assets/js/bootstrap.js','assets/js/modernizr.js','js/sign.js']
+		-for(var i=0;i<jslist.length;i++)
+			script(src="/#{jslist[i]}",type="text/javascript")
+		//- script(src="#{config.cdn}/js/vendor/require.js") 

@@ -3,7 +3,7 @@ exports.config =
 	name: 'Giccoo'
 	description: 'Giccoo'
 	version: '0.1.0'
-
+	upload: '/Users/sumomofukeqiao/Kelvin_code/My/giccoo/public/uploadDir'
 	site_headers: [
 		'<meta name="author" content="Kelvin" />'
 	]

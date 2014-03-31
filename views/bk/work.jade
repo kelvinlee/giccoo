@@ -1,0 +1,47 @@
+extends layout 
+block title
+	title #{l.t.homepage}
+block content_here
+	div.page-title
+		h1 Work
+	div.row
+		div.col-lg-12
+			div.widget-container.fluid-height.clearfix
+				div.heading
+					i.icon-table
+					|Work Table with Sorting
+					a.btn.btn-sm.btn-primary-outline.pull-right(href="/admin/work/new")
+						i.fa.fa-plus
+						|Add row
+				div.widget-content.padded.clearfix 
+					table#dataMenuTable.table.table-bordered.table-striped.dataTable
+						thead
+							th.check-header.hidden-xs
+							th Work Name
+							th Tag
+							th Url 
+							th Language
+							th Date Added
+							th
+						tbody
+							- for (var i=0;i<worklist.length;i++)
+								tr
+									td.check.hidden-xs
+										<input name="menuoptions" type="checkbox" value="option1">
+									td #{worklist[i].title}
+									td #{worklist[i].tag_id}
+									td #{worklist[i].shortname}
+									td #{worklist[i].language}
+									td #{worklist[i].create_at}
+									td.actions
+										div.action-buttons
+											a.table-actions(href="/admin/work/update/#{menulist[i].id}")
+												i.icon-pencil
+											a.table-actions(href="/admin/work/del/#{menulist[i].id}",onclick="return confirm('#{l.note.del}');")
+												i.icon-trash
+
+
+
+block thisPageScript
+	script(src="/js/vendor/jquery.dataTables.min.js")
+	script(src="/js/admin/main.js")

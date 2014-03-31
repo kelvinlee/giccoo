@@ -1,0 +1,46 @@
+extends layout 
+block title
+
+block crumb 
+	li.active Files
+block nav-model
+	div.top-content
+		ul.list-inline.mini-stat
+			li
+				h5 files Count
+					span.stat-value.stat-color-orange
+						i.fa.fa-plus-circle
+						|  0
+				//- span#mini-bar-chart1.mini-bar-chart
+			//- li
+				h5 files Best Author
+					span.stat-value.stat-color-blue
+						//- i.fa.fa-plus-circle
+						img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=28")
+						img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=28")
+						img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=28")
+				//- span#mini-bar-chart2.mini-bar-chart
+			//- li
+				h5 CUSTOMERS
+					span.stat-value.stat-color-seagreen
+						i.fa.fa-plus-circle
+						|  150,743
+				span#mini-bar-chart3.mini-bar-chart
+block content-here
+	div.main-header
+		h2 Files List
+		em Here's all your files.
+	div.main-content
+		div.widget.widget-table
+			div.widget-header
+				h3
+					i.fa.fa-table
+					| Files List
+				em Here's all your files.
+			div.widget-content
+				form.dropzone(enctype="multipart/form-data")
+
+block thisPageScript
+	-var pagejs = ['assets/js/dropzone.min.js']
+	-for(var mn=0;mn<pagejs.length;mn++)
+		script(src="/#{pagejs[mn]}",type="text/javascript")

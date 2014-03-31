@@ -1,0 +1,55 @@
+doctype
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible",content="IE=edge,chrome=1")
+		meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		title 404 Page Not Found
+		link(rel="shortcut icon",href="/favicon.ico")
+		link(rel="canonical",href="http://www.Giccoo.com")
+
+		//- font and css
+		link(href="/assets/css/bootstrap.min.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/assets/css/font-awesome.min.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/assets/css/main.min.css",media="all",rel="stylesheet",type="text/css")
+		link(href="/css/foradmin.css",media="all",rel="stylesheet",type="text/css")
+		
+		//- link(href="css/admin/color/orange.css",media="all",rel="alternate,stylesheet",title="orange-theme",type="text/css")
+		//- link(href="css/admin/color/magenta.css",media="all",rel="alternate,stylesheet",title="magenta-theme",type="text/css")
+		//- link(href="css/admin/color/gray.css",media="all",rel="stylesheet",title="gray-theme",type="text/css")
+		
+		block css
+		//- script(src="/js/vendor/modernizr-2.6.2.min.js")
+		//if lte IE7
+			style .support-note .note-ie{display:block;}
+	body
+		div(class="full-page-wrapper page-error text-center")
+			div.inner-page
+				h1
+					span(class="clearfix title")
+						span.number 404
+						span.text Oops!<br/>Page Not Found
+				p The page you were looking for could not be found, please <a href="page-404.html#">contact us</a> to report this issue.
+				p You can also use search form below to find the page you are looking for.
+				form(class="searchbox center-block")
+					div(class="input-group input-group-lg")
+						input(type="search",placeholder="type keyword here",class="form-control")
+						span(class="input-group-btn")
+							button(class="btn btn-primary",type="button")
+								i.fa.fa-search
+								|  Search
+				p 
+					a(href="javascript:history.go(-1)",class="btn btn-custom-primary")
+						i.fa.fa-arrow-left
+						|  Go Back
+					a.btn.btn-primary(href="http://www.giccoo.com")
+						i.fa.fa-home
+						|  Home
+			footer.footer &copy; 2014 Giccoo
+
+		//- footer.footer(id="footer") 
+			
+		- var jslist =['assets/js/jquery-1.7.2.min.js','assets/js/bootstrap.js','assets/js/modernizr.js']
+		-for(var i=0;i<jslist.length;i++)
+			script(src="/#{jslist[i]}",type="text/javascript")
+		//- script(src="#{config.cdn}/js/vendor/require.js") 

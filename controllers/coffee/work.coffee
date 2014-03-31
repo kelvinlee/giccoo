@@ -24,3 +24,8 @@ exports.art = (req,res,next)->
 	# console.log "work",req.params.shortname
 	res.render 'work'
 	# next()
+
+exports.workPost = (req,res,next)->
+	# save the new work.
+	
+	

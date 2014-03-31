@@ -1,0 +1,28 @@
+div#page-work.pages.page-work
+	div.container
+		header
+			h4.line-divider Work
+			h1 Portfolio
+			div.row
+				div.span8.offset2
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+			div.submenu
+				ul
+					li
+						a.plugin-filter.active(href="#",data-filter="all") All
+					-var taglist = ['typography','illustration']
+					-for(var i=0;i<taglist.length;i++)
+						li
+							a.plugin-filter(href="#",data-filter="#{taglist[i]}") #{taglist[i]}
+		article
+			ul.thumbnails.plugin-filter-elements.portfolio-items
+				li.span4.mix.illustration.branding
+					a(href="#work/shortname",data-destination="portfolio-items",data-insert="before")
+						img(src="/assets-gico/images/pages/work/01_th.jpg")
+						div.portfolio-overlay
+							h4 Vita WorldWide
+		footer
+			div.show-more-cube
+				a(href="#works/pages-2",data-destination="plugin-filter-elements",data-insert="appendTo",data-action="remove")
+					span Show<br/>More
+					

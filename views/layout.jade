@@ -3,7 +3,9 @@ html(lang="en")
 	head
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible",content="IE=edge,chrome=1")
-		meta(name="viewport",content="width=device-width, initial-scale=1.0")
+		meta(name="viewport",content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0")
+		meta(name="apple-mobile-web-app-capable",content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style",content="black")
 		block title
 		//- link(rel="shortcut icon",type="image/x-icon",href="http://www.giccoo.com/favicon.ico")
 		//- link(rel="icon",type="image/x-icon",href="http://www.giccoo.com/favicon.ico")
@@ -12,85 +14,24 @@ html(lang="en")
 		//- link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic")
 		//- link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here")
 		//- link(rel="stylesheet",type="text/css",href="http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600")
-		link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/bootstrap.min.css")
-		link(rel="stylesheet",type="text/css",href="/css/animate.css")
-		link(rel="stylesheet",type="text/css",href="/css/main.css")
-		block css
-		script(src="/js/vendor/modernizr-2.6.2.min.js")
-		//if lte IE7
-			style .support-note .note-ie{display:block;}
+		//- link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/bootstrap.min.css")
+		//- link(rel="stylesheet",type="text/css",href="/css/animate.css")
+		//- link(rel="stylesheet",type="text/css",href="/css/main.css")
+		link(rel="stylesheet",type="text/css",href="/assets-gico/style/bootstrap.css")
+		block css 
 	body
-		//- div.sign
-		//- 	div.in.container.clearfix
-		//- 		form.form-inline
-		//- 			div.form-group
-		//- 				label.sr-only Email:
-		//- 				input.form-control(type="text")
-		//- 			div.form-group
-		//- 				label.sr-only Password:
-		//- 				input.form-control(type="text")
-		header(id="header").header
-			div.container.clearfix
-				//- div.logo
-				//- 	a(href="/")
-				//- 		img(src="/img/logo_text.png",width="120",height="40")
-				//- div.col
-				//- 	button.phonenav
-				//- 	ul#nav.menu_nav.clearfix
-				//- 		- for(var i in l.menu)
-				//- 			li
-				//- 				a(href="#{l.menu[i].url}") #{l.menu[i].name} 
-				nav.navbar.navbar-default(role="navigation")
-					div.navbar-header
-						a(href="/")
-							img(src="/img/logo_text.png",width="120",height="40")
-					div.collapse.navbar-collapse
-						ul.nav.navbar-nav.navbar-right
-							- for(var i in l.menu)
-								li
-									a(href="#{l.menu[i].url}") #{l.menu[i].name} 
-		block content_here
-		footer.footer(id="footer")
-			div.container
-				div.row.sitemap
-					div.col-sm-2
-						ul
-							li.title #{l.footer.wantsay}
-							li #{l.footer.content}
-					div.col-sm-2
-						ul
-							li.title #{l.social.name}
-							li
-								a(href="#{l.social.twitter.url}",target="_blank") #{l.social.twitter.name}
-							li
-								a(href="#{l.social.facebook.url}",target="_blank") #{l.social.facebook.name}
-							li
-								a(href="#{l.social.dribbble.url}",target="_blank") #{l.social.dribbble.name}
-					div.col-sm-4
-						ul
-							li.title #{l.contact.name}
-							li
-								a(href="tel:#{l.contact.tel}") #{l.contact.tel}
-							li
-								a(href="mailto:#{l.contact.email}") #{l.contact.email}
-							li #{l.contact.adr}
-					div.col-sm-4
-						ul
-							li.title #{l.letter.title}
-							li
-								label #{l.letter.content}
-								div.control-group
-									input.span4(name="email",type="text",placeholder="#{l.letter.placeholder}")
-									a.input-icon(href="javascript:void(0)",onclick="getourmail('#{language}')")
-										i.fui-mail
-				div.row.copyright
-					| © 2013 GICCOO LTD | ALL RIGHTS RESERVED
-					img.footlogo(src="/img/logo-w.png",alt="Giccoo")
+		include nav
+		include welcome
+		include works
+		include clients
+		include features
+		include about
+		//- include twitter
+		//- include blogs
+		include contact
 
-		script(src="#{config.cdn}/js/vendor/jquery-1.10.1.min.js")
-		script(src="#{config.cdn}/js/vendor/bootstrap.min.js")
-		script(src="#{config.cdn}/js/vendor/jquery.pjax.js")
-		//- script(src="#{config.cdn}/js/plugins.js")
-		script(src="/js/main.js")
+		-var jslist = ['js/jquery-1.10.2.min.js','js/bootstrap/bootstrap.min.js','js/plugins/source/jquery.bxslider.js','js/plugins/source/jquery.centralized.js','js/plugins/source/jquery.fixedonlater.js','js/plugins/source/jquery.hashloader.js','js/plugins/source/jquery.mixitup.js','js/plugins/source/jquery.nav.js','js/plugins/source/jquery.parallax-1.1.3.js','js/plugins/source/jquery.responsivevideos.js','js/plugins/source/jquery.scrollTo-1.4.3.1.js','js/application/source/application.js']
+		-for(var i=0;i<jslist.length;i++)
+			script(src="#{config.cdn}/assets-gico/#{jslist[i]}")
 		block scripts
 		block script

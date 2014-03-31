@@ -1,0 +1,71 @@
+nav.main-nav
+	ul.main-menu
+		li.menu-dashboard.active
+			a(href="/admin")
+				i.fa.fa-dashboard.fa-fw
+				span.text Dashboard
+		li.menu-pages
+			a.js-sub-menu-toggle(href="#")
+				i.fa.fa-file-o.fa-fw
+				span.text Pages
+				i.toggle-icon.fa.fa-angle-left
+		li.menu-blogs
+			a.js-sub-menu-toggle(href="#")
+				i.fa.fa-rss-square.fa-fw
+				span.text Blogs
+				i.toggle-icon.fa.fa-angle-left
+		li.menu-work
+			a.js-sub-menu-toggle(href="#")
+				i.fa.fa-clipboard.fa-fw
+				span.text Work
+				i.toggle-icon.fa.fa-angle-left
+			ul.sub-menu
+				li.menu-work-list
+					a(href="/admin/work")
+						span.text Work List
+				li.menu-work-new
+					a(href="/admin/work/new")
+						span.text New Work
+				li.menu-work-tag-list
+					a(href="/admin/work-tag")
+						span.text Work Tag
+				li.menu-work-tag-new
+					a(href="/admin/work-tag/new")
+						span.text New Work Tag
+		li.menu-user
+			a.js-sub-menu-toggle(href="#")
+				i.fa.fa-user
+				span.text User
+				i.toggle-icon.fa.fa-angle-left
+			ul.sub-menu
+				li.menu-user-list
+					a(href="/admin/user")
+						span.text User List
+		li.menu-files
+			a.js-sub-menu-toggle(href="#")
+				i.fa.fa-cloud-upload
+				span.text Files
+				i.toggle-icon.fa.fa-angle-left
+			ul.sub-menu
+				li.menu-files-list
+					a(href="/admin/files")
+						span.text Files List
+				li.menu-files-upload
+					a(href="/admin/files-upload")
+						span.text Files Upload
+		li.menu-setting
+			a(href="/admin/setting")
+				i.fa.fa-gears.fa-fw
+				span.text Setting
+
+	div.sidebar-minified.js-toggle-minified
+		i.fa.fa-angle-left
+	//- sidebar content
+	div.sidebar-content
+		div.panel.panel-default
+			div.panel-heading
+				h5
+					i.fa.fa-lightbulb-o
+					|  Tips
+			div.panel-body
+				p You can do live search to the widget at search box located at top bar. It's very useful if your dashboard is full of widget.

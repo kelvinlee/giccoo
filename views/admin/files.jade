@@ -1,0 +1,62 @@
+extends layout 
+block title
+
+block crumb 
+	li.active Files
+block nav-model
+	div.top-content
+		ul.list-inline.mini-stat
+			li
+				h5 Work Count
+					span.stat-value.stat-color-orange
+						i.fa.fa-plus-circle
+						|  0
+				//- span#mini-bar-chart1.mini-bar-chart
+			//- li
+				h5 Work Best Author
+					span.stat-value.stat-color-blue
+						//- i.fa.fa-plus-circle
+						img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=28")
+						img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=28")
+						img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=28")
+				//- span#mini-bar-chart2.mini-bar-chart
+			//- li
+				h5 CUSTOMERS
+					span.stat-value.stat-color-seagreen
+						i.fa.fa-plus-circle
+						|  150,743
+				span#mini-bar-chart3.mini-bar-chart
+block content-here
+	div.main-header
+		h2 Files List
+		em Here's all your files
+	div.main-content
+		div.gallery-buttons.bottom-30px
+			a.btn.btn-custom-primary.btn-md(href="/admin/files-upload")
+				i.fa.fa-cloud-upload
+				|Upload New Image
+		div.row.list-group.king-gallery
+			-for (var i=0;i<files.length;i++)
+				div.item.col-md-3.col-sm-6
+					div.thumbnail
+						img.list-group-image(src="/uploadDir/#{files[i]}")
+						div.caption
+							h3.inner.list-group-item-heading #{files[i]}
+							ul.list-unstyled
+								li
+									strong Path:
+									em  /uploadDir/#{files[i]}
+								//- li
+									strong File Size:
+									em 139KB
+							div.action-buttons
+								a.btn.btn-danger.btn-xs(href="/admin/files-remove/:files_name")
+									i.fa.trash-o
+									|Rmove
+
+				
+
+block thisPageScript
+	-var pagejs = ['assets/js/dropzone.min.js']
+	-for(var mn=0;mn<pagejs.length;mn++)
+		script(src="/#{pagejs[mn]}",type="text/javascript")

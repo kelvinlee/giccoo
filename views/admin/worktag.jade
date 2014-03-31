@@ -1,0 +1,69 @@
+extends layout 
+block title
+
+block crumb
+	li Work
+	li.active Tag List
+block nav-model
+	div.top-content
+		ul.list-inline.mini-stat
+			li
+				h5 Tag Count
+					span.stat-value.stat-color-orange
+						i.fa.fa-plus-circle
+						|  0
+				//- span#mini-bar-chart1.mini-bar-chart
+			//- li
+				h5 SUBSCRIBERS
+					span.stat-value.stat-color-blue
+						i.fa.fa-plus-circle
+						|  150,743
+				span#mini-bar-chart2.mini-bar-chart
+			//- li
+				h5 CUSTOMERS
+					span.stat-value.stat-color-seagreen
+						i.fa.fa-plus-circle
+						|  150,743
+				span#mini-bar-chart3.mini-bar-chart
+block content-here
+	div.main-header
+		h2 Work Tag List
+		em When you write a work you must create a tag before.
+	div.main-content
+		div.widget.widget-table
+			div.widget-header
+				h3
+					i.fa.fa-table
+					| Work Tag List
+				em jQuery Data Table with sorting feature, live search and pagination
+			div.widget-content
+				table(class="table table-sorting table-striped table-hover datatable",cellpadding="0",cellspacing="0",width="100%")
+					thead
+						tr
+							th Name
+							//- th Description
+							th Create Date
+							th 
+					tbody
+						-if (worktaglist.length>0)
+							-for(var i=0;i<worktaglist.length;i++)
+								-var date = worktaglist[i].create_at;
+								-var dateStr = date.getFullYear() + '-' +(date.getMonth()>9?date.getMonth()+1:'0'+(date.getMonth()+1))+'-'+(date.getDate()>10?date.getDate():'0'+date.getDate())+' '+(date.getHours()>10?date.getHours():'0'+date.getHours())+':'+(date.getMinutes()>10?date.getMinutes():'0'+date.getMinutes())
+									tr
+										td #{worktaglist[i].name}
+										//- td #{worktaglist[i].description}
+										td #{dateStr}
+										td 
+											a(href="/admin/work-tag/#{worktaglist[i]._id}")
+												i.fa.fa-edit
+											|  | 
+											a.del-this(href="/admin/work-tag/del/#{worktaglist[i]._id}",data-id="#{worktaglist[i]._id}")
+												i.fa.fa-trash-o
+
+
+block thisPageScript
+	script.
+		_sort = [ [1,'desc'], [0,'asc'] ];
+	-var pagejs = ['assets/js/datatable/jquery.dataTables.min.js','assets/js/datatable/jquery.dataTables.bootstrap.js','assets/js/king-table.min.js']
+	-for(var mn=0;mn<pagejs.length;mn++)
+		script(src="/#{pagejs[mn]}",type="text/javascript")

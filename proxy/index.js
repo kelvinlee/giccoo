@@ -1,6 +1,7 @@
 exports.User = require('./user'); 
-exports.Art = require('./art'); 
+// exports.Art = require('./art');
 exports.Reply = require('./reply'); 
-exports.ArtTag = require('./tag'); 
+// exports.ArtTag = require('./tag');
 exports.Menu = require('./menu'); 
 exports.Work = require('./work'); 
+exports.TagWork = require('./tagwork'); 

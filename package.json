@@ -11,6 +11,7 @@
     "eventproxy":"*",
     "node-markdown":"*",
     "socket.io":"*",
+    "gm":"*",
     "xss":"*",
     "ejs": "*",
     "jade": "*"

@@ -1,0 +1,65 @@
+extends layout 
+block title
+	title #{l.t.homepage}
+block content_here
+	div.page-title
+		h1 Add new Work
+	form(action="/admin/work/new",method="post")
+		div.row
+			div.col-md-12
+				div.widget-container.fluid-height.clearfix
+					div.heading
+						i.icon-table
+						|Work info
+					div.widget-content.padded.clearfix 
+						
+						div.form-group
+							label Name: 
+							input.form-control(name="workname",placeholder="Input Work name",type="text")
+						div.form-group
+							label http://www.giccoo.com/work/
+							input.form-control(name="workurl",placeholder="Input Work short name",type="text")
+
+		div.row
+			div.col-md-6
+				div.widget-container.fluid-height.clearfix
+					div.heading
+						i.icon-table
+						|Work content
+					div.widget-content.padded.clearfix 
+						div.btn-toolbar.text-editor-toolbar
+							div.btn-group
+								a.btn.btn-default-outline
+									i.icon-picture
+						textarea#editor(name="editor")
+					div.pager
+						input.btn.btn-primary(type="submit") Submit
+						input.btn.btn-default-outline(type="reset") Reset
+						a.btn.btn-default-outline(href="/admin/menu") Cancel
+			div.col-md-6
+				div.widget-container.fluid-height.clearfix
+					div.heading
+						i.icon-table
+						|Menu content Preview
+					div.widget-content.padded.clearfix
+						div.entry-preview-content
+							div#preview.preview.rendered-markdown
+
+
+
+block css
+	link(href="/css/admin/codemirror.css",media="all",rel="stylesheet",type="text/css")
+	
+block thisPageScript
+	script(src="/js/vendor/jquery.dataTables.min.js")
+	script(src="/js/vendor/codemirror.js")
+	script(src="/js/vendor/showdown.js")
+	script(src="/js/vendor/codemode/markdown.js")
+	//- script(src="/js/vendor/epiceditor.min.js")
+	script(src="/js/admin/main.js")
+block thisPageJs 
+	script.
+		$(document).ready(function() { 
+			fCreateEditor();
+		});
+    

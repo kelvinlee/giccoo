@@ -1,0 +1,30 @@
+div.entry-preview-content
+	div#files.files-list
+		div.input-group.input-group-lg
+			input.form-control(type="search",placeholder="enter a search file name")
+			span.input-group-btn.search
+				button.btn.btn-primary(type="button")
+					i.fa.fa-search
+					| Search
+		div.list-group.king-gallery.files-list-o
+			-for (var i=0;i<files.length;i++)
+				div.item.col-md-6.col-sm-6
+					div.thumbnail
+						img.list-group-image(src="/uploadDir/#{files[i]}")
+						div.caption
+							h3.inner.list-group-item-heading #{files[i]}
+							ul.list-unstyled
+								li
+									strong Path:
+									em  /uploadDir/#{files[i]}
+								//- li
+									strong File Size:
+									em 139KB
+							div.action-buttons
+								a.btn.btn-primary.editor-images.btn-xs(href="javascript:void(0)",data-name="#{files[i]}",data-src="/uploadDir/#{files[i]}")
+									i.fa.add
+									|  Insert
+								a.btn.btn-danger.btn-xs(href="/admin/files-remove/:files_name")
+									i.fa.trash-o
+									|Rmove
+	div#preview.preview.rendered-markdown

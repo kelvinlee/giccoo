@@ -1,0 +1,48 @@
+@cw : #ffffff;
+.entry-preview-content {
+	max-height: 650px;
+	overflow: auto;
+	.files-list {
+		display: none;
+		.search,.btn-primary {
+			color: @cw !important;
+		}
+	}
+	.preview {
+		display: block;
+	}
+	&.file {
+		.files-list {
+			display: block;
+		}
+		.preview {
+			display: none;
+		}
+	}
+}
+.files-list-o {
+	margin-top:20px;
+	max-height: 480px;
+	margin-bottom: 0px;
+	overflow: auto; 
+	.thumbnail {
+		max-height: 120px;
+	}
+	.action-buttons a{
+		color: @cw;
+	}
+	.search .btn{
+		color: @cw;	
+	}
+}
+.btn-gourp {
+	margin-bottom: 7px;
+}
+.userzw {
+	height: 370px;
+}
+.preview {
+	img {
+		max-width: 100%;
+	}
+}

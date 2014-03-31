@@ -1,0 +1,77 @@
+extends layout 
+block title
+
+block crumb
+	li Work
+	li.active New Tag
+block nav-model
+	div.top-content
+		//- ul.list-inline.mini-stat
+			li
+				h5 Tag Count
+					span.stat-value.stat-color-orange
+						i.fa.fa-plus-circle
+						|  0
+				//- span#mini-bar-chart1.mini-bar-chart
+			li
+				h5 SUBSCRIBERS
+					span.stat-value.stat-color-blue
+						i.fa.fa-plus-circle
+						|  150,743
+				span#mini-bar-chart2.mini-bar-chart
+			li
+				h5 CUSTOMERS
+					span.stat-value.stat-color-seagreen
+						i.fa.fa-plus-circle
+						|  150,743
+				span#mini-bar-chart3.mini-bar-chart
+block content-here
+	div.main-header
+		h2 Create a new Tag for Work
+		em When you write a work you must create a tag before.
+	div.main-content
+		div.row
+			div.col-md-6
+				div.widget
+					div.widget-header
+						h3
+							i.fa.fa-tags
+							| Tag form
+					div.widget-content
+						-if (!edit){ edit= {_id:"new",name:"",description:"",author_id:""} }
+						form(method="post",action="/admin/work-tag/#{edit._id}")
+							div.form-group
+								label Name
+								input.form-control.parsley-validated(name="name",type="text",value="#{edit.name}",required)
+							div.form-group
+								label Description
+								include editor-btn
+								textarea#editor.form-control(name="editor",rows="5",cols="30",required) #{edit.description}
+							div.form-group
+								label Author
+								div
+									img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=48")
+							div.form-group
+								button.btn.btn-primary(type="submit") Submit
+								button.btn.btn-default(type="reset") Reset
+			div.col-md-6
+				div.widget
+					div.widget-header
+						h3
+							i.fa.fa-tags
+							| Tag Preview
+					div.widget-content
+						include preview
+
+block css
+	link(href="/css/admin/codemirror.css",media="all",rel="stylesheet",type="text/css")
+block thisPageScript
+	-var pagejs = ['js/vendor/codemirror.js','js/vendor/showdown.js','js/vendor/codemode/markdown.js','assets/js/parsley.min.js']
+	-for(var mn=0;mn<pagejs.length;mn++)
+		script(src="/#{pagejs[mn]}",type="text/javascript")
+block thisPageJs 
+	script.
+		$(document).ready(function() { 
+			fCreateEditor();
+			fBindForm();
+		});

@@ -1,0 +1,65 @@
+extends layout 
+block title
+	title #{l.t.homepage}
+block content_here
+	div.page-title
+		h1 Add new menu
+	form(action="/admin/menu/new",method="post")
+		div.row
+			div.col-md-8
+				div.widget-container.fluid-height.clearfix
+					div.heading
+						i.icon-table
+						|Menu info
+					div.widget-content.padded.clearfix 
+						
+						div.form-group
+							label Name: 
+							input.form-control(name="menuname",placeholder="Input menu name",type="text")
+						div.form-group
+							label Url: 
+							input.form-control(name="menuurl",placeholder="Input menu url",type="text")
+
+		div.row
+			div.col-md-6
+				div.widget-container.fluid-height.clearfix
+					div.heading
+						i.icon-table
+						|Menu description
+					div.widget-content.padded.clearfix 
+						div.btn-toolbar.text-editor-toolbar
+							div.btn-group
+								a.btn.btn-default-outline
+									i.icon-picture
+						textarea#editor(name="editor")
+					div.pager
+						input.btn.btn-primary(type="submit") Submit
+						input.btn.btn-default-outline(type="reset") Reset
+						a.btn.btn-default-outline(href="/admin/menu") Cancel
+			div.col-md-6
+				div.widget-container.fluid-height.clearfix
+					div.heading
+						i.icon-table
+						|Menu description Preview
+					div.widget-content.padded.clearfix
+						div.entry-preview-content
+							div#preview.preview.rendered-markdown
+
+
+
+block css
+	link(href="/css/admin/codemirror.css",media="all",rel="stylesheet",type="text/css")
+	
+block thisPageScript
+	script(src="/js/vendor/jquery.dataTables.min.js")
+	script(src="/js/vendor/codemirror.js")
+	script(src="/js/vendor/showdown.js")
+	script(src="/js/vendor/codemode/markdown.js")
+	//- script(src="/js/vendor/epiceditor.min.js")
+	script(src="/js/admin/main.js")
+block thisPageJs 
+	script.
+		$(document).ready(function() { 
+			fCreateEditor();
+		});
+    

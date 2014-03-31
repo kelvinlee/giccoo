@@ -15,14 +15,14 @@ checkAdmin = (req,res)->
 	no
 exports.in = (req,res)->
 	# 登录界面
-	res.render 'signin'
+	res.render 'admin/signin'
 	no
 exports.out = (req,res)->
 	# 登录提交
 	no
 exports.register = (req,res)->
 	# 注册页面
-	res.render 'register'
+	res.render 'admin/register'
 	no
 exports.post = (req,res)->
 	# console.log req.body
@@ -43,8 +43,11 @@ exports.post = (req,res)->
 				re.recode = 201
 			else
 				if list.length>0
-					req.session.is_admin = list[0].is_admin
-					req.session.userid = list[0]._id
+					# req.session.is_admin = list[0].is_admin
+					# req.session.userid = list[0]._id
+					user = Ut.encrypt list[0]._id+'\t'+list[0].name+'\t'+list[0].email,'giccoo'
+					day = 1000 * 60 * 60 * 24 * 7
+					res.cookie 'user',user ,{expires: new Date Date.now()+60*60*24*7,maxAge: day}
 					# console.log req.session
 				else
 					re.reason = 'none'

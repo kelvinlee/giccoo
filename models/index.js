@@ -19,6 +19,7 @@ require('./file_tag');
 require('./art_tag'); 
 require('./menu'); 
 require('./work'); 
+require('./tag_work'); 
 
 exports.User = mongoose.model('User');
 exports.Art = mongoose.model('Art');
@@ -30,3 +31,4 @@ exports.ArtTag = mongoose.model('ArtTag');
 exports.FileTag = mongoose.model('FileTag');
 exports.Menu = mongoose.model('Menu');
 exports.Work = mongoose.model('Work');
+exports.TagWork = mongoose.model('TagWork');

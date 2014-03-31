@@ -1,0 +1,44 @@
+.entry-preview-content {
+  max-height: 650px;
+  overflow: auto;
+}
+.entry-preview-content .files-list {
+  display: none;
+}
+.entry-preview-content .files-list .search,
+.entry-preview-content .files-list .btn-primary {
+  color: #ffffff !important;
+}
+.entry-preview-content .preview {
+  display: block;
+}
+.entry-preview-content.file .files-list {
+  display: block;
+}
+.entry-preview-content.file .preview {
+  display: none;
+}
+.files-list-o {
+  margin-top: 20px;
+  max-height: 480px;
+  margin-bottom: 0px;
+  overflow: auto;
+}
+.files-list-o .thumbnail {
+  max-height: 120px;
+}
+.files-list-o .action-buttons a {
+  color: #ffffff;
+}
+.files-list-o .search .btn {
+  color: #ffffff;
+}
+.btn-gourp {
+  margin-bottom: 7px;
+}
+.userzw {
+  height: 370px;
+}
+.preview img {
+  max-width: 100%;
+}

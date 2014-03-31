@@ -11,6 +11,7 @@ module.exports = (app)->
   # home page
   app.get '/', art.homepage
   # admin
+  app.get '/admin/*',admin.before
   app.get '/admin', admin.homepage
   app.get '/admin/page', admin.pages
   app.get '/admin/menu', admin.menu
@@ -18,7 +19,26 @@ module.exports = (app)->
   app.post '/admin/menu/new', admin.menuPost
   # work
   app.get '/admin/work', admin.work
+  app.get '/admin/work/:work_id', admin.workEdit
   app.get '/admin/work/new', admin.workNew
+  app.get '/admin/work/del/:work_id', admin.workDel
+  app.post '/admin/work/new', admin.workNewPost
+  app.post '/admin/work/:work_id', admin.workEditPost
+  # Work Tag
+  app.get '/admin/work-tag', admin.workTag
+  app.get '/admin/work-tag/:tag_id', admin.workTagEdit
+  app.get '/admin/work-tag/new', admin.workNewTag
+  app.get '/admin/work-tag/del/:tag_id', admin.workDelTag
+  app.post '/admin/work-tag/new', admin.workNewTagPost
+  app.post '/admin/work-tag/:tag_id', admin.workEditTagPost
+  # User
+  app.get '/admin/user',admin.userList
+  app.get '/admin/user/:user_id',admin.userEdit
+  app.post '/admin/user/:user_id',admin.userEditPost
+  # files
+  app.get '/admin/files',admin.files
+  app.get '/admin/files-upload',admin.fileUpload
+  app.post '/admin/file-upload',admin.fileUploadPost
   # app.post '/admin/work/new', admin.workNewPost
   # app.get '/admin/work/updata/:work_id', admin.workUpdata
   # app.post '/admin/work/updata/:work_id', admin.workUpdataPost
@@ -36,8 +56,8 @@ module.exports = (app)->
   app.post '/register', sign.reg
   
   # work
-  app.get '/work', work.homepage
-  app.get '/work/:shortname', work.art
+  # app.get '/work', work.homepage
+  # app.get '/work/:shortname', work.art
   
 
   # art 

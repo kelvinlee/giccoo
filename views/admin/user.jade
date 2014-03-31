@@ -1,0 +1,81 @@
+extends layout 
+block title
+
+block crumb
+	li User
+	li.active User List
+block nav-model
+	div.top-content
+		ul.list-inline.mini-stat
+			li
+				h5 User Count
+					span.stat-value.stat-color-orange
+						i.fa.fa-plus-circle
+						|  #{userlist.length}
+				//- span#mini-bar-chart1.mini-bar-chart
+			//- li !{l.menu.home.name}
+			//- li
+				h5 Admin User
+					span.stat-value.stat-color-blue
+						//- i.fa.fa-plus-circle
+						img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=28")
+						img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=28")
+						img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=28")
+				//- span#mini-bar-chart2.mini-bar-chart
+			//- li
+				h5 CUSTOMERS
+					span.stat-value.stat-color-seagreen
+						i.fa.fa-plus-circle
+						|  150,743
+				span#mini-bar-chart3.mini-bar-chart
+block content-here
+	div.main-header
+		h2 User List
+		em Here's all user
+	div.main-content
+		div.widget.widget-table
+			div.widget-header
+				h3
+					i.fa.fa-table
+					| User List
+				em Here's all user
+			div.widget-content
+				table(class="table table-sorting table-striped table-hover datatable",cellpadding="0",cellspacing="0",width="100%")
+					thead
+						tr
+							th Name
+							th Avatar
+							th.hidden-xs Email
+							th.hidden-xs Create Date
+							th Admin
+							th
+					tbody
+						-for(var i=0;i<userlist.length;i++)
+							-var date = userlist[i].create_at;
+							-var dateStr = date.getFullYear() + '-' +(date.getMonth()>9?date.getMonth()+1:'0'+(date.getMonth()+1))+'-'+(date.getDate()>10?date.getDate():'0'+date.getDate())+' '+(date.getHours()>10?date.getHours():'0'+date.getHours())+':'+(date.getMinutes()>10?date.getMinutes():'0'+date.getMinutes())
+							-var is_admin = "";
+							-if (userlist[i].is_admin) is_admin = "color:#ce7b11";
+								tr
+									td #{userlist[i].name}
+									td
+										//- a(href="/admin/user/#{userlist[i]._id}")
+										img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=24")
+									td.hidden-xs #{userlist[i].email}
+									td.hidden-xs #{dateStr}
+									td
+										span.stat-value(style="#{is_admin}")
+											i.fa.fa-user
+									td 
+										a(href="/admin/user/#{userlist[i]._id}")
+											i.fa.fa-edit
+										|  | 
+										a.del-this(href="/admin/user/del/#{userlist[i]._id}")
+											i.fa.fa-trash-o 
+
+
+block thisPageScript
+	script.
+		_sort = [ [3,'desc'], [0,'asc'] ];
+	-var pagejs = ['assets/js/datatable/jquery.dataTables.min.js','assets/js/datatable/jquery.dataTables.bootstrap.js','assets/js/king-table.min.js']
+	-for(var mn=0;mn<pagejs.length;mn++)
+		script(src="/#{pagejs[mn]}",type="text/javascript")

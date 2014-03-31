@@ -1,0 +1,84 @@
+div.top-bar
+	div.container
+		div.row
+			div.col-md-2.logo
+				a(href="index.html")
+					img(src="/assets/img/logo-w.png",width="70",alt="Kingboard - Admin Dashboard")
+				h1.sr-only Kingboard Admin Dashboard
+			div.col-md-10
+				div.row
+					div.col-md-3
+						div.input-group.searchbox
+							input(type="search",class="form-control",placeholder="enter keyword here...")
+							span.input-group-btn
+								button.btn.btn-default(type="button")
+									i.fa.fa-search
+					div.col-md-9
+						div.top-bar-right
+							a.hidden-md.hidden-lg.main-nav-toggle(href="index.html#")
+								i.fa.fa-bars
+							div.notifications
+								ul
+									li.notification-item.inbox
+										div.btn-group
+											a.dropdown-toggle(data-toggle="dropdown",href="#")
+												i.fa.fa-envelope
+												span.count 2
+												span.circle
+											ul.dropdown-menu(role="menu")
+												li.notification-header
+													em You have 2 unread messages
+												//- unread
+												//- for (var inbox = 0;inbox<5;inbox++)
+												li.inbox-item.clearfix
+													a(href="")
+														div.media
+															div.pull-left
+																img.media-object(src="assets/img/user1.png",alt="Antonio")
+															div.media-body
+																h5.media-heading.name Antonius
+																p.text The problem just happened this morning. I can't see ...
+																span.timestamp 4 minutes ago
+
+												li.notification-footer
+													a(href="#") View All Messages
+									li.notification-item.general
+										div.btn-group
+											a.dropdown-toggle(data-toggle="dropdown",href="#")
+												i.fa.fa-bell
+												span.count 2
+												span.circle
+											ul.dropdown-menu(role="menu")
+												li.notification-header
+													em You have 8 unread messages
+												//- unread
+												//- for (var inbox = 0;inbox<5;inbox++)
+												li.inbox-item.clearfix
+													a(href="")
+														i.fa.fa-user.green-font
+														span.text New registered user
+														span.timestamp 12 minutes ago
+
+												li.notification-footer
+													a(href="#") View All Messages
+
+							div.logged-user
+								div.btn-group
+									a.btn.btn-link.dropdown-toggle(data-toggle="dropdown",href="#")
+										img(src="/assets/img/user-avatar.png")
+										span.name  Kelvin Lee  
+										span.caret
+									ul.dropdown-menu(role="menu")
+										li
+											a(href="")
+												i.fa.fa-user
+												span.text  Profile
+										li
+											a(href="")
+												i.fa.fa-cog
+												span.text  Settings
+										li
+											a(href="")
+												i.fa.fa-power-off
+												span.text  Logout
+

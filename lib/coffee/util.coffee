@@ -85,6 +85,14 @@ exports.strim = (str)->
 exports.recode = ->
 	{recode:200,reason:'success'}
 #
+# 接口基本格式
+#
+# @param {obj/string/number}
+# @return string
+#
+exports.str = (str)->
+	str+""
+#
 # 查看是否为空
 #
 # @param {string}
@@ -146,3 +154,15 @@ exports.gen_session = (user, res)->
   day = 1000 * 60 * 60 * 24 * 30
   res.cookie config.auth_cookie_name, auth_token, {path: '/', maxAge: day} 
 
+#
+# 获取头像地址
+#
+# @param {string}
+# @return {string}
+#
+avatar = (email, size = 48)->
+	default_avatar = "http://f.giccoo.com/img/logo.png"
+	email = email+""
+	url = "http://www.gravatar.com/avatar/"+md5(email.toLowerCase())+"?d="+default_avatar+"&s="+size
+	return url
+exports.avatar = avatar
