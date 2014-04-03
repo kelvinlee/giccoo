@@ -2,40 +2,33 @@ div#page-features.pages.white.paralax.page-features
 	div.overlay
 	div.container
 		header
-			h4.line-divider Features
-			h1 What's Inside
+			h4.line-divider #{l.features.title}
+			h1 #{l.features.subtitle}
 			div.row
 				div.span8.offset2
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					p #{l.features.description}
 		article
 			div.row-fluid
-				div.span4.center
-					img(src="/assets-gico/images/pages/features/about01.png")
-					h5 Responsive
-					p.smallFontBy08.cutBy10 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				div.span4.center
-					img(src="/assets-gico/images/pages/features/about01.png")
-					h5 Responsive
-					p.smallFontBy08.cutBy10 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				div.span4.center
-					img(src="/assets-gico/images/pages/features/about01.png")
-					h5 Responsive
-					p.smallFontBy08.cutBy10 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				-for(var i=0;i<l.features.items.length;i++)
+					div.span4.center
+						img(src="/assets-gico/images/pages/features/#{l.features.items[i].img}")
+						h5 #{l.features.items[i].title}
+						p.smallFontBy08.cutBy10 #{l.features.items[i].description} 
 			div.row-fluid
 				div.span8.offset2
 					div.quote.center
 						div#quote-slider.slide
 							div.carousel-inner
 								div.active.item
-									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									h5 Happy client
-								div.item
-									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									h5 Happy client
-								div.item
-									p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									h5 Happy client
+									p #{l.features.clientsay[0].content}
+									h5 #{l.features.clientsay[0].name}
+								-for(var i=1;i<l.features.clientsay.length;i++)
+									div.item
+										p #{l.features.clientsay[i].content}
+										h5 #{l.features.clientsay[i].name}
 							ol.carousel-indicators
 								li(data-target="#quote-slider",data-slide-to="0",class="active")
-								li(data-target="#quote-slider",data-slide-to="1")
-								li(data-target="#quote-slider",data-slide-to="2")
+								-for(var i=1;i<l.features.clientsay.length;i++)
+									li(data-target="#quote-slider",data-slide-to="#{i}")
+								//- li(data-target="#quote-slider",data-slide-to="1")
+								//- li(data-target="#quote-slider",data-slide-to="2")

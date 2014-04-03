@@ -2,9 +2,9 @@ div.top-bar
 	div.container
 		div.row
 			div.col-md-2.logo
-				a(href="index.html")
-					img(src="/assets/img/logo-w.png",width="70",alt="Kingboard - Admin Dashboard")
-				h1.sr-only Kingboard Admin Dashboard
+				a(href="/admin")
+					img(src="/assets/img/logo-w.png",width="70",alt="Giccoo - Admin Dashboard")
+				h1.sr-only Giccoo Admin Dashboard
 			div.col-md-10
 				div.row
 					div.col-md-3
@@ -17,7 +17,7 @@ div.top-bar
 						div.top-bar-right
 							a.hidden-md.hidden-lg.main-nav-toggle(href="index.html#")
 								i.fa.fa-bars
-							div.notifications
+							//- div.notifications
 								ul
 									li.notification-item.inbox
 										div.btn-group
@@ -65,12 +65,12 @@ div.top-bar
 							div.logged-user
 								div.btn-group
 									a.btn.btn-link.dropdown-toggle(data-toggle="dropdown",href="#")
-										img(src="/assets/img/user-avatar.png")
-										span.name  Kelvin Lee  
+										img(src="#{avatar}",width="26")
+										span.name  #{username}  
 										span.caret
 									ul.dropdown-menu(role="menu")
 										li
-											a(href="")
+											a(href="/admin/user/#{userid}")
 												i.fa.fa-user
 												span.text  Profile
 										li

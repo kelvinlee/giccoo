@@ -13,11 +13,8 @@ div#page-welcome.pages.white.paralax.page-welcome
 								img(src="assets-gico/images/pages/welcome/logo2_welcome.png",width="140",height="140")
 					div#welcome-messages.line-divider
 						ul.slides
-							li
-								h1 Welcome to Giccoo
-							li
-								h1 Fresh & Clean
-							li
-								h1 Creative & Fun
-					p Wirte less do more 
+							-for (var i=0;i<l.welcome.message.length;i++)
+								li
+									h1 #{l.welcome.message[i]} 
+					p #{l.welcome.description}
 					div.social-icons.sicon-white.bordered

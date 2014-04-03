@@ -4,6 +4,7 @@ if _menu
 		.addClass 'active'
 		$('.menu-'+a+' .sub-menu').addClass 'open'
 editor = {}
+_whoselectfiles = ""
 $(document).ready ->
 	# check menu open
 	# select
@@ -23,13 +24,26 @@ $(document).ready ->
 
 	if $(".dropzone").length > 0
 		Dropzone.autoDiscover = false
-		$(".dropzone").dropzone
-			url:"/admin/file-upload",
-			addRemoveLinks:true,
+		myDropzone = new Dropzone ".dropzone",
+			url:"/admin/file-upload"
+			addRemoveLinks : true
 			maxFilesize:1.5,
 			maxFiles:20,
 			acceptedFiles:"image/*, application/pdf, .txt",
-			dictResponseError:"File Upload Error." 
+			dictResponseError:"File Upload Error."
+		myDropzone.on "success", (obj)->
+			console.log obj
+		myDropzone.on "removedfile", (obj)->
+			$.ajax
+				type:"get"
+				dataType:"json"
+				url:'/admin/files-remove/'+obj.name
+				success: (msg)->
+					console.log msg 
+		 
+	if $("button[data-target=#getfiles]").length > 0
+		$("button[data-target=#getfiles]").click ->
+			_whoselectfiles = $(this).data 'starget'
 
 message = (title,msg,img,callback)->
 	$.extend $.gritter.options,
@@ -143,10 +157,14 @@ fBindEidtorBtn = ->
 		getFilesList()
 	$(".editor-images").click ->
 		# ![](http://www.baidu.com)
-		editor.replaceSelection("\n!["+$(this).data("name")+"]("+$(this).data("src")+")")
-		pos = editor.getCursor()
-		editor.setCursor pos
-		editor.focus()
+		if _whoselectfiles is 'editor'
+			editor.replaceSelection("\n!["+$(this).data("name")+"]("+$(this).data("src")+")")
+			pos = editor.getCursor()
+			editor.setCursor pos
+			editor.focus()
+		else
+			$(_whoselectfiles).val $(this).data "src"
+
 getFilesList = ->
 
 

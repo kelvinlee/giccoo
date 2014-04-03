@@ -59,7 +59,7 @@ block content-here
 									td #{userlist[i].name}
 									td
 										//- a(href="/admin/user/#{userlist[i]._id}")
-										img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=24")
+										img(src="#{userlist[i].avatar}")
 									td.hidden-xs #{userlist[i].email}
 									td.hidden-xs #{dateStr}
 									td

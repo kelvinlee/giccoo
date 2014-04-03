@@ -1,62 +1,43 @@
-extends layout 
-block title
-	title #{l.t.homepage}
-block content_here
-	section.homepage
-		div#banner.banner-work
-		div#content.content.growtopcontent
-			div.container.gicontent.p60
-				h3 #{l.services.h3}
-				div
-					ul.nav.nav-pills
+section.portfolio-item-details
+	div.row-fluid
+		div.span8
+			-if(work.mobile)
+				- var pmodlcls = ""
+				- if (work.phone_model == 'iphone5s') {pmodlcls = "gold"}
+				- if (work.phone_model == 'iphone5c') {pmodlcls = "green"}
+				- if (work.phone_model == 'iphone4s') {pmodlcls = "black"}
+				div(id="#{work.phone_model}",class="#{pmodlcls} hidden-phone")
+					div.device
+						div.inner
+						div.camera
+						div.sleep
+						div.sensor
+						div.volume
+						div.speaker
+						div.screen
+							iframe.mobilesite(src="#{work.website}")
+						div.home
+				div.visible-phone
+					img(src="#{work.small_img}")
+			-else
+				img(src="/assets-gico/images/pages/work/01.jpg")
+		div.span4
+			div.close-portfolio
+				span &#10006;
+				div.clearfix
+			h5 #{work.title}
+			article.smallFontBy08 !{content}
+			-if (work.website)
+				section.website
+					h5 Visit site
+					p
+						a(href="#{work.website}",target="_blank") #{work.website}
+			div.social-icons.sicon-black.bordered.bordered-black
+				a.sicon-white.sicon-facebook(href="") 
+					i Facebook
+
+			div.submenu
+				ul
+					-for (var i=0;i<work.tag_id.length;i++)
 						li
-							a(href="/work/tag") work标签
-				div.row
-					div.col-sm-3.work-item
-						a(href="/work/shortname")
-							img(src="http://image.tianjimedia.com/uploadImages/2013/309/1QLO85514380.jpg")
-							div.title
-								span look here
-					div.col-sm-3.work-item
-						a(href="/work/shortname")
-							img(src="http://image.tianjimedia.com/uploadImages/2013/309/1QLO85514380.jpg")
-							div.title
-								span look here
-					div.col-sm-3.work-item
-						a(href="/work/shortname")
-							img(src="http://image.tianjimedia.com/uploadImages/2013/309/1QLO85514380.jpg")
-							div.title
-								span look here
-					div.col-sm-3.work-item
-						a(href="/work/shortname")
-							img(src="http://image.tianjimedia.com/uploadImages/2013/309/1QLO85514380.jpg")
-							div.title
-								span look here
-					div.col-sm-3.work-item
-						a(href="/work/shortname")
-							img(src="http://image.tianjimedia.com/uploadImages/2013/309/1QLO85514380.jpg")
-							div.title
-								span look here
-					div.col-sm-3.work-item
-						a(href="/work/shortname")
-							img(src="http://image.tianjimedia.com/uploadImages/2013/309/1QLO85514380.jpg")
-							div.title
-								span look here
-					div.col-sm-3.work-item
-						a(href="/work/shortname")
-							img(src="http://image.tianjimedia.com/uploadImages/2013/309/1QLO85514380.jpg")
-							div.title
-								span look here
-					div.col-sm-3.work-item
-						a(href="/work/shortname")
-							img(src="http://image.tianjimedia.com/uploadImages/2013/309/1QLO85514380.jpg")
-							div.title
-								span look here
-					div.col-sm-3.work-item
-						a(href="/work/shortname")
-							img(src="http://image.tianjimedia.com/uploadImages/2013/309/1QLO85514380.jpg")
-							div.title
-								span look here
-
-
-block scripts
+							span #{work.tag_id[i].name}

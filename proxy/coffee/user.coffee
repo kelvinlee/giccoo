@@ -1,6 +1,8 @@
 models = require '../models'
 User = models.User
 
+exports.getUserAdmins = (callback)->
+  User.find {is_admin:true},null,{sort:{create_at:1}},callback
 exports.getUsers = (callback)->
   # Description...
   User.find {},null,{sort:{create_at:-1}},callback

@@ -1,24 +1,39 @@
 div#page-about.pages.page-about
 	div.container
 		header
-			h4.line-divider About
-			h1 Meet The Team
+			h4.line-divider #{l.about.title}
+			h1 #{l.about.subtitle}
 			div.row
 				div.span8.offset2
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					p #{l.about.description}
 		article
 			ul.thumbnails.about-items
-				li.span4.center
-					div.item
-						img.img-circle(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=280")
-						div.about-overlay.img-circle
-							div.social-icons.sicon-white
-								a.sicon-facebook(href="#")
-									i Facebook
-								a.sicon-facebook(href="#")
-									i Facebook
-					h5 Kelvin
-						br
-						small Develepor
-					p.smallFontBy08 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.
+				-for(var i=0;i<users.length;i++)
+					li.span4.center
+						div.item
+							img.img-circle.about-avatar(src="#{users[i].avatar}",width="280",height="280")
+							div.about-overlay.img-circle
+								div.social-icons.sicon-white
+									-if (users[i].social.weibo)
+										a(href="#{users[i].social.weibo}",target="_blank")
+											i.fa.fa-weibo
+									-if (users[i].social.facebook)
+										a(href="#{users[i].social.facebook}",target="_blank")
+											i.fa.fa-facebook-square
+									-if (users[i].social.twitter)
+										a(href="#{users[i].social.twitter}",target="_blank")
+											i.fa.fa-twitter
+									-if (users[i].social.dribbble)
+										a(href="#{users[i].social.dribbble}",target="_blank")
+											i.fa.fa-dribbble
+									-if (users[i].social.instagram)
+										a(href="#{users[i].social.instagram}",target="_blank")
+											i.fa.fa-instagram
+									-if (users[i].social.github)
+										a(href="#{users[i].social.github}",target="_blank")
+											i.fa.fa-github
+						h5 #{users[i].name}
+							br
+							small #{users[i].motto}
+						div.smallFontBy08 !{users[i].description}
 			

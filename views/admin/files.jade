@@ -39,18 +39,18 @@ block content-here
 			-for (var i=0;i<files.length;i++)
 				div.item.col-md-3.col-sm-6
 					div.thumbnail
-						img.list-group-image(src="/uploadDir/#{files[i]}")
+						img.list-group-image(src="/uploadDir/#{userid}/#{files[i]}")
 						div.caption
 							h3.inner.list-group-item-heading #{files[i]}
 							ul.list-unstyled
 								li
 									strong Path:
-									em  /uploadDir/#{files[i]}
+									em  /uploadDir/#{userid}/#{files[i]}
 								//- li
 									strong File Size:
 									em 139KB
 							div.action-buttons
-								a.btn.btn-danger.btn-xs(href="/admin/files-remove/:files_name")
+								a.btn.btn-danger.btn-xs.del-this(href="/admin/files-remove/#{files[i]}")
 									i.fa.trash-o
 									|Rmove
 

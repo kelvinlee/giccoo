@@ -9,7 +9,21 @@ note = require './controllers/note'
 module.exports = (app)->
   # git never changed.
   # home page
-  app.get '/', art.homepage
+  app.get '/', work.homepage
+
+  # sign
+  app.get '/sign/in', sign.in
+  app.get '/sign/out', sign.out
+  app.post '/sign/in', sign.post
+  # register
+  app.get '/register', sign.register
+  app.post '/register', sign.reg
+  
+  # work
+  # app.get '/works', work.homepage
+  app.get '/work/:shortname', work.work
+
+
   # admin
   app.get '/admin/*',admin.before
   app.get '/admin', admin.homepage
@@ -34,10 +48,12 @@ module.exports = (app)->
   # User
   app.get '/admin/user',admin.userList
   app.get '/admin/user/:user_id',admin.userEdit
+  app.get '/admin/user/del/:user_id',admin.userDel
   app.post '/admin/user/:user_id',admin.userEditPost
   # files
   app.get '/admin/files',admin.files
   app.get '/admin/files-upload',admin.fileUpload
+  app.get '/admin/files-remove/:file_name',admin.fileDel
   app.post '/admin/file-upload',admin.fileUploadPost
   # app.post '/admin/work/new', admin.workNewPost
   # app.get '/admin/work/updata/:work_id', admin.workUpdata
@@ -47,17 +63,7 @@ module.exports = (app)->
   # app.post '/admin/work/tag/new', admin.workTagNewPost
   # app.get '/admin/work/tag/updata/:tag_id', admin.workTagUpdata
   # app.post '/admin/work/tag/updata/:tag_id', admin.workTagUpdataPost
-  # sign
-  app.get '/sign/in', sign.in
-  app.get '/sign/out', sign.out
-  app.post '/sign/in', sign.post
-  # register
-  app.get '/register', sign.register
-  app.post '/register', sign.reg
   
-  # work
-  # app.get '/work', work.homepage
-  # app.get '/work/:shortname', work.art
   
 
   # art 

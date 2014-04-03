@@ -10,18 +10,10 @@ nav#navigation.fixed-top
 					span.icon-bar
 				//- MAIN MENU
 				ul#main-menu.nav-collapse.collapse
-					li
-						a(href="#page-welcome") Home
-					li
-						a(href="#page-work") Work
-					li
-						a(href="#page-features") Features
-					li
-						a(href="#page-about") About
-					//- li
-						a(href="#page-blog") Blog
-					li
-						a(href="#page-contact") Contact
+					-for(var i=0;i<l.nav.length;i++)
+						li
+							a(href="#{l.nav[i].url}") #{l.nav[i].name}
+					
 
 				div.social-icons.hover-big.pull-right
 					//- -var icons = ['facebook','twitter']

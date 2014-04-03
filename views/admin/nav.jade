@@ -4,12 +4,12 @@ nav.main-nav
 			a(href="/admin")
 				i.fa.fa-dashboard.fa-fw
 				span.text Dashboard
-		li.menu-pages
+		//- li.menu-pages
 			a.js-sub-menu-toggle(href="#")
 				i.fa.fa-file-o.fa-fw
 				span.text Pages
 				i.toggle-icon.fa.fa-angle-left
-		li.menu-blogs
+		//- li.menu-blogs
 			a.js-sub-menu-toggle(href="#")
 				i.fa.fa-rss-square.fa-fw
 				span.text Blogs
@@ -53,7 +53,7 @@ nav.main-nav
 				li.menu-files-upload
 					a(href="/admin/files-upload")
 						span.text Files Upload
-		li.menu-setting
+		//- li.menu-setting
 			a(href="/admin/setting")
 				i.fa.fa-gears.fa-fw
 				span.text Setting
@@ -69,3 +69,31 @@ nav.main-nav
 					|  Tips
 			div.panel-body
 				p You can do live search to the widget at search box located at top bar. It's very useful if your dashboard is full of widget.
+		h5.label.label-default
+			i.fa.fa-info-circle
+			|   Server Info
+		ul.list-unstyled.list-info-sidebar.bottom-30px
+			li.data-row
+				span.data-name Memory
+				-var totalmem = parseInt(company.totalmem/8/1024/1024)
+				-var freemem = parseInt(company.freemem/8/1024/1024)
+				-var freemenw = parseInt((totalmem-freemem)/totalmem*100)<50?'progress-bar-success':'progress-bar-warning'
+				span.data-value #{totalmem-freemem}MB/#{totalmem/1024}GB
+					div.progress.progress-xs
+						div(class="progress-bar #{freemenw}",role="progressbar",aria-valuemin="0",aria-valuemax="100",aria-valuenow="#{parseInt((totalmem-freemem)/totalmem*100)}",style="width:#{parseInt((totalmem-freemem)/totalmem*100)}%")
+							span.sr-only #{parseInt((totalmem-freemem)/totalmem*100)}%
+			li.data-row
+				span.data-name Cpus
+				span.data-value #{company.cpus[0].model} * #{company.cpus.length}
+			li.data-row
+				span.data-name Type
+				span.data-value #{company.type}
+			li.data-row
+				span.data-name Operating System
+				span.data-value Center OS
+			li.data-row
+				span.data-name Endianness
+				span.data-value #{company.endianness}
+			li.data-row
+				span.data-name Architecture
+				span.data-value #{company.arch}

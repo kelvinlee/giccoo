@@ -1,28 +1,33 @@
 div#page-work.pages.page-work
 	div.container
 		header
-			h4.line-divider Work
-			h1 Portfolio
+			h4.line-divider #{l.works.title}
+			h1 #{l.works.portfolio}
 			div.row
 				div.span8.offset2
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+					p #{l.works.description}
 			div.submenu
 				ul
 					li
 						a.plugin-filter.active(href="#",data-filter="all") All
-					-var taglist = ['typography','illustration']
 					-for(var i=0;i<taglist.length;i++)
 						li
-							a.plugin-filter(href="#",data-filter="#{taglist[i]}") #{taglist[i]}
+							a.plugin-filter(href="#",data-filter="#{taglist[i].name}") #{taglist[i].name}
 		article
 			ul.thumbnails.plugin-filter-elements.portfolio-items
-				li.span4.mix.illustration.branding
-					a(href="#work/shortname",data-destination="portfolio-items",data-insert="before")
-						img(src="/assets-gico/images/pages/work/01_th.jpg")
-						div.portfolio-overlay
-							h4 Vita WorldWide
-		footer
-			div.show-more-cube
-				a(href="#works/pages-2",data-destination="plugin-filter-elements",data-insert="appendTo",data-action="remove")
-					span Show<br/>More
+				-for(var i = 0;i<worklist.length;i++)
+					-var wk_tag = ""
+					-for(var j=0;j<worklist[i].tag_id.length;j++)
+						-wk_tag += " "+worklist[i].tag_id[j].name
+					li(class="span4 mix #{wk_tag}")
+						a(href="#work/#{worklist[i].shortname}",data-destination="portfolio-items",data-insert="before")
+							img(src="#{worklist[i].small_img}")
+							div.portfolio-overlay
+								h4 #{worklist[i].title}
+		-if (workcount.count > (workcount.page)*workcount.size)
+			footer
+				p !{(workcount.page)*workcount.size}
+				div.show-more-cube
+					a(href="#works/pages-2",data-destination="plugin-filter-elements",data-insert="appendTo",data-action="remove")
+						span #{l.works.more}
 					

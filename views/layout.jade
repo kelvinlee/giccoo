@@ -6,7 +6,8 @@ html(lang="en")
 		meta(name="viewport",content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0")
 		meta(name="apple-mobile-web-app-capable",content="yes")
 		meta(name="apple-mobile-web-app-status-bar-style",content="black")
-		block title
+		//- block title
+		title #{l.t.title}
 		//- link(rel="shortcut icon",type="image/x-icon",href="http://www.giccoo.com/favicon.ico")
 		//- link(rel="icon",type="image/x-icon",href="http://www.giccoo.com/favicon.ico")
 
@@ -17,7 +18,13 @@ html(lang="en")
 		//- link(rel="stylesheet",type="text/css",href="#{config.cdn}/css/bootstrap.min.css")
 		//- link(rel="stylesheet",type="text/css",href="/css/animate.css")
 		//- link(rel="stylesheet",type="text/css",href="/css/main.css")
+		link(href="/assets/css/font-awesome.min.css",media="all",rel="stylesheet",type="text/css")
 		link(rel="stylesheet",type="text/css",href="/assets-gico/style/bootstrap.css")
+		link(rel="stylesheet",type="text/css",href="/css/devices.css")
+		-if (language == "zh-CN")
+			style.
+				h1 {font-size:56px;letter-spacing:4px;}
+				p {letter-spacing:2px;}
 		block css 
 	body
 		include nav

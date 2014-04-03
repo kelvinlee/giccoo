@@ -9,8 +9,16 @@ var UserSchema = new Schema({
   weibo: { type: String },
   avatar: { type: String },
   sex: {type:Number , default: 1},
-  motto: {type:String, default:""} ,
-  description: {type:String, default:""} ,
+  motto: {type:String, default:""},
+  description: {type:String, default:""},
+  social:{
+    weibo: {type: String, default:""},
+    facebook: {type: String, default:""},
+    twitter: {type: String, default:""},
+    dribbble: {type: String, default:""},
+    instagram: {type: String, default:""},
+    github: {type: String, default:""}
+  },
 
   is_admin: { type: Boolean, default: false },
   active: { type: Boolean, default: true },

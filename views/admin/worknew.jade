@@ -41,7 +41,7 @@ block content-here
 							i.fa.fa-tags
 							| Work form
 					div.widget-content
-						-if (!edit){ edit= {_id:"new",title:"",shortname:"",content:"",tag_id:[],author_id:"",shortname:""} }
+						-if (!edit){ edit= {_id:"new",title:"",mobile:false,phone_model:"",small_img:"",img:"",website:"",shortname:"",content:"",tag_id:[],author_id:"",shortname:""} }
 						form(method="post",action="/admin/work/#{edit._id}")
 							div.form-group
 								label Title
@@ -49,21 +49,55 @@ block content-here
 							div.form-group
 								label Short Name
 								input.form-control.parsley-validated(name="shortname",type="text",value="#{edit.shortname}",placeholder="http://www.giccoo.com/work/:short_name",required)
+							div.form-group 
+								p
+									label Mobile? 
+								-if (edit.mobile)
+									input(type="checkbox",name="mobile",class="switch-demo",data-text-label="Mobile",checked)
+								-else
+									input(type="checkbox",name="mobile",class="switch-demo",data-text-label="Mobile")
 							div.form-group
 								p 
-									label Tag 
+									label Phone Model
+								select#phonemodel.multiselect(name="phonemodel")
+									-var phone_model = ['iphone5s','iphone5c','iphone4s','nexus5','lumia920','s5','htc-one']
+									-for (var i=0;i<phone_model.length;i++)
+										-if (phone_model[i] == edit.phone_model)
+											option(value="#{phone_model[i]}",selected) #{phone_model[i]}
+										-else
+											option(value="#{phone_model[i]}") #{phone_model[i]}
+							div.form-group
+								label Website
+								input.form-control.parsley-validated(name="website",type="text",value="#{edit.website}",placeholder="Online Url")
+							div.form-group
+								label Small image for this Work (Must 390px * 390px).
+								div.input-group
+									input#smallimg.form-control.parsley-validated(name="smallimg",type="text",value="#{edit.small_img}",placeholder="Small image's url",required)
+									span.input-group-btn
+										button.btn.btn-default(type="button",data-toggle="modal",data-starget="#smallimg",data-target="#getfiles")
+											i.fa.fa-file
+							div.form-group
+								label Image for this Work (Need width >= 790).
+								div.input-group
+									input#preimg.form-control.parsley-validated(name="img",data-only="true",type="text",value="#{edit.img}",placeholder="Image's url")
+									span.input-group-btn
+										button.btn.btn-default(type="button",data-toggle="modal",data-starget="#preimg",data-target="#getfiles")
+											i.fa.fa-file
+							div.form-group
+								p 
+									label Tag
 								select#tagid.multiselect(name="tagid[]",multiple="multiple",title="请选择",required)
 									-for(var i=0;i<taglist.length;i++)
 										-var isselect = false
 										-for (var j=0;j<edit.tag_id.length;j++)
-											-if (edit.tag_id[j] == taglist[i]._id) {isselect = "true"}
+											-if (edit.tag_id[j]._id+"" == taglist[i]._id+"") {isselect = "true"}
 										-if (isselect == "true")
 											option(value="#{taglist[i]._id}",selected) #{taglist[i].name}
 										-else
 											option(value="#{taglist[i]._id}") #{taglist[i].name}
 							div.form-group
 								label Description
-								include editor-btn
+								//- include editor-btn
 								textarea#editor.form-control(name="editor",rows="5",cols="30",required) #{edit.content}
 							div.form-group
 								label Author
@@ -77,9 +111,23 @@ block content-here
 					div.widget-header
 						h3
 							i.fa.fa-tags
+							| Work Precautions
+					div.widget-content
+						p 请注意 短名称是链接地址.
+						p 打开mobile功能,将在作品详情当中出现手机.
+						p 小图是必须选择的,而且尺寸固定为390*390.
+						p 选择一个Work标签否则是不能提交的
+						p 简介采用的是<a href="http://zh.wikipedia.org/wiki/Markdown" target="_blank">Markdown</a>写法.
+						p 尽量不要使用过多 #标签.
+						p 每个人的文件夹都是独立的,所以你看不到其他人的文件.
+						
+				div.widget
+					div.widget-header
+						h3
+							i.fa.fa-tags
 							| Work Preview
 					div.widget-content
-						div.blog-title
+						//- div.blog-title
 							h1#title
 							p.info 2014-03-16 08:22
 							div.author
@@ -90,7 +138,7 @@ block content-here
 block css
 	link(href="/css/admin/codemirror.css",media="all",rel="stylesheet",type="text/css")
 block thisPageScript
-	-var pagejs = ['js/vendor/codemirror.js','js/vendor/showdown.js','js/vendor/codemode/markdown.js','assets/js/bootstrap-multiselect.js','assets/js/parsley.min.js']
+	-var pagejs = ['js/vendor/codemirror.js','js/vendor/showdown.js','js/vendor/codemode/markdown.js','assets/js/bootstrap-multiselect.js','assets/js/bootstrap-switch.min.js','assets/js/parsley.min.js']
 	-for(var mn=0;mn<pagejs.length;mn++)
 		script(src="/#{pagejs[mn]}",type="text/javascript")
 block thisPageJs 
@@ -98,6 +146,7 @@ block thisPageJs
 		$(document).ready(function() {
 			fBindTitleEditor();
 			fCreateEditor();
+			fBindSwitch();
 			fBindForm();
 			fBindShortName();
 		});

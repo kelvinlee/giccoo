@@ -1,9 +1,10 @@
 div#page-clients.pages.page-clients
 	div.container
-		h4.line-divider-inline.center Satisfied clients
+		h4.line-divider-inline.center #{l.clients.title}
 		div.row-fluid
-			div.span2.center
-				img(src="/assets-gico/images/pages/clients/01.png")
+			-for (var i=0;i<6;i++)
+				div.span2.center
+					img(src="/assets-gico/images/pages/clients/0#{i+1}.png") 
 		div.row-fluid
 			div.span8.offset2.center.smallFontBy08
-				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				p #{l.clients.description}

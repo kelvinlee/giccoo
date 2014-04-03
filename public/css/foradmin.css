@@ -42,3 +42,7 @@
 .preview img {
   max-width: 100%;
 }
+.preview p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}

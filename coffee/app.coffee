@@ -39,9 +39,11 @@ app.use (req,res,next)->
   # console.log req.headers && req.headers["accept-language"]
   res.locals.config = config
   language = 'en-US'
+  # language = 'zh-CN'
   res.locals.l = require "./language/en-US.js"
+  # res.locals.l = require "./language/zh-CN.js"
   res.locals.language = language
-  # console.log req.acceptedLanguages
+
   if req.acceptedLanguages.length > 0
     fs.exists "./language/"+req.acceptedLanguages[0]+".js", (exists)->
       if exists

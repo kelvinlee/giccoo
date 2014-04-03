@@ -9,23 +9,42 @@ Ut = require '../lib/util'
 check = require('validator').check 
 EventProxy = require('eventproxy')
 config = require('../config').config
-
-#var md = require('showdown').Markdown
+os = require 'os'
+# md = require('showdown')
+# converter = new md.converter()
 
 # 查看是否登录
 checkAdmin = (req,res,next)->
+	res.locals.company = 
+		freemem:os.freemem()
+		totalmem:os.totalmem()
+		arch:os.arch()
+		type:os.type()
+		endianness:os.endianness()
+		cpus:os.cpus()
+	console.log "type",os.cpus() 
 	if req.session.is_admin && req.cookies.user
+		res.locals.avatar = Ut.avatar req.session.email,26
+		res.locals.username = req.session.username
+		res.locals.userid = req.session.userid
 		next()
 		return yes
 	else if req.cookies.user
 		bk = Ut.decrypt req.cookies.user,'giccoo'
 		Uinfo = bk.split '\t'
 		User.getUserById Uinfo[0], (err,user)->
-			if user.is_admin
+			# console.log "here?",user
+			if user? && user.is_admin? && user.is_admin
 				req.session.is_admin = true
-				req.session.userid = Uinfo[0]
-				req.session.email = Uinfo[2]
+				req.session.userid = user._id
+				req.session.username = user.name 
+				req.session.email = user.email
+
+				res.locals.avatar = Ut.avatar user.email,26
+				res.locals.username = user.name
+				res.locals.userid = user._id 
 				next()
+				# res.redirect '/sign/in'
 			else
 				res.redirect '/sign/in'
 	else 

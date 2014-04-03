@@ -38,7 +38,7 @@ block content-here
 							i.fa.fa-tags
 							| User form
 					div.widget-content
-						-if (!edit){ edit= {_id:"new",name:"",email:"",avatar:avatar,motto:"",active:"",sex:"",is_admin:"",description:"",art_count:0,work_count:0,reply_count:0} }
+						-if (!edit){ edit= {_id:"new",name:"",email:"",avatar:avatar,motto:"",active:"",sex:"",is_admin:"",description:"",social:{weibo:"",facebook:"",twitter:"",dribbble:"",instagram:"",github:""},art_count:0,work_count:0,reply_count:0} }
 						form(method="post",action="/admin/user/#{edit._id}")
 							div.form-group
 								label User name
@@ -47,8 +47,47 @@ block content-here
 								label Email
 								input.form-control.parsley-validated(name="email",type="email",value="#{edit.email}",required)
 							div.form-group
+								label Description
+								include editor-btn
+								textarea#editor.form-control(name="editor",rows="5",cols="30") #{edit.description}
+							div.form-group
+								label Avatar
+								div
+									a(href="http://www.gravatar.com/",target="_blank")
+										img(src="#{edit.avatar}")
+							div.form-group
 								label Motto
 								input.form-control.parsley-validated(name="motto",type="text",value="#{edit.motto}")
+							div.form-group
+								div.input-group
+									span.input-group-addon
+										i.fa.fa-weibo
+									input.form-control.parsley-validated(name="weibo",type="text",value="#{edit.social.weibo}")
+							div.form-group
+								div.input-group
+									span.input-group-addon
+										i.fa.fa-facebook-square
+									input.form-control.parsley-validated(name="facebook",type="text",value="#{edit.social.facebook}")
+							div.form-group
+								div.input-group
+									span.input-group-addon
+										i.fa.fa-twitter
+									input.form-control.parsley-validated(name="twitter",type="text",value="#{edit.social.twitter}")
+							div.form-group
+								div.input-group
+									span.input-group-addon
+										i.fa.fa-dribbble
+									input.form-control.parsley-validated(name="dribbble",type="text",value="#{edit.social.dribbble}")
+							div.form-group
+								div.input-group
+									span.input-group-addon
+										i.fa.fa-instagram
+									input.form-control.parsley-validated(name="instagram",type="text",value="#{edit.social.instagram}")
+							div.form-group
+								div.input-group
+									span.input-group-addon
+										i.fa.fa-github
+									input.form-control.parsley-validated(name="github",type="text",value="#{edit.social.github}")
 							div.form-group
 								p
 									label Active
@@ -63,15 +102,6 @@ block content-here
 									input.switch-demo.switch-small(type="checkbox",name="is_admin",data-on="success",data-off="warning",data-on-label="<i class='fa fa-check'></i>",data-off-label="<i class='fa fa-warning'></i>",checked)
 								-else
 									input.switch-demo.switch-small(type="checkbox",name="is_admin",data-on="success",data-off="warning",data-on-label="<i class='fa fa-check'></i>",data-off-label="<i class='fa fa-warning'></i>")
-							div.form-group
-								label Description
-								include editor-btn
-								textarea#editor.form-control(name="editor",rows="5",cols="30") #{edit.description}
-							div.form-group
-								label Avatar
-								div
-									a(href="http://www.gravatar.com/",target="_blank")
-										img(src="#{edit.avatar}")
 							div.form-group
 								label Info
 								div
@@ -94,13 +124,23 @@ block content-here
 							i.fa.fa-tags
 							| User Description Preview
 					div.widget-content
+						p 管理员用户只能编辑自己和非管理员用户.
+						p 如果你有社交帐号,请添加.
+						p 请注意不要随机添加管理员,会引起很多麻烦.
+						p 
+				div.widget
+					div.widget-header
+						h3
+							i.fa.fa-tags
+							| User Description Preview
+					div.widget-content
 						//- div.blog-title
 							h1#title
 							p.info 2014-03-16 08:22
 							div.author
 								img(src="http://www.gravatar.com/avatar/242c9a188be878be87d71a314ceeae3d?size=48")
 							hr
-						div.userzw.hidden-xs
+						//- div.userzw.hidden-xs
 						include preview
 
 block css

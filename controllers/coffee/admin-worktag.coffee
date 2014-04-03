@@ -6,7 +6,7 @@ exports.workTag = (req,res,next)->
 # new Work tag form
 exports.workNewTag = (req,res,next)->
 	res.locals.active = ['work','work-tag-new']
-	fs.readdir config.upload, (err,files)->
+	fs.readdir config.upload+'/'+req.session.userid+"/", (err,files)->
 		res.render 'admin/worknewtag',{files:files}
 # del work tag form
 exports.workDelTag = (req,res,next)->
@@ -52,7 +52,7 @@ exports.workTagEdit = (req,res,next)->
 		next()
 	else
 		res.locals.active = ['work','work-tag-list']
-		fs.readdir config.upload, (err,files)->
+		fs.readdir config.upload+'/'+req.session.userid+"/", (err,files)->
 			TagWork.getTagWork req.params.tag_id,(err,list)->
 				console.log list
 				res.render 'admin/worknewtag',{edit:list,files:files}
