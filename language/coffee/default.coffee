@@ -58,4 +58,5 @@ exports.contact =
   _company:""
   social:"Get social"
 
-
+exports.error = 
+  registersuccess : "success"

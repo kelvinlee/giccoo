@@ -2,7 +2,7 @@
 path = require 'path'
 express = require 'express'
 #var io = require socket.io').listen(server); 
-config = require('./config').config
+config = require('./de-config').config
 routes = require './routes'
 fs = require 'fs'
 
@@ -18,6 +18,8 @@ app.configure ->
     secret: config.session_secret
   app.use express.urlencoded()
   app.use express.json()
+  # app.use express.bodyParser()
+  app.use express.bodyParser keepExtensions: true,uploadDir: config.upload
   app.use require('./controllers/user').auth_user
   app.use (req,res,next)->
     return next() if req.body and req.body.git is 'pull'
@@ -36,18 +38,22 @@ app.use (req,res,next)->
   req.session.messages = []
   # console.log req.headers && req.headers["accept-language"]
   res.locals.config = config
-  # 判断系统语言.
   language = 'en-US'
+  # language = 'zh-CN'
   res.locals.l = require "./language/en-US.js"
+  # res.locals.l = require "./language/zh-CN.js"
   res.locals.language = language
-  # console.log req.headers
-  if req.headers && req.headers["accept-language"]
-    language = req.headers["accept-language"].split "," if req.headers["accept-language"]
-    fs.exists "./language/"+language[0]+".js", (exists)->
+
+  if req.acceptedLanguages.length > 0
+    fs.exists "./language/"+req.acceptedLanguages[0]+".js", (exists)->
       if exists
-        res.locals.l = require "./language/"+language[0]
-        res.locals.language = language[0]
+        res.locals.l = require "./language/"+req.acceptedLanguages[0]
+        res.locals.language = req.acceptedLanguages[0]
   next()
+  # if req.headers && req.headers["accept-language"]
+  #   language = req.headers["accept-language"].split "," if req.headers["accept-language"]
+    
+  
 
 
 # 缓存过期时间

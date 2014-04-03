@@ -9,7 +9,7 @@ exports.userList = (req,res,next)->
 exports.userEdit = (req,res,next)->
 	# Description...
 	res.locals.active = ['user','user-list']
-	fs.readdir config.upload+'/'+req.session.userid+"/", (err,files)->
+	fs.readdir res.locals.config.upload+'/'+req.session.userid+"/", (err,files)->
 		User.getUserById req.params.user_id, (err,obj)->
 			obj.avatar = Ut.avatar obj.email
 			res.render 'admin/usernew',{edit:obj,files:files}
@@ -66,5 +66,5 @@ exports.userEditPost = (req,res,next)->
 			obj.save()
 			res.send re
 			if obj.active || obj._isadmin
-				fs.mkdir config.upload+'/'+obj._id+"/",777, (isok)->
+				fs.mkdir res.locals.config.upload+'/'+obj._id+"/",777, (isok)->
 					console.log isok

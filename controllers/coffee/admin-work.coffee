@@ -16,7 +16,7 @@ exports.workNew = (req,res,next)->
 	# Work.getWorkByTagId ["5322d1e6676c00880b000001","5322d437f85b3cb00b000001"],(err,list)->
 		# console.log err,list
 	res.locals.active = ['work','work-new']
-	fs.readdir config.upload+'/'+req.session.userid+"/", (err,files)->
+	fs.readdir res.locals.config.upload+'/'+req.session.userid+"/", (err,files)->
 		TagWork.getTagWorks (err,list)->
 			res.render 'admin/worknew',{taglist:list,avatar:Ut.avatar(req.session.email),files:files}
 exports.workEdit = (req,res,next)->
@@ -28,7 +28,7 @@ exports.workEdit = (req,res,next)->
 		goto = EventProxy.create 'files','taglist','work', (files,taglist,work)->
 			# console.log work.author_id.email
 			res.render 'admin/worknew',{taglist:taglist,avatar:Ut.avatar(work.author_id.email),edit:work,files:files}
-		fs.readdir config.upload+'/'+req.session.userid+"/", (err,files)->
+		fs.readdir res.locals.config.upload+'/'+req.session.userid+"/", (err,files)->
 			goto.emit "files",files
 		TagWork.getTagWorks (err,list)->
 			goto.emit "taglist",list

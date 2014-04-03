@@ -61,3 +61,5 @@ exports.contact =
   _company:"北京栩易灵动科技有限公司"
   social:"Get social"
 
+exports.error = 
+  registersuccess : "success"
