@@ -21,8 +21,7 @@ checkAdmin = (req,res,next)->
 		arch:os.arch()
 		type:os.type()
 		endianness:os.endianness()
-		cpus:os.cpus()
-	console.log "type",os.cpus() 
+		cpus:os.cpus() 
 	if req.session.is_admin && req.cookies.user
 		res.locals.avatar = Ut.avatar req.session.email,26
 		res.locals.username = req.session.username
