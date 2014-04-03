@@ -60,6 +60,7 @@ exports.post = (req,res)->
 exports.reg = (req,res) ->
 	# 注册提交
 	console.log typeof Ut.strim("aa")
+	console.log Ut.recode()
 	name = Ut.strim req.body.username
 	passwd = Ut.strim req.body.password
 	email = Ut.strim req.body.email

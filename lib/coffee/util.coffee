@@ -75,7 +75,7 @@ exports.xss = (html)->
 # @return {string}
 #
 exports.strim = (str)->
-	console.log typeof sanitize
+	console.log "sa:",typeof sanitize
 	return sanitize(str).trim()
 #
 # 接口基本格式
