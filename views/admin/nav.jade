@@ -78,7 +78,7 @@ nav.main-nav
 				-var totalmem = parseInt(company.totalmem/1024/1024)
 				-var freemem = parseInt(company.freemem/1024/1024)
 				-var freemenw = parseInt((totalmem-freemem)/totalmem*100)<50?'progress-bar-success':'progress-bar-warning'
-				span.data-value #{totalmem-freemem}MB/#{totalmem/1024}GB
+				span.data-value #{totalmem-freemem}MB/#{totalmem}MB
 					div.progress.progress-xs
 						div(class="progress-bar #{freemenw}",role="progressbar",aria-valuemin="0",aria-valuemax="100",aria-valuenow="#{parseInt((totalmem-freemem)/totalmem*100)}",style="width:#{parseInt((totalmem-freemem)/totalmem*100)}%")
 							span.sr-only #{parseInt((totalmem-freemem)/totalmem*100)}%
