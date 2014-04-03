@@ -75,8 +75,8 @@ nav.main-nav
 		ul.list-unstyled.list-info-sidebar.bottom-30px
 			li.data-row
 				span.data-name Memory
-				-var totalmem = parseInt(company.totalmem/8/1024/1024)
-				-var freemem = parseInt(company.freemem/8/1024/1024)
+				-var totalmem = parseInt(company.totalmem/1024/1024)
+				-var freemem = parseInt(company.freemem/1024/1024)
 				-var freemenw = parseInt((totalmem-freemem)/totalmem*100)<50?'progress-bar-success':'progress-bar-warning'
 				span.data-value #{totalmem-freemem}MB/#{totalmem/1024}GB
 					div.progress.progress-xs

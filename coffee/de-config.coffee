@@ -3,7 +3,7 @@ exports.config =
 	name: 'Giccoo'
 	description: 'Giccoo'
 	version: '0.1.0'
-
+	upload: '/Users/sumomofukeqiao/Kelvin_code/My/giccoo/public/uploadDir'
 	site_headers: [
 		'<meta name="author" content="Kelvin" />'
 	]
@@ -28,7 +28,7 @@ exports.config =
 	db: 'mongodb://localhost/giccoo'
 	session_secret: 'giccoo_club'
 	auth_cookie_name: 'giccoo_club'
-	ip: '127.0.0.1' #209.148.89.194
+	ip: '127.0.0.1' #
 	port: 8080
 	list_count: 20
 	# mail SMTP
