@@ -59,7 +59,7 @@ exports.post = (req,res)->
 	no
 exports.reg = (req,res) ->
 	# 注册提交
-	console.log Ut.strim " sdf "
+	console.log typeof Ut.strim
 	name = Ut.strim req.body.username
 	passwd = Ut.strim req.body.password
 	email = Ut.strim req.body.email
