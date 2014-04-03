@@ -1,5 +1,5 @@
 xss = require 'xss'
-sanitize = require('validator').sanitize
+validator = require('validator')
 crypto = require 'crypto'
 
 exports.format_date = (date, friendly)->
@@ -74,9 +74,8 @@ exports.xss = (html)->
 # @param {string}
 # @return {string}
 #
-exports.strim = (str)->
-	console.log "sa:",typeof sanitize
-	return sanitize(str).trim()
+exports.strim = (str)-> 
+	return validator.trim(str)
 #
 # 接口基本格式
 #

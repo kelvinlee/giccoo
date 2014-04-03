@@ -58,14 +58,11 @@ exports.post = (req,res)->
 		res.send re
 	no
 exports.reg = (req,res) ->
-	# 注册提交
-	console.log typeof Ut.strim("aa")
-	console.log Ut.recode()
+	# 注册提交 
 	name = Ut.strim req.body.username
 	passwd = Ut.strim req.body.password
 	email = Ut.strim req.body.email
-	re = Ut.recode()
-	console.log re
+	re = Ut.recode() 
 	if Ut.empty passwd
 		re.reason = 'empty password'
 		re.recode = 201

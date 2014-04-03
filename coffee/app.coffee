@@ -19,7 +19,7 @@ app.configure ->
   app.use express.urlencoded()
   app.use express.json()
   # app.use express.bodyParser()
-  app.use express.bodyParser uploadDir: config.upload
+  app.use express.bodyParser keepExtensions: true,uploadDir: config.upload
   app.use require('./controllers/user').auth_user
   app.use (req,res,next)->
     return next() if req.body and req.body.git is 'pull'
