@@ -157,7 +157,7 @@ exports.gen_session = (user, res)->
 #
 # 获取头像地址
 #
-# @param {string},{number}
+# @param {string},{string}
 # @return {string}
 #
 avatar = (email, size = 48)->
