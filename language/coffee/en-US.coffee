@@ -56,7 +56,7 @@ exports.contact =
   location:"Location"
   email:"Email"
   _phone: "(+86) 13426109193"
-  _location: ""
+  _location: "北京市海淀区中关村910号楼-2 0605室"
   _email: "hr@giccoo.com"
   _company:"北京栩易灵动科技有限公司"
   social:"Get social"
