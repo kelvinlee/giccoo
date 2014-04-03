@@ -52,7 +52,7 @@ block content-here
 					tbody
 						-for(var i=0;i<userlist.length;i++)
 							-var date = userlist[i].create_at;
-							-var dateStr = date.getFullYear() + '-' +(date.getMonth()>9?date.getMonth()+1:'0'+(date.getMonth()+1))+'-'+(date.getDate()>10?date.getDate():'0'+date.getDate())+' '+(date.getHours()>10?date.getHours():'0'+date.getHours())+':'+(date.getMinutes()>10?date.getMinutes():'0'+date.getMinutes())
+							-var dateStr = date.getFullYear() + '-' +(date.getMonth()>8?date.getMonth()+1:'0'+(date.getMonth()+1))+'-'+(date.getDate()>9?date.getDate():'0'+date.getDate())+' '+(date.getHours()>9?date.getHours():'0'+date.getHours())+':'+(date.getMinutes()>9?date.getMinutes():'0'+date.getMinutes())
 							-var is_admin = "";
 							-if (userlist[i].is_admin) is_admin = "color:#ce7b11";
 								tr

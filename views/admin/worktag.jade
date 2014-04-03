@@ -48,7 +48,7 @@ block content-here
 						-if (worktaglist.length>0)
 							-for(var i=0;i<worktaglist.length;i++)
 								-var date = worktaglist[i].create_at;
-								-var dateStr = date.getFullYear() + '-' +(date.getMonth()>9?date.getMonth()+1:'0'+(date.getMonth()+1))+'-'+(date.getDate()>10?date.getDate():'0'+date.getDate())+' '+(date.getHours()>10?date.getHours():'0'+date.getHours())+':'+(date.getMinutes()>10?date.getMinutes():'0'+date.getMinutes())
+								-var dateStr = date.getFullYear() + '-' +(date.getMonth()>8?date.getMonth()+1:'0'+(date.getMonth()+1))+'-'+(date.getDate()>9?date.getDate():'0'+date.getDate())+' '+(date.getHours()>9?date.getHours():'0'+date.getHours())+':'+(date.getMinutes()>9?date.getMinutes():'0'+date.getMinutes())
 									tr
 										td #{worktaglist[i].name}
 										//- td #{worktaglist[i].description}
