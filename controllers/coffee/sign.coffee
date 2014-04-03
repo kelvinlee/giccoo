@@ -59,11 +59,12 @@ exports.post = (req,res)->
 	no
 exports.reg = (req,res) ->
 	# 注册提交
-	console.log Ut
+	console.log Ut.strim " sdf "
 	name = Ut.strim req.body.username
 	passwd = Ut.strim req.body.password
 	email = Ut.strim req.body.email
-	re = Ut.recode() 
+	re = Ut.recode()
+	console.log re
 	if Ut.empty passwd
 		re.reason = 'empty password'
 		re.recode = 201
