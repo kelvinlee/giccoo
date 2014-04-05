@@ -26,8 +26,8 @@ div#page-work.pages.page-work
 								h4 #{worklist[i].title}
 		-if (workcount.count > (workcount.page)*workcount.size)
 			footer
-				p !{(workcount.page)*workcount.size}
+				//- p !{workcount.count}
 				div.show-more-cube
-					a(href="#works/pages-2",data-destination="plugin-filter-elements",data-insert="appendTo",data-action="remove")
-						span #{l.works.more}
+					a#pages(href="#works/2",data-pages="#{workcount.count}",data-destination="plugin-filter-elements",data-insert="appendTo")
+						span !{l.works.more}
 					

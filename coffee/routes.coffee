@@ -22,6 +22,9 @@ module.exports = (app)->
   # work
   # app.get '/works', work.homepage
   app.get '/work/:shortname', work.work
+  app.get '/works/:page_num', work.works
+  # like
+  app.get '/like/:model/:model_id', work.like
 
 
   # admin

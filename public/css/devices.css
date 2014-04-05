@@ -257,13 +257,18 @@ a {
 	position: relative;
 	height: 100%;
 	z-index: 2;
-	text-align: left;
-	text-indent: -999px;
+	text-align: center;
+	/*text-indent: -999px;*/
 	display: block;
 	-webkit-border-radius: 1px;
 	border-radius: 1px;
 	-webkit-box-shadow: 0 0 0 3px #111;
 	box-shadow: 0 0 0 3px #111;
+	overflow: auto;
+}
+.device .screen .ipadimg {
+	max-width: 100%;
+	position: relative;
 }
 .device .screen .mobilesite {
 	position: absolute;

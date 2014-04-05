@@ -40,4 +40,29 @@ exports.work = (req,res,next)->
 			work.save()
 		else
 			res.send {error:'404'}
-	
+exports.works = (req,res,next)->
+	page = req.params.page_num
+
+	Work.getWorkPage page,9, (err,list,count)-> 
+		# ep.emit "work",list
+		# ep.emit "workcount",{count:count,page:page,size:9}
+		res.render 'workpage', {worklist:list,workcount:{count:count,page:page,size:9}}
+
+exports.like = (req,res,next)->
+	model = req.params.model
+	model_id = req.params.model_id
+	re = Ut.recode()
+	if req.cookies[model+"-"+model_id] is "true"
+		re.recode = 201
+		re.reason = "already have."
+	if model is 'work' && re.recode is 200
+		day = 1000 * 60 * 60 * 24 * 7
+		res.cookie model+"-"+model_id,"true" ,{expires: new Date Date.now()+60*60*24*7,maxAge: day}
+		Work.getWorkById model_id, (err,obj)->
+			obj.like_count += 1
+			obj.save()
+
+	res.send re
+
+
+

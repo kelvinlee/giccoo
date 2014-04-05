@@ -1,12 +1,66 @@
+mixin share()
+	section.share
+		h5 Share to site
+		p.top30
+			a.share-btn(href="javascript:void(0)")
+				i.fa.fa-weibo
+			a.share-btn(href="javascript:void(0)")
+				i.fa.fa-facebook-square
+			a.share-btn(href="javascript:void(0)")
+				i.fa.fa-twitter
+			a.share-btn.like-btn(href="/like/work/#{work._id}")
+				i.fa.fa-thumbs-o-up
+				span #{work.like_count}
+			div
+				i.fa.fa-eye
+				span #{work.visit_count}
+
 section.portfolio-item-details
 	div.row-fluid
-		div.span8
-			-if(work.mobile)
-				- var pmodlcls = ""
-				- if (work.phone_model == 'iphone5s') {pmodlcls = "gold"}
-				- if (work.phone_model == 'iphone5c') {pmodlcls = "green"}
-				- if (work.phone_model == 'iphone4s') {pmodlcls = "black"}
-				div(id="#{work.phone_model}",class="#{pmodlcls} hidden-phone")
+		-if(work.mobile)
+			div.span8 
+					- var pmodlcls = ""
+					- if (work.phone_model == 'iphone5s') {pmodlcls = "gold"}
+					- if (work.phone_model == 'iphone5c') {pmodlcls = "green"}
+					- if (work.phone_model == 'iphone4s') {pmodlcls = "black"}
+					div(id="#{work.phone_model}",class="#{pmodlcls} hidden-phone")
+						div.device
+							div.inner
+							div.camera
+							div.sleep
+							div.sensor
+							div.volume
+							div.speaker
+							div.screen
+								iframe.mobilesite(src="#{work.website}")
+							div.home
+					div.visible-phone
+						img(src="#{work.small_img}")
+				
+			div.span4
+				div.close-portfolio
+					span &#10006;
+					div.clearfix
+				h5 #{work.title}
+				article.smallFontBy08 !{content}
+				-if (work.website)
+					section.website
+						h5 Visit site
+						p
+							a(href="#{work.website}",target="_blank") #{work.website}
+					+share()
+				//- div.social-icons.sicon-black.bordered.bordered-black
+					a.sicon-white.sicon-facebook(href="") 
+						i Facebook
+
+				div.submenu
+					ul
+						-for (var i=0;i<work.tag_id.length;i++)
+							li
+								span #{work.tag_id[i].name}
+		-else
+			div.span12
+				div(id="ipad",class="landscape silver hidden-phone")
 					div.device
 						div.inner
 						div.camera
@@ -15,29 +69,27 @@ section.portfolio-item-details
 						div.volume
 						div.speaker
 						div.screen
-							iframe.mobilesite(src="#{work.website}")
+							img(src="#{work.img}",class="ipadimg")
 						div.home
 				div.visible-phone
-					img(src="#{work.small_img}")
-			-else
-				img(src="/assets-gico/images/pages/work/01.jpg")
-		div.span4
-			div.close-portfolio
-				span &#10006;
-				div.clearfix
-			h5 #{work.title}
-			article.smallFontBy08 !{content}
-			-if (work.website)
-				section.website
-					h5 Visit site
-					p
-						a(href="#{work.website}",target="_blank") #{work.website}
-			//- div.social-icons.sicon-black.bordered.bordered-black
-				a.sicon-white.sicon-facebook(href="") 
-					i Facebook
-
-			div.submenu
-				ul
-					-for (var i=0;i<work.tag_id.length;i++)
-						li
-							span #{work.tag_id[i].name}
+					img(src="#{work.img}")
+			div.span10.offset1
+				div.close-portfolio
+					span &#10006;
+					div.clearfix
+				h5 #{work.title}
+				article.smallFontBy08 !{content}
+				-if (work.website)
+					section.website
+						h5 Visit site
+						p
+							a(href="#{work.website}",target="_blank") #{work.website}
+					+share()
+				//- div.social-icons.sicon-black.bordered.bordered-black
+					a.sicon-white.sicon-facebook(href="") 
+						i Facebook
+				div.submenu
+					ul
+						-for (var i=0;i<work.tag_id.length;i++)
+							li
+								span #{work.tag_id[i].name}

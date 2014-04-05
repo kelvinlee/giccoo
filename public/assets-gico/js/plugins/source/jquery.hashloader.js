@@ -140,6 +140,12 @@
                         $(hashDestination).delay(500).slideUp(400, function(){
                             $(this).remove();
                         });
+                    } 
+                    $("#pages").attr("href","#works/"+(Math.ceil($(".mix").length/9)+1));
+                    if($(".mix").length>=parseInt($("#pages").data('pages'))) {
+                        $("#pages").delay(500).slideUp(400, function(){
+                            $(this).remove();
+                        });
                     }
                     
                 });

@@ -1,73 +1,14 @@
-art:
- ✔ model @done (13-06-13 19:33)
- ☐ proxy
- ☐ controllers
- ☐ view
+ 
 
-art_tag:
- ✔ model @done (13-06-13 19:34)
- ☐ proxy
- ☐ controllers
- ☐ view
+下一个步骤 :
+ ✔ Work 翻页功能需要补全. @done (14-04-04 15:38)
+ ☐ 给Work增加浏览次数,like次数.
+ ☐ 给work增加分享功能.
+ ☐ 给手机浏览增加图片功能.
+ ☐ 给网站增加检测,浏览次数,日志功能等.
 
-user:
- ✔ model @done (13-06-13 19:33)
- ☐ proxy
- ☐ controllers
- ☐ view
 
-page:
- ✔ model @done (13-06-13 19:34)
- ☐ proxy
- ☐ controllers
- ☐ view
-
-menu:
- ✔ model @done (13-06-13 19:34)
- ☐ proxy
- ☐ controllers
- ☐ view
-
-reply:
- ☐ model 需要根据情况具体改一下.
- ☐ proxy
- ☐ controllers
- ☐ view
-
-tag:
- ✔ model @done (13-06-13 19:33)
- ☐ proxy
- ☐ controllers
- ☐ view
-
-file:
- ✔ model @done (13-06-13 19:35)
- ☐ proxy
- ☐ controllers
- ☐ view
-
-file_tag:
- ✔ model @done (13-06-13 19:35)
- ☐ proxy
- ☐ controllers
- ☐ view
-
-后台管理功能:
- ☐ art
- ☐ page
- ☐ menu
- ☐ reply
- ☐ tag
- ☐ files
-
-前端界面:
- ☐ homepage
- ☐ art
- ☐ page
- ☐ menu
- ☐ reply
- ☐ tag
- ☐ files
-
-其它:
- ☐ routes看看能不能按照url获取地址.
+未来修改 [需要做的时候提出]:
+  ☐ 给编辑器增加复制图片功能
+  ☐ Blog.
+  ☐ 设置网站功能

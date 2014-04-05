@@ -161,7 +161,7 @@ exports.gen_session = (user, res)->
 # @return {string}
 #
 avatar = (email, size = 48)->
-	default_avatar = "http://f.giccoo.com/img/logo.png"
+	default_avatar = "http://f.giccoo.com/img/user.jpg"
 	email = email+""
 	url = "http://www.gravatar.com/avatar/"+md5(email.toLowerCase())+"?d="+default_avatar+"&s="+size
 	return url
